@@ -1,0 +1,62 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 06.08.2020, 10:50:00
+    Author     : Peter Thienel thienel@data-quest.de
+*/
+ul.coa-boxed-grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+ul.coa-boxed-grid li {
+  flex: 0 1 30%;
+  display: block;
+  min-width: 30%;
+  max-width: 30%;
+  margin: 10px;
+}
+ul.coa-boxed-grid li button {
+  box-sizing: border-box;
+  background-color: #e7ebf1;
+  border: 1px solid #d0d0d0;
+  display: block;
+  margin: 0 0 1em;
+  overflow: hidden;
+  padding: 1em;
+  position: relative;
+  cursor: pointer;
+  width: 100%;
+}
+ul.coa-boxed-grid li button:hover {
+  background-color: #f3f5f8;
+  border: 1px solid #d0d0d0;
+}
+ul.coa-boxed-grid h3 {
+  color: inherit;
+  font-size: 2em;
+  font-weight: 400;
+  margin: 0;
+  padding: 0px 1.2em 0px;
+  text-overflow: ellipsis;
+  line-break: anywhere;
+  white-space: nowrap;
+  position: relative;
+  overflow: hidden;
+}
+ul.coa-boxed-grid img {
+  display: block;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+ul.coa-boxed-grid .coa-template-selected {
+  background-image: url("https://studip.hs-rm.de/assets/images/icons/blue/accept.svg");
+  background-size: 32px;
+  background-repeat: no-repeat;
+  background-position: top right;
+}

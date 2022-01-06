@@ -1,0 +1,103 @@
+\documentclass{article}
+\usepackage{mathtools}
+\begin{document}
+	\section*{Lsg Vorschlag A+N Ü007 Maximilian Maag}
+	Anmerkung: Das Anfertigen von Skizzen jedweder Art muss aufgrund meiner Sehschädigung entfallen.
+	\section*{Aufgabe A}
+	\subsection*{a)}
+	$\lim\limits_{x \to 0}\frac{e^x - e^{2x}}{x} \\ 
+	\lim\limits_{x \to 0}\frac{e^x - 2e^{2x}}{1}$ \\
+	$\lim\limits_{x \to 0}\frac{e^0 - 2e^{2*0}}{1}$ \\
+	$\lim\limits_{x \to 0}\frac{1 - 2}{1}$ \\
+	$\lim\limits_{x \to 0} = -1 $
+	\subsection*{b)}
+	$\lim\limits_{t \to \frac{\pi}{2}} \frac{cos(3t)}{cos(t)}$ \\
+	$\lim\limits_{t \to \frac{\pi}{2}} \frac{3*-sin(3*\frac{\pi}{2})}{-sin(\frac{\pi}{2})}$ \\
+	$\lim\limits_{t \to \frac{\pi}{2}} \frac{-3}{1} = -3$ \\
+	\subsection*{c)}
+	$\lim\limits_{x \to -2} \frac{2^{x+2}-1}{x+2}$ \\
+	$\lim\limits_{x \to -2} \frac{2^{x+2}*ln(2)}{1}$ \\
+	$\lim\limits_{x \to -2} \frac{2^{-2+2}*ln(2)}{1}$ \\
+	$\lim\limits_{x \to -2} \frac{1*ln(2)}{1}$ \\
+	$\lim\limits_{x \to -2} ln(2)$ \\
+	\section*{Aufgabe B}
+	$D = x \in R | -\frac{\pi}{2} < x < \frac{\pi}{2}$ \\
+	$f^{-1}(x) = arcostan(x)$ \\
+	$(tan(x))' = 1 + tan(x)^2$ \\
+	$(f^{-1})'(x) = \frac{1}{1 + tan^2(arcostan(x))}$ \\
+	$(f^{-1})'(x) = \frac{1}{1 + x^2}$ \\
+	\section*{Aufgabe 1}
+	$D = x \in R | -1 < x < 1$ \\
+	$f(x) = cos(x)$ \\
+	$f^{-1}(x) = arcos(x)$ \\
+	$(f^{-1})'(x) = \frac{1}{f'(f^{-1}(x))}$ \\
+	$(arcos(x))' = \frac{1}{-sin(arcos(x))}$ \\
+	trigonometrischer Pythagoras: \\
+	$cos(x)^2 + sin(x)^2 = 1$ \\
+	$cos(x)^2 = 1 - sin(x)^2$ \\
+	$cos(x) = \sqrt{1 - cos(x)^2}$ \\
+	$(arcos(x))' = \frac{1}{\sqrt{1-cos(arcos(x))^2}}$ \\
+	$(arcos(x))' = \frac{1}{\sqrt{1-x^2}}$ \\
+	\section*{Aufgabe 2}
+	\subsection*{a)}
+	E(x) ist eine lineare Funktion mit dem y-achsenabschnit 0 und somit eine Ursprungsgerade die mit der Steigung m = 25 streng monoton für x $\to$ $\infty$ steigt. \\
+	Nutzengrenze und -schwelle. \\
+	$E(x) = K(x)$ \\
+	$25x = x^3 - 8x^2 + 24x + 8$ \\
+	$0 = x^3 - 8x^2 - x + 8$ \\
+	$(x^3 - 8x^2 - x + 8) : (x+1) = (x^2 - 7x - 8) $ \\
+	$x_1 = -1; x_2 = 1; x_3 = 8$  \\
+	$x_1$ ist zu vernachlässigen, da diese Nullstelle im Negativintervall liegt. \\
+	$E(2) = 50$ \\
+	$E(8) = 25 * 8$ \\
+	$E(8) = 200$
+	Die Nutzengrenze liegt bei 8 Einheiten, die Nutenschwelle bei 2 Einheiten. \\
+	\subsection*{b)}
+	G(x) = E(x) - K(x) \\
+	$G(x) = 25x -  (x^3 - 8x^2 + 24x + 8)$ \\
+	Die Nullstellen zweier Funktionen sind die Nullstellen der Differenzfunktion.
+	\subsection*{c)}
+	Ansatz: Das Maximum von G(x) beschreibt die Stelle mit dem maximalen Gewinn. \\
+	$G(x) = 25x -  (x^3 - 8x^2 + 24x + 8)$ \\
+	$G(x) = 25x -  x^3 + 8x^2 - 24x - 8$ \\
+	$G(x) = -x^3 + 8x^2 + x - 8$ \\
+	$G'(x) = -3x^2 + 16x + 1$ \\
+	$G''(x) = -6x + 16$
+	$G'(x) = 0$ \\
+	$x_{1} = 5,395118$; $x_{2}$ wird ignoriert weil negativ. \\
+	$x_{1}$ muss gerundet werde, da es keine gebrochenen Produkteinheiten geben kann. Es wird von 5 ausgegangen. \\
+	G(5) = 72 GE (Geldeinheiten). \\
+	Die Funktion G(x) erreicht für 5 Einheiten ihr Maximum mit 72 GE.
+	\section*{Aufgabe 3}
+	\subsection*{a)}
+	$N(t) = \frac{N(0)*e^{kt}}{1 + N(0)*(e^{kt} - 1)}$ \\
+	$N'(t) = \frac{u'(x) * v(x) - v'(x) * u(x)}{v(x)^2}$ \\
+	$u = N(0) * e^{kt}$; $v = 1 + N(0)*(e^{kt}-1)$ \\
+	$u'(x) = N(0) * k * e^{kt}$; $v = 1 + N(0) * e^{kt} - N(0))$; $v'(x) = N(0) * k * e^{kt}$ \\
+	$N'(t) = \frac{N(0) * k * e^{kt} * 1 + N(0)*(e^{kt}-1) - N(0) * k * e^{kt} * N(0) * e^{kt}}{(1 + N(0)*(e^{kt}-1))^2}$ \\
+	$N'(t) = \frac{N(0) * k * e^{kt} - N(0) * k * e^{kt} * N(0) * e^{kt}}{(1 + N(0)*(e^{kt}-1))}$ \\
+	$N'(t) = \frac{k * N(0) * e^{kt} - k * N(0) *e^{kt} * N(0) * e^{kt}}{(1 + N(0)*(e^{kt}-1))}$ \\
+	$N'(t) = k * \frac{N(0)*e^{kt}}{1+N(0)*(e^{kt}-1)} - k *  \frac{(N(0)*e^{kt})^2}{(1+N(0)*(e^{kt}-1))^2}$ \\
+	$N'(t) = k * N(t) - k * N(t)^2$
+	\subsection*{b)}
+	$N(0) = \frac{1}{100}$; $t = 1$; $N(1) = \frac{7}{100}$ \\
+	$\frac{\frac{1}{100}*e^k}{1 + \frac{1}{100}*(e^k - 1)} = \frac{7}{100}$ \\
+	$\frac{\frac{1}{100}*e^k}{1 + \frac{1}{100}*e^k - \frac{1}{100} )} = \frac{7}{100}$ \\
+	$\frac{\frac{1}{100}*e^k}{\frac{e^k}{100} + \frac{99}{100}} = \frac{7}{100}$ \\
+	$\frac{e^k}{e^k + 99} = \frac{7}{100}$ \\
+	$\frac{e^k + 99}{e^k} = \frac{100}{7}$ \\
+	$\frac{e^k}{e^k} + \frac{99}{e^k} = \frac{100}{7}$ \\
+	$1 + \frac{99}{e^k} = \frac{100}{7}$ \\
+	$\frac{99}{e^k} = \frac{100}{7} - 1$ \\
+	$\frac{99}{e^k} = \frac{93}{7}$ \\
+	$99 = \frac{93}{7} * e^k$ \\
+	$ \frac{99 * 7}{93} = e^k$ \\
+	$e^k = \frac{693}{93}$ \\
+	$ln(e^k) = ln(\frac{693}{93})$ \\
+	$k = ln(693) - ln(93)$ \\
+	$k = 2,00843$ \\
+	$N(t) = \frac{N(0) * e^{t * 2,00843}}{1 + N(0)*(e^{t* 2,00843}-1)}$ \\
+	$N(5) = \frac{\frac{1}{1} * e^{5 * 2,00843}}{1 + \frac{1}{100}*(e^{5* 2,00843}-1)}$ \\
+	$N(5) = \frac{99}{100}$ \\
+	Um 13 Uhr kennen 99 von 100 Studenten das Gerücht.
+\end{document}

@@ -1,0 +1,448 @@
+\documentclass{article}
+\usepackage{mathtools}
+\begin{document}
+	\section*{Notizen Einführung in die Informatik}
+	\section*{Roadmap zur Klausur}
+	Wechsel der Zahlenbasis \\
+	Hornerschema Division durch fallende Potenzen  \\
+	Huffmancodierung Shanon-Farno-codierung \\
+	CRC-Prüffelder \\
+	Auf Sender- und Empfängerseite \\
+	Wissensfragen quer durch das Modul \\
+	Gleitpunktzahlen IEEE Umwandlung von und nach \\
+	Multipalchoice querbet \\
+	vollständige Linux-Comandos \\
+	Schaltnetze Boolsche Funktionen \\
+	KNF und DNF \\
+	Hamming-Codes \\
+	Codewort ermitteln oder Parität prüfen
+	
+	\section*{06.11.2020}
+	\subsection*{Einführung}
+	Organisation \\
+	Methoden Softwareentwicklung, Mischform V und P. Ziel: Student soll konstruktive Fragen stellen können. Weiteres Wissen selbstständig erarbeiten. \\
+	Von Neumann Rechner, Prinzip für meiste CPUs heute. Clusterung Gerätekunde.
+	Keine Musterlösungen Material muss selbst erarbeitet werden. 
+	Informatik: Systematische Darstellung, Verarbeitung und Übertragung von Informationen.
+	Hot Swopping, Mainframes hohe Verlässigkeit. Abgrenzung Supercomputer. SC besteht aus vielen zusammengeschalteten Prozessoren. \\
+	Kerninformatik: theorie, pratisch, technische \\
+	Angewandte Informatik: Softwareentwicklung \\
+	Theoreitsche Informatik Beispiel KI.
+	Informatikstudium sollte sich auf Kerninformatik beziehen. Informatik besteht nicht nur aus Programmieren.
+	\subsection*{Geschichte Informatik}
+	Zahlsysteme älteste Zahlzeichen 4000 v.Chr. Ägypter hatten Zeichen für Zahlen. \\
+	Frühe Stellenwertsysteme. Rechenbuch Indische Ziffern Adam Ries. Dualsystem basiert auf Leipnitz. Basiert auf 2-er Potenzen. 1550 Dezimalnotation und Logarythmus. Komplexe Rechnungen mit Logarythmus auf Addition etc zurückführen. Traum Mechanisierung von mühevollem Rechnen. Erste Konstruktion 1592. Problem Feinmechanik war nicht präzise genug. Mauser-Cordt 1929 erste kommerzielle elektrische Rechenmaschine. \\
+	Erste Webstühle programmierbar 1728 Mit Löchern in Holzplatten. Difference Engine Charles Babbage. Analytical Engine Programmgestuerte Rechenmaschine. Weist alles auf was ein moderner Rechner hat. Lochkarten. 1833 \\
+	1886 Automat Volkszählung. Ausgründung Wurzel der Firma IBM. 1924f
+	
+	\subsection*{20.11.2020}
+	Visionen aus 1954. Vorstellung von Wissenschaftlern aus den 50 Jahren wie ein PC heute aussehen könnte \\
+	Personal Computer \\
+	\subparagraph*{Geschichte Computernetze}
+	Netzentwicklung Sputnikschock \\
+	USA wollten mit UDSSR nachziehen \\
+	ARPANET zum Internet \\
+	Dateitransfer, E-Mail, Remote-Login \\
+	IETF Internet Ingeneering Taskforce \\
+	RFC = Request for Command \\
+	IETF veröffentlicht RFCs und basis der Meinung der Comunity wird der neue Standard etabliert. \\
+	das WWW Protokoll World-Wide-Web \\
+	Wiege des WWW in Zern  um wissenschaftliche Dokumente zu organisieren 1990 es entstand HTML\\
+	1991 50 Webserver \\
+	1995 Browserkrieg zwischen MS und Netscape \\
+	Netscape verliert Browserkrieg \\
+	1995 HTML CSS sollen WWW Standardisieren \\
+	W3C Organisation für das WWW \\
+	Aktuell nur graduell keine fundamentale Entwicklung \\
+	Gesetz von Moore: Alle n Monate verdoppelt sich die Anzahl Transistorfunktionen auf der gleichen Fläche. 1965 \\
+	Neuanwendungen von Rechenleistung verteilte Systeme, open-sourche, Heterogenität, Skalirbarkeit, Sicherheit, Echtzeitfähigkeit (garantierte Höchstdauer), Fehlertoleranz / Robustheit, Multimedia, WWW-Anbindung, Managebarkeit, \\
+	\subsection*{Gesellschaftliche Auswirkungen}
+	Informatik ist zwingend Teil des Alltags. \\
+	Jeder nutzt Informatik und ist abhängig davon \\
+	\subparagraph*{Grundbegriffe der Informatik}
+	Information und Definition, Relationen, Funktionen, Graphen, Bäume, Algorithmen und Datensrukturen \\
+	Partielle und totale Ordnung \\
+	System \\
+	Grenzen nach außen und innen \\
+	Schnitstellen nach Außen \\
+	Komponenten und ihre Beziehungen innerhalb des Systems \\
+	Abstraktion erkennt durch Eigenschaften und Beziehungen eines Ausschnitts der realen Welt \\
+	Modell als Ersatz für Realität \\
+	Modell muss einfacher sein als Wirklichkeit \\
+	billiger und oder sicherer \\
+	Informatiker sind systemorientiert \\
+	Gatter \\
+	Register Transfer Sprache \\
+	Bildet einen Prozessor der programmiert werden kann.
+	Prozessorsystem \\
+	Anwendungsprogramme \\
+	Geschäftsprozesse \\
+	Informatik ist die Wissenschaft der Informationsverarbeitung \\
+	Information = Die Essenz von etwas \\
+	Darstellung einer Information ist der einzige Kommunikationsweg \\
+	Kommunikation nur über Darstellung \\
+	Semantik = Informationsgehalt, \\
+	Representation = Darstellung der Semantik \\
+	Deutung \\
+	Deutung kann mehrere Informationen haben. \\
+	Verstehen Herstellung von Beziehung aus Repräsentation und Wirklichkeit \\
+	
+	\subsection*{formelle Sprachen}
+	Zeichen, Zeichenvorrat \\
+	Bit \\
+	Bsp. 0 teil Zeichenvorrat 0, 1 \\
+	Zeichen abstrakt wertneutral \\
+	Symbol Zeichen mit Bedeutung \\
+	Alphabet $\sigma$ Zeichenvorrat mit linearer Ordnung (Reihenfolge) z.B. das ABC \\
+	Wörter sind endliche Folgen von Zeichen eines Alaphabets $\in$ $\sigma$ als Sequenz geschrieben. |w|=n für Länge des Worts, |w| kann auch 0 sein.\\
+	$\sigma*$ Menge aller Wörter. \\
+	$\sigma+$ Menge aller nicht lehrer Zeichenketten. \\
+	$\sigma^{n}$ = alle Zeichenketten mit Länge n. \\
+	Präfix Anfangsstück, Suffix Endstück \\
+	Lexikographische Ordnung: suchen nach alphabetischer Ordnung Beispiel Lexikon. \\
+
+	Alle $w \in \sigma^{*} : \epsilon <=_{lex} W$  \\
+	
+	lexikographische Ordnung definiert eine lineare Ordnung für ein Alphabet.
+	
+	\section*{27.11.2020}
+	Bsp.: $\sum^*$ = (0,1) $\leq_{lex}$ 1 \\
+	Mengenoperationen lassen sich auf formale Sprachen angewendet werden.
+	Sprache L kann mit M geschnitten werden: L $\cap$ M \\
+	Oder vereinigt werden: L $\cup$ M
+	Sei A und B Zeichenvorräte ist ein code eine Abbildung c. \\
+	Decodierung ist die Abbildung eines Codes injektiv. \\
+	Zu Codezeichen wird Klarzeichen gesucht. \\
+	Graphen und Bäume werden in Mathematik behandelt. \\
+	
+	\section*{Algorithmen}
+	Verarbeitungsvorschrift müssen exakt festgelegt sein, formal definiert sein, durch einen Prozessor ausführbar sein. Darunter versteht man einen Algorithmus. \\
+	Ein Algorithmus ist ein Verfahren in einer genau festgelegten Sprache zur Lösung gleichartiger Probleme. \\
+	Algorithmus liefert für eine Eingabe immer eine Ausgabe. \\
+	Problemklasse und Lösungsverfahren unterscheiden. \\
+	Merkmale Algorithmus: \\
+	terminiert nach n endlichen Schritten. \\
+	deterministisch feste Ablaufschritte. \\
+	determiniert Endergebnis ist immer eindeutig(korrekt). \\
+	klassische Elemente: Wiederholung Rekursion arithmetische Operatoren Vergleichsoperatoren. \\
+	Komplexität meint Abhängigkeit zwischen Aufwand und Anfangszustand. Z.B. Speicheraufwand, Rechenzeit. \\
+	unified moduling language = UML \\
+	Def. Syntax ist die zulässige Anordnung einer Sprache. \\
+	Eine Programmiersprache ist eine formale Sprache zur Darstellung von Algorithmen. \\
+	Ein in einer solchen Sprache dargestellten Algorithmus heist Programm. \\
+	Def. Prozess Ausführung eines Programmes für ein bestimmtes Problem. \\
+	\section*{Kap 3. Repräsentierung von Informationen in Rechensystemen}
+	Def Daten sind Informationen die nach eindeutiggen Regeln in Rechensystemen gespeichert und verarbeitet werden. 
+	Def. Nachrichten sind Daten für Übertragungen.\\
+	Bitfolgen variabler länge Bits, Vektoren bestimmte Länge. \\
+	1 byte ist eine Folge aus 8 Bit!!! \\
+	byte ist die kleinste adressierbare Einheit in heutigen Arbeitsspeichern. \\
+	fortlaufende Bytes sind durchnummeriert. Diese Nummern nennt man Adressen. \\
+	Maschinenwörter meist Binärwörter weniger fester Längen. \\
+	typisch 32 Bit Wortlänge bei 32-bit Prozessoren 64-bit Desktop. \\
+	Wortlänge hängt von der Hardware ab. \\
+	B KB MB GB TB PB
+	Unterscheide Kilobyte und Kibibyte
+	KB = 1000 Byte Kibibyte = 1024 Byte \\
+	Auf Bitvektoren können boolsche Funktionen angewendet werden. \\
+	Elementare Maschinenbefehle. Verschieben rotieren (links rechts) \\
+	Bitoperatoren in Hochsprachen \\
+
+	Summe der Potenzen der Basis \\
+	Horner-Schema \\
+	Q Darstellung R nur Aproximation \\
+	Q setzt sich periodisch vor R nicht periodisch \\
+	Umrechnung der Darstellung \\
+	Division durch fallende Potenzen der Zielbasis. \\
+	Horner-Schema Division durch B \\
+	Konvertierung gebrochener Zahlen \\
+	Darstellung ganzer Zahlen als Maschinenwort. \\
+	64 bit = $2^{64}$ \\
+	Bitmuster in Maschinenwort. \\
+	Bitmuster (byte) werden unterschiedlich in Speicher geschrieben. Big-Endian, Little-Endian
+	BE höchstes Byte als letztes. \\
+	LE höchstes Byte als erstes. \\
+	Vorzeichen-Betragsdarstellung \\
+	Excess-Darstellung Bsp Analog-/Digitalwandler \\
+	Komplement-Darstellung \\
+	\section*{11.12.2020}
+	Stellenkomplement \\
+	Darstellung in n-Bit Maschinenwort \\
+	symetrischer Bereich darstellbarer Zahlen \\
+	doppelte Darstellung der 0 \\
+	Einfache Arithmetik \\
+	Zweierkomplementdarstellung \\
+	Einerkomplementdarstellung \\
+	Unterschied im Wertebereich beachten. \\
+	unterschiedliche Wortlänge verursacht größeren Wertebereich. signed integer \\
+	Speicherüberlauf alle Bits klappen um. \\
+	Arithmetik in der Zweierkomplementdarstellung \\
+	Subtraktion und Addition kann mit Addition dargestellt werden. \\
+	Vorzeichenbit = Normale Stelle \\
+	Bsp: 0110 + 0011 = (01)1001 \\
+	(01) Übertragbits beachten um feststellen zu können ob Wertebereich verlassen wird. \\
+	Wenn Übertragbits ungleich Indikator für Fehler. \\
+	Multiplikation Komplementdarstellung \\
+	Mit Addition und Multiplikation können alle Grundrechenarten abgebildet werden. \\
+	Darstellung Festkommazahlen \\
+	Festes Bitmuster bleibt, Komma wird nur gedacht und ist eine Vereinbarungssache. \\
+	Probleme: Ungenaue Konvertierung, Rundungsfehler \\
+	Dezimalarithmetik (BCD) als Antwort auf die Anforderung Buchhaltung auf den Cent genau. \\
+	BCD Darstellung \\
+	Dezimalzahl wird in 4-stelligen Dualzahlen dargestellt.
+	Darstellung Ziffernweise, nur für 0 - 9. \\
+	Rest Pseudotetrade. \\
+	Darstellung von Gleitkommazahlen. \\
+	Wird angenähert. Es werde nur die wichtigsten Stellen gezeigt. \\
+	Komma wird zum Teil der Zahlendarstellung \\
+	Gleitkommazahl x = m * $B^{e}$ \\
+	m ist eine vorzeichenbehaftet Festkommazahl \\
+	B ist die Basis des Systems typisch 2, 8, 16, 32 \\
+	e ist ganzzahliger exponent (Bestimmt Größe der zahl) \\
+	Mantisse m muss normalisiert werden. \\
+	$\frac{1}{B}<|m|<1$ oder 1 $\leq |m| < B$
+	Maschinenwort wird in S ch m unterteilt. \\
+	Wahl der Grenzen bestimmmt Wertebereich und Genauigkeit \\
+	Mehr Platz für Mantisse = mehr Genauigkeit \\
+	Mehr Platz für Exponent (ch) = größerer Wertebereich \\
+	Arithmetik dieser Darstellung lehnt an Potenzgesetze an. \\
+	IEEE Gleitkommadarstellung \\
+	Bitmuster alleine macht keine Darstellung \\
+	\section*{18.12.2020}
+	Buchstaben, Ziffern, Steuerzeichen = alphanumerischer Code \\
+	heute UTF-8 und UTF-16 \\
+	US-ASCII code \\
+	PC-8 führt Sonderzeichen ein. \\
+	Anfang der 90er Alle Zeichen der Welt sollen eigenen Code bekommen. \\
+	Zeichenbereiche in U sind Skripte. \\
+	Skripte können angesprochen werden auf Programmierebene. \\
+	little oder bigg engine byte order mark \\
+	Jede ASCII ist gültiger UNICODE gemäß UTF-8!!! \\
+	Unicode kann in Ruby verwendet werden.
+	Serielle Übertragung Zeittakt \\
+	Parallele Übertragung nutzt mehrere Leitungen parallel. \\
+	Signal zeitlicher Verlauf einer physikalischen Größe. \\
+	Def. Rasterung: Abtastung eines Signals zu bestimmten Zeitpunkten (Intervallen). \\
+	PCM \\
+	\section*{08.01.2021}
+	Codierung \\
+	Komprimierung, Fehlererkennung -behebung etc, \\
+	Codierung ist eine Abbildung über zwei Zeichenvorräte. \\
+	Ziele von Codierung: Geheimhaltung, Sicherung gegen Fälschung, Effitienz \\
+	Codebaum \\
+	Def. Blockcodes = wörter fester Länge. \\
+	Def. Dichter Code ist surjektiv. \\
+	Gray-Code wechselt bei Zustandswechsel immer ein Bit. \\
+	Blockcode kann zum Beispiel 7-Segmentanzeige steuern. \\
+	Def. Farno-Bedingung Kein Codewort ist Präfix eines anderen Codeworts. \\
+	Häufigkeitsabhängige Codierung \\
+	Länge der Codwörter häufiger Zeichen soll möglichst kurz sein. \\
+	Mittlere Codelänge. \\
+	Codierungstheorem von Shanon: es gibt eine untere Grenze Mittlere Codelänge. \\
+	\section*{15.01.2021}
+	nicht verlustfreie codierung typisch Bild und Ton. \\
+	Fehler erkennende Codes \\
+	Fehler korrigierende Codes \\
+	Def. Ein Bitfehler seines Signals ist seine Umkehrung. \\
+	Fehler werden erkannt indem geprüft wird ob es sich um ein gültiges Codewort handelt. \\
+	Fehler Eingabefehler, Übertragungsfehler (Burst-Fehler $\lor$ Bündel-Fehler), Speicherfehler. \\
+	Fehlercodes während auf häufigste Fehler angepasst. \\
+	möglich durch Hinzufügen von Redundanz. \\
+	Hamming-Gewicht und Hamming-Abstand \\
+	Hamming-Gewicht g(b) Anzahl der 1 im Code. \\
+	Hammingdistanz zwischen AB ist die Anzal der Stellen an denen sich die Codewörter unterscheiden. \\
+	Fehlerkorrektur problemlos möglich für einen Code mit Hammingabstand d bis d -1. \\
+	Paritätsbit \\
+	Fehlererkennung durch Paritätsprüfung \\
+	Feherlcode beheben für d = 2k+1 können Störungen mit höchstens k-Bitfehler behoben werden. Beispiel d = 3 k = 1 \\
+	Binärer Rechteck-Code \\
+	Paritätsbit je Codewort und je Spalte. \\
+	lineare codes symmetrische codes. \\
+	Blockcode Länge n dan $2^m$ Codewörter mit m$\leq$n daraus folgt r = n - m Prüfstellen. \\
+	Def. Hammingcode ist ein linearer symmetrischer code. \\
+	Prüfbit an Stelle $2^{r-1}$ r wächst damit logarithmisch. \\
+	\section*{22.01.2021}
+	Optimalität Hamming-Code \\
+	Satz: m+r+1 $\leq 2^r$ für Hammming-Distanz $\geq$3. \\
+	SEC DED Codes Single Error Correction und Double Error Detection \\
+	Error Correcting Code Memmory ECC Speicher \\
+	Hamming-Code für k wörter wird in Tabelle zeilenweise geschrieben und spaltenweise übertragen. \\
+	Spalten können mit Hamming-Code gesichert werden. \\
+	\\
+	Zyklische Codes \\
+	Burst-Fehler = Folgen verfälschter Bitstellen \\
+	n Bits eines Datenblocks B der Länge n werden als Koeffizienten eines Polynoms P(x) mit dem Grad n - 1 interpretiert. \\
+	an M bits werden R Prüfbits angehängt. \\
+	$M(x) * x^r$ Division durch Generator Polynom muss einen Rest mit dem Grad r-1. \\
+	Empfänger prüft P(x) / G(x) muss R ergeben. Fehler wird erkannt indem der Rest R = 0 ist. \\
+	Generatorpolynom ist Vereinbarung zwischen Sender und Empfänger. \\
+	Wenn P(x) : G(x) ohne Rest teilbar ist sind alle Daten heil angekommen \\
+	Je länger Burstfehler desto länger muss CRC Feld sein. \\
+	Generatorpolynome in der Praxis standardisiert. \\
+	CRC Feld mit Länge r kann r-1 Fehler erkennen.
+	\\
+	\\
+	Kapitel 5 Schaltwerke und Schaltnetze \\
+	Def. Eine Schaltfunktion wird durch eine Abbildung definiert: \\
+	$f_s: \{0,1\}^n \to \{0,1\}^m$ \\
+	zu Beginn m = 1. Dann bildet eine n stellige Boolsche-Funktion auf ein binäres Tupel ab. \\
+	Boolsche-Funktion wird durch Wertetafel beschrieben. \\
+	n-stellige Boolsche-Funktionen können durch verkettete 2-stellig Boolsche-Funktionen dargestellt werden. \\
+	Boolsche-Algebra \\
+	Dualitätsprinzip \\
+	Beispiel Idempotenzgeset De Morgansche Regeln. \\
+	Boolsche-Terme \\
+	\section*{29.01.2021}
+	Normalform boolsche Terme \\
+	dnf und knf \\
+	Minterm mit oder verknüpfen \\
+	Maxterme mit und verknüpfen. \\
+	Normalform soll elektronische Schaltungen vereinfachen. \\
+	Komplexitätsmaße: Größe: Chipfläche und Tiefe: Klammerausdrücke
+	dnf und knf sind nicht auf minimaler Hardware optimiert. \\
+	Kann zum Beispiel mit KV-Diagramm erzeugt werden. \\
+	Schaltnetze \\
+	Graphische Repräsentierung für Schaltungen basierend auf boolscher Algebra. \\
+	gerichteter zyklenfreier Graph. \\
+	Gatter eingehende Kante und ausgehende Kante \\
+	Gatter sind unär oder binär. \\
+	2 stellige logische Gater. \\
+	es gibt und oder nichtund nichtoder xor und equiv Gatter. \\ 
+	NAND-Gatter ist universell. \\
+	technische Realisierung von Gattern. \\
+	And zwei Schalter gegeneinander in Serie \\
+	Or zwei Schalter parallel. \\
+	Gatter höherer Ordnung n-Oder-Gatter n-And-Gatter. \\
+	\\
+	praktische Beispiele für Schaltnetze. \\
+	Übersicht:
+	Tore, Encoder, Decoder, Multiplexer, Demultiplexer, Halbaddierer, Volladdierer, Arithmetisch-Logischen-Einheit (ALU) \\
+	Tor, kontrollierte Durchleitung mit Steuersignal. \\
+	Encoder 1 aus n code Übersetzung aus sperlichem in dichten Code. \\
+	für jeden gewünschten Zustand hat der Decoder einen Ausgang. \\
+	z.B. drei Ausgänge für 8 Inputsignale \\
+	Decoder dekomprimiert code. \\
+	Encoder und Decoder können Leitungen sparen. \\
+	Multiplexer n Eingänge werden auf einen Ausgang, nacheinander (seriell) durchgeschaltet. Decoder wird für Steuersignal verwendet. \\ 
+	Demultiplexer Gegnstück zum Multiplexer. \\
+	Halbaddierer addiert zwei Bits. \\
+	bei (1,1) wird Übertrag benötigt Carry Bit. \\
+	Volladdierer: Berücksichtigt Übertrag aus vorheriger Stelle. \\
+	Viele VAs ergeben hohe Tiefe und damit hohe Laufzeit. (Ripple Carry) \\
+	Lösung: Carry-Look-Ahead. Alle Überträge werden vor dem Addieren berechnet. \\
+	ALU kann undieren odieren addieren etc. \\
+	Schaltwerke \\
+	Graphen mit Rückkopplung um Speicherung zu ermöglichen. \\
+	\section*{05.02.2021}
+	Rechner Architektur \\
+	Ziele universell oder Speziell \\
+	Def. OS/BS Betriebssystem ist das grundlegendeste Systemprogramm. Verwaltet alle Systemprogramme offeriert eine Virtuelle Maschine. \\
+	Abstraktion der Datei. \\
+	Def. Resourcen: Alle zuteilbaren Hard- und Softwarekomponenten. \\
+	Betriebssystem als VM \\
+	Ziel: Schirmt vor Komplexität ab. OS richtet sich danach. \\
+	Typische Abstraktionen: Prozess, Threads (Aktivitätsträger), Datei, Speichersegment, Nachrichten, Synchronisierungsobjekt \\
+	OS Als Betriebsmittelverwalter \\
+	OS Ordnet Zuteilung von Ressourcen. \\
+	Vereinfachte Schichtung, Assembler als hardware nahe Sprache. \\
+	Von-Neumann-Architektur \\
+	Idee Programm soll im Hauptspeicher gehalten werden. \\
+	Von-Neumann-Architektur prinzipielle bis heute. \\
+	Ziel der Hardwareersparnis ist gefallen. \\
+	Elemente: CPU (Rechenwerk, Steuerwerk). \\
+	I/O, Speicherwerk. \\
+	Speicherwerk enthält Maschinenprogramm. \\
+	Elemente werden mit Bus verbunden. \\
+	Control Unit liest Steuerbefehle. \\
+	Rechenwerk liest Daten und schreibt Ergebnisse \\
+	I/O gibt Ergebnisse aus und liest eingaben ein. \\
+	Speicherwerk \\
+	MAR = Memmory Adress Register \\
+	Decodierung \\
+	MDR = Memmory Data Register \\
+	Rechenwerk enthält ALU, und Akkumulator \\
+	ACC = Ergebnisregister \\
+	Steuerwerk: Instruction Register IR, Programm Counter \\
+	Ablaufsteuerung \\
+	Ablauf: streng zyklisch und sequenziell. \\
+	Von-Neumann-Flaschenhals \\
+	Engpass Prozessor und Speicher \\
+	häufige Transportbefehle. \\
+	Bus zwischen Speicher und CPU macht Langsam. \\
+	Lösung schnelle Zwischenspeicher an der CPU sogn. Caches. \\
+	Leistungssteigerung durch Transistorgröße oder durch Anzahl der Transistoren. \\
+	Erhöhung der Wortbreite eines Maschinenworts. \\
+	Prozessorfamilie: Maschinenprogramme bleiben kompatibel zu früheren Mitgliedern einer Familie. \\
+	Speicherarten: RAM (Random Acces Memmory); ROm(read only); EPROM(eraseable programmable ROM); \\
+	EEPROM electric EPROM vorreiter für flash Speicher. \\
+	S(tatic)RAM speicher aus Flip Flops schnell und teuer \\
+	D(ynamic)RAM Basis Kondensatoren \\
+	zerstörendes Lesen muss durch anschließendes Schreiben ausgeglichen werden. \\
+	Kondensatoren verlieren durch Leckstrom speicher. \\
+	refresh erforderlich in deutlich unter 100 Nanosekunden. \\
+	DRAM Grundlage der Hauptspeicher. \\
+	SSDs nutzen Kondensatoren reduzieren aber Leckstrom. \\
+	Kondensatoren können mehrere Spannungsstufen unterscheiden. \\
+	Interleaving \\
+	multible Nutzung von Speicherbänken.(RAM immer im dual Channel) \\
+	\section*{12.02.2021}
+	Steuerwerke \\
+	Steuerwort \\
+	Jedes Maschinenwort braucht Operationscode \\
+	Steuerwerk im Steuerwerk \\
+	Mikroprogrammiertes Steuerwerk \\
+	Sequencer legt nächsten Befehl fest \\
+	Microprogramme im Steuerwerk \\
+	Leistungsteigerung CPU \\
+	Ausstattung Spezialeiheiten Koprozessoren. \\
+	Pipelining, Vervielfältigung von Modulen \\
+	CPU/Speicher Schnittstelle \\
+	Prefetching \\
+	Caching \\
+	Pipelining: Mehrere Spezialisten bearbeiten Parallel ein Problem in Teilaufgaben. \\
+	Pipeline haben Nachlauf und Hochlauf. \\
+	Besonders problematisch Sprungbefehl \\
+	Superskalarität \\
+	CPU Verfügt über mehrere Verarbeitungseinheiten \\
+	Caches \\
+	L1 schnell und klein L1 Cache hat einen Data und einen Code Cache halten CPU Takt mit \\
+	L2 Cache KiB, langsamer als L1 \\
+	L3 nimmt Daten auf\\
+	Swapping Schieben von Daten aus Hauptspeicher Sekundarspeicher. \\ 
+	CISC / RISC \\
+	CISC möglichst viele komplexe Befehle in Hardware umsetzen \\
+	RISC Reduziertes Set von Anweisungen. Verschlankung der CPU \\
+	Spekulative Ausführung \\
+	Ausführung eines Bedingten Sprunges bevor der Befehl kommt. \\
+	CISC/RISC-Grenzen verwischen \\
+	SIMD-Technik, Vektorverarbeitung \\
+	Systemarchitektur \\
+	Bisher eine CPU und jetzt ganzes System. \\
+	Kopplung mehrerer Prozessoren \\
+	Enge Kopplung bei geteiltem Speicher, lose Kopplung Nachrichtenaustausch \\
+	hommogene Systeme haben identische Komponenten (mindestens binärkompatibel und gleich schnell) \\
+	symmetrische Systeme Alle Komponenten haben die gleiche Rolle und sind austauschbar. \\
+	SI / MI single instruction / Multi instruction\\
+	SD / MD single data / multi data \\
+	können zu vier Fälle kombiniert werden \\
+	Multiprozessorsystem / Multicomputersystem \\
+	Multiprozessorsystem bus oder switchbasiert \\
+	bus eine line. Switch: Kreuzschienenmatix  mehrere Schalter schalten mehrere Leitungen durch. Zugriffe können parallel erfolgen. \\
+	(Crossbar Switch) hoher Hardwareaufwand, schlechte Skalierbarkeit. \\
+	hirachischer Bus \\
+	nutzt Kommunikationsprozessor für gelegentliche Fernzugriffe. gute Skallierbarkeit. \\
+	Grundlage für Supercomputer \\
+	Stichwort NUMA \\
+	\section*{19.02.2021}
+	Multiprozessorsysteme \\
+	Maschinen werden auf die Klasse zu lösender Probleme angepasst. \\
+	Multicomputersysteme \\
+	Koppelung lose über message passing \\
+	Caching ist reduziert auf lokale Rechner \\
+	konzentration auf leicht parallelisierbare Aufgaben  \\
+	Netzwerkgitter-Topologie \\
+	Netzwerk mit n dimensonalen Würfel alss Topologie = Hypercube. \\
+	n Kommunikationswege pro Knoten \\
+	längster Weg wächst logaritthmisch mit der Anzahl der Knoten. \\
+	
+\end{document}

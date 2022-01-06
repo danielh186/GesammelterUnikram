@@ -1,0 +1,140 @@
+\documentclass{article}
+\usepackage{mathtools}
+\begin{document}
+	\section*{Lsg Vorschlag A+N Maag 002}
+	\section*{Aufgabe A}
+	\begin{itemize}
+		\item Falsch, es muss $|a_{n} -g| < \epsilon$ erfüllt sein. Das kann nicht für zwei Werte geschehen.
+		\item Richtig, der Konvergenzwert ist der Grenzwert der Folge.
+		\item Falsch
+		\item Richtig, für zwei Folgen mit Grenzwert n und m gilt $\lim(n,m) = \lim(n) + \lim(m)$.
+		\item Falsch, man kann ein Gegenbeispiel finden.
+	\end{itemize}
+	
+	\section*{Aufgabe B}
+	\subsection*{a)}
+	$\lim\limits_{n\to\infty}a_{n} = \frac{8+ n}{4n}$\\
+	$ = \lim\limits_{n\to\infty} \frac{8+n}{4n}$ \\
+	$ = \lim\limits_{n\to\infty} \frac{n * (\frac{8}{n} + 1)}{4n}$ \\
+	$\lim\limits_{n\to\infty}a_{n} = \frac{1}{4}$ \\
+	
+	\subsection*{b)}
+	$\lim\limits_{n\to\infty}b_{n} = \frac{4n - 8}{2n + 6} $ \\
+	$ = \lim\limits_{n\to\infty} \frac{n * (4 - \frac{8}{n})}{n * (2 + \frac{6}{n})} $ \\
+	$ = \lim\limits_{n\to\infty} \frac{4 - 0}{2 + 0} $ \\
+	$\lim\limits_{n\to\infty}b_{n} =  \frac{4}{2} = 2 $ 
+	
+	\subsection*{c)}	
+	$\lim\limits_{n\to\infty}c_{n} = \lim\limits_{n\to\infty} \frac{2n^2 + n + 7}{n(n + 2)}$ \\
+	$ = \lim\limits_{n\to\infty} \frac{n^2* (2 + \frac{1}{n} + \frac{7}{n^2})}{n*n*(1 + \frac{2}{n})}$ \\
+	$ = \lim\limits_{n\to\infty} \frac{(2 + \frac{1}{n} + \frac{7}{n^2})}{(1 + \frac{2}{n})}$ \\
+	$ = \lim\limits_{n\to\infty} \frac{2 + 0 + 0}{1 + 0}$ \\
+	$ \lim\limits_{n\to\infty}c_{n} = 2$
+	
+	\section*{Aufgabe C}
+	$|\frac{5n + 2}{n+ 1} - 5| < \epsilon$ \\
+	$|\frac{5n + 2 -5(n+1)}{n+1}| < \epsilon$ \\
+	$|\frac{5n + 2 -5n - 5)}{n+1}| < \epsilon$ \\
+	$|\frac{-3}{n+1}| < \epsilon$ \\
+	$ 3 < \epsilon * (n+1) | : \epsilon$ \\
+	$ \frac{3}{\epsilon} > (n+1)$ \\
+	$\frac{3}{\epsilon} - 1 < n $ \\
+	$N = n + 1$ \\
+	\subsection*{a)}
+	$n = 29; N = 30$
+	\subsection*{b)}
+	$n = 1499; N = 1500$
+	
+	\section*{Aufgabe 1}
+	\subsection*{a)}
+	$\lim\limits_{n\to\infty}a_{n} = \lim\limits_{n\to\infty} \frac{6n - 3}{6 - 2n} $ \\
+	$= \lim\limits_{n\to\infty} \frac{n*(6 - \frac{3}{n})}{n * (\frac{6}{n} - 2)} $ \\
+	$= \lim\limits_{n\to\infty} \frac{6 - 0}{0 - 2} $ \\
+	$= -\frac{6}{2} = -3$
+	
+	\subsection*{b)}
+	$\lim\limits_{n\to\infty} a_{n} = \lim\limits_{n\to\infty} \frac{9n^{2} + \sqrt{n}+7}{3n^{2} + 2} * \frac{2^{n+1}}{3^{n}} $ \\
+	$ = \lim\limits_{n\to\infty} \frac{9n^{2} + \sqrt{n}+7}{3n^{2} + 2} * \lim\limits_{n\to\infty}\frac{2^{n+1}}{3^{n}} $ \\
+	$ = \lim\limits_{n\to\infty} \frac{n^{2} * (9 + n^{-\frac{3}{2}+\frac{7}{n}})}{n^{2}*(3 + \frac{2}{n})} * \lim\limits_{n\to\infty}\frac{2^{n+1}}{3^{n}} $ \\
+	$ = \lim\limits_{n\to\infty} \frac{(9 + 0 + 0}{(3 + 0)} * \lim\limits_{n\to\infty}\frac{2^{n+1}}{3^{n}} $ \\
+	$ = 3 * \lim\limits_{n\to\infty}\frac{2^{n+1}}{3^{n}} $ \\
+	$ = 3 * 0 $ \\
+	$ = 0 $
+	
+	\subsection*{c)}
+	$\lim\limits_{n\to\infty} a_{n} = \lim\limits_{n\to\infty}(\frac{1}{2}(a_{n-1}+\frac{4}{a_{n-1}}))$ \\
+	$= \frac{1}{2}(\lim\limits_{n\to\infty}a_{n-1}+ \lim\limits_{n\to\infty}\frac{4}{a_{n-1}})$ \\
+	$= \frac{1}{2} * \lim\limits_{n\to\infty}a_{n-1} + \frac{1}{2} * \lim\limits_{n\to\infty}\frac{4}{a_{n-1}}$ \\
+	$= \frac{1}{2} * \lim\limits_{n\to\infty}a_{n-1} +  \lim\limits_{n\to\infty}\frac{2}{a_{n-1}}$ \\
+	Ersetzen des Limes durch $g$ ergibt: \\
+	$g = \frac{1}{2}*g + \frac{2}{g}$ \\
+	$\frac{1}{2}*g = \frac{2}{g}$ \\
+	$\frac{1}{2}*g^{2} = 2$ \\
+	$g^{2} = 4$ \\
+	$g_{1} = 2$ \\
+	$g_{2} = -2$ \\
+	Da alle Folgenglieder der Folge $ a_{n}$ positiv sein müssen kann $g_{2}$ als Lösung ausgeschlossen werden. Alle Folgeglieder der Folge $a_{n}$ sind positiv, da es keinen negativen Flächeninhalt bzw. Umfang geben kann.
+	
+	\section*{Aufgabe 2}
+	$a(0,m) = m + 1$; $a(n,0) = a(n-1, 1)$; $a(n,m) = a(n-1, a(n, m-1))$ \\
+	$a(2,2) = a(1,a(2,1))$ \\
+	$= a(1,a(1,a(2,0)))$ \\
+	$= a(1,a(1,a(2,1)))$ \\
+	$= a(1,a(1,a(1,0)))$ \\
+	$= a(1,a(1,a(0,1)))$ \\
+	$= a(1,a(1,a(0,2)))$ \\
+	$= a(1,a(1,3))$ \\
+	$= a(1,a(0,a(1,2)))$ \\
+	$= a(1,a(0,a(0,a(1, 1))))$ \\
+	$= a(1,a(0,a(0,a(0, a(1, 0)))))$ \\
+	$= a(1,a(0,a(0,a(0, 2))))$ \\
+	$= a(1,a(0,a(0,3)))$ \\
+	$= a(1,a(0,4))$ \\
+	$= a(1,5)$ \\
+	$= a(0,a(1,4))$ \\
+	$= a(0,a(0,a(1,3)))$ \\
+	$= a(0,a(0,a(0,a(1,2))))$ \\
+	$= a(0,a(0,a(0,a(0,a(1,1)))))$ \\
+	$= a(0,a(0,a(0,a(0,a(0,a(1,0))))))$ \\
+	$= a(0,a(0,a(0,a(0,a(0,2)))))$ \\
+	$= a(0,a(0,a(0,a(0,3))))$ \\
+	$= a(0,a(0,a(0,4)))$ \\
+	$= a(0,a(0,5))$ \\
+	$= a(0,6)$ \\
+	$= 7$
+	\section*{Aufgabe 3}
+	\subsection*{a)}
+	To Figur .n :s \\
+	IfElse :n = 1 [Fd :s] \\
+	\[ \\ 
+	Fd :s/3 \\
+	Lt 90 \\
+	Figur :n-1 :s/3 \\ 
+	Rt 90 \\
+	Figur :n-1 :s/3 \\
+	Lt 90 \\ 
+	Fd :s/3 \\
+	\] \\
+	End \\
+	clearscreen \\
+	Repeat 3 \[Figur 3 100 rt 90 \] \\
+	Figur 1 100
+	
+	\subsection*{b)}
+	Es sei $a_{n}$ eine Folge die den Umfang U des Quadrates beschreibt. \\ 
+	$a_{0}  = 4$ \\
+	$a_{1} = 4 + (\frac{2}{3}*3) = 4 + \frac{6}{3} = 6$ \\
+	$a_{2} = 6 + \frac{2}{9}*3*3$ \\
+	$a_{2} = 6 + 2$ \\
+	$a_{2} = 8$ \\
+	$a_{n} - a_{n-1} = 2$ \\
+	$a_{n} = 4 + 2n$ \\
+	$1000 = 4 + 2n$ \\
+	$500 = 2 + n$ \\
+	$n = 498$ \\
+	Nach 498 Durchgängen ist der Umfang 1000.
+	\subsection*{c)}
+	$a_{0} = 1$ \\
+	$a_{n+1} = a_{n} + \frac{A}{3^n}$ \\
+	Experiment mit LibreCalc zeigt, dass diese Folge gegen $\frac{3}{2}$ konvergiert.
+\end{document}

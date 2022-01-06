@@ -1,0 +1,308 @@
+\documentclass{article}
+\usepackage{mathtools}
+%\usepackage{hyperref}
+\begin{document}
+	\section*{Notizen Diskrete Strukturen}
+	\section*{Was kommt in die Klausur? - Eine Roadmap zum lernen und üben}
+	Was kommt in die Klausur dran? \\
+	1. Logik: \\
+	
+	Wahrheitswertetafel ausfüllen, \\
+	
+	Beweise \\
+	
+	Umformungen \\
+	
+	Vereinfachungen \\
+	
+	(AND, OR, XOR, IMPLIKATION, FÜRALLE, ES EXISTIERT, ....) \\
+	
+	(sprachlich < -- > formal) \\
+	
+	
+	2. Mengen: \\
+	
+	Mengen bestimmen: \\
+	
+	aus vorgegebenen Mengen andere Mengen bilden (schnittmenge / vereinigung / verneinung, etc...) \\
+	
+	Rechengesetze anwenden \\
+	
+	Mächtigkeiten von Mengen: \\
+	
+	Summenformel (bis zu 3 Mengen) \\
+	
+	Binomialkoeffizient können \\
+	
+	
+	3. Relationen und Funktionen: \\
+	Relation \\ 
+	Umkehrrelation \\
+	Komposition (R o S) \\
+	Äquivalenzklassen \\
+	Äquivalenzrelation \\
+	
+	reflexiv \\
+	
+	symmetrisch \\
+	
+	transitiv \\
+	
+	Funktionen: \\
+	
+	injektiv \\
+	
+	surjektiv \\
+	
+	bijektiv \\
+	
+	Umkehrfunktionen bestimmen! \\
+	4. Beweisen: \\
+	- Schubfachprinzip(auch erweitert) \\
+	- vollständige Induktion  (Summenformeln, Fibonacci) \\
+	
+	5. Graphentehorie     \\
+	
+	- Eulersche Graphen \\
+	
+	- Eulerscher Kreis \\
+	
+	- Offene Eulersche Linien \\
+	
+	-Vollständige Graphen \\
+	
+	-Vollständig bipartide Graphen \\
+	
+	-planare Graphen \\
+	
+	-Eulersche Polyederformel \\
+	6. Algebraische Strukturen \\
+	
+	-Mod, ggT((erweiterter)Euklid) \\
+	
+	-Vielfachsummendarstellung \\
+	
+	- Gruppen(Z ohne und mit Stern) \\
+	
+	-Multiplikationstafeln aufstellen \\
+	
+	-inverse bestimmen \\
+	
+	- Ringe \\
+	
+	- Körper \\
+	
+	
+	
+	\subsection*{06.11.2020}
+	Allgemeine Hinweise. Zu Vorlesungen und Übungen etc.
+	Jens betont mann könne ihm jederzeit eine E-Mail schreiben.
+	Vorlesung ging mit Technischen Problemen vorüber.
+	Diskrete Mathematik für Kryptographie. Endliche Strukturen.
+	Vereint endliche Phänomene Beispiel Algebra, Graphentheorie. Dient als Grundlage für Informatik. \linebreak
+	Logik, Mengen,, Relationen und Funktionen, Weweise, Graphentheorie, Algebraische Grundstrukturen \linebreak
+	Induktionsbeweise
+	Definitionen, Sätze, Beweis, Beispiele
+	\subsection*{Logik}
+	Aussagen, Distributionen, Aussagen sind wahr oder falsch nie beides \linebreak
+	Aussage besitzt Wahrheitswert. Paradoxon, ist keine Aussage weil sie nicht wahr oder falsch ist.
+	
+	\subsection*{20.11.2020}
+	Junktoren boolsche Algebra \\
+	$\neq$ nicht; $\land$ und; $\lor$ oder\\
+	Dualität ein Satz folgt aus einem anderen wenn $\land$ und $\lor$ vertauscht werden. \\
+	Absorptionsgesetz \\
+	Idempotenzgesetze \\
+	Doppelte Negation (doppeltes nicht hebt sich auf)\\
+	A $\land$ A = A Idepotenzgesetz \\
+	Vereinfachen Sie: (A $\land$ B) $\lor$ ($\not$A $\land$ B ) \\
+	$\equiv$ B $\land$(A $\lor$ $\not$A) \\
+	$\equiv$ B $\land$ w \\
+	$\equiv$ B \\
+	Disjunktive Normalform umformen.\\
+	Mindestens zwei aus drei Schaltung und Disjunktive Normalform \\
+	WolframAlpha \\
+	\subparagraph*{Aussageform}
+	Aussageform Aussage entsteht erst indem im Term Variable eine Zahl bekommt \\
+	$A(x) = x$ ist eine Primzahl \\
+	$A(2) = w$; $A(0) = f$ Aussage entsteht durch Belegung der Variable x. \\
+	Universum ist Definitionsbereich der Aussageform. \\
+	Aussageform kann verschiedene Variablen haben von denen jede Variable ein eigene Universum haben kann. \\
+	\subparagraph*{Quantoren}
+	Allaussagen gelten für alle Elemente eines Universums einer Aussageform. Allquantor großer $\land$ Operator \\
+	Existenzaussage $\equiv$ verkettete Oder-Aussage es gibt mindestens ein Element; Existenzquantor \\
+	All- und Existenzaussagen können auch negiert werden \\
+	
+	\section*{27.11.2020}
+	Mengen \\
+	Mächtigkeiten von Mengen bestimmen \\
+	Binomialzahlen. \\
+	Def. Menge nach Cantor Mengen sind Zusammenfassung von wohlunterschiedenen Objekten unseres Denkens oder unserer Anschauung. \\
+	Menge beschreiben durch Aufzählung und Beschreibung. \\
+	Reihenfolge der Objekte einer Menge ist nicht entscheidend. Objekte müssen sich klar unterscheiden. \\
+	a $\in$ M oder a $\notin$ M. \\
+	Berühnmte Mengen Zahlenmengen. \\
+	N $\in$ Z $\in$ Q $\in$ R. \\
+	Menge durch Beschreibung Y = \{ $x \in X | A(x)$ \}
+	Menge durch Aufzählung A = \{3, 5, 7, 9\} \\
+	(a, b) = \{x $\in R | a < x < b$\} offenes Intervall \\
+	Schnittmenge A $\cap$ B enthält alle Objekte, die in A und B enthalten sind. \\
+	Vereinigungsmenge A $\cup$ B enthält alle objekte, die in A oder in B enthalten sind. \\
+	Wenn A $\cap$ B = \{\} dann sind A und B disjunkte Mengen. \\
+	A $\setminus$ B gesp. A ohne B. Differenzmenge \\
+	A $\subset$ B A Teilmenge von B. \\
+	A $\subseteq$ B A ist echte Teilmenge von B. \\
+	Komplement einer Menge ist Differenz Universum und Menge. \\
+	De Morgansche Gesetze für Mengen beachten. \\
+	Beweise können relevant für Klausur sein. \\
+	es gelten Rechengesetze für Mengen. \\
+	Distributivgesetz, Komutativgesetz, Komplement, neutrales Element. \\
+	\section*{04.12.2020}
+	Kapitel 2 Mengen \\
+	Kartesisches Produkt \\
+	A x B = {(a,b) $|$ a $\in$ A b $\in$ B} \\
+	Kombination von Menggen. \\
+	Innerhalb der Ergebnismenge kommt es nicht auf die Reihenfolge an in den Ergebnispaaren allerdings schon. \\
+	
+	Für zwei nicht leere mengen A und B ist das kartesische Produkt das Kreuzprodukt von A und B. \\
+	Kartesisches Produkt mit leerer Menge ist eine leere Menge. \\
+	
+	Distributivgesetz: (A $\cup$ B) x C $\equiv$ (A X C) $\cup$ (B X C) \\
+	KP kann auch über n Mengen gebildet werden.
+	
+	\section*{11.12.2020}
+	Mächtigkeit von Mengen. \\
+	Anzahl der Elemente einer menge. \\
+	Mächtigkeit kann eine endliche natürliche Zahl. \\
+	Mächtigkeit kann aber auch $\infty$ sein. \\
+	Mächtigkeit Vereinigungsmenge $| A \cup B | = |A| + |B| - |A \cap B|$ \\
+	Disjunkte Menge |A| +  |B| \\
+	Mächtigkeit von Drei endlichen Mängen \\
+	 $|A \cup B \cup C| = |A| + |B| + |C| - |A \cap B| - |A \cap C| - |B \cap C| + |A \cap B \cap C|$ \\
+	 Summe beliebig vieler Mengen (Siebformel)  \\
+	 $|A_{1} \cup A_{2} \cup ... A_{n}| = \alpha_{1} - \alpha_{2} + \alpha_{3} +- ....$ \\
+	 $\alpha_{1}$ wird mit Durschnitt einer Menge gebildet. \\
+	 $\alpha_{2}$ Wird mit Durchschnitt von zwei Mengen gebildet. \\
+	 Siebformel kann nicht negativ sein. \\
+	 $|A x B| = |A| * |B|$ \\
+	 Potenzmenge \\
+	 Def. Die Menge aller Teilmengen von M heißt Potenzmenge $\mathcal{P}$(M) von M. \\
+	 $|\mathcal{P}(M)| = 2^{n}$ \\
+	 k-elementige Teilmengen \\
+	 Binomialzahl $\binom{n}{k}$ \\
+	 Anzahl der k-teiligen Teilmengen einer n teiligen Menge berechnen. \\
+	$ \binom{n}{k} = \frac{n!}{k!*(n-k)!}$ \\
+	\subsection*{Kaptiel 3 - Relationen und Funktionen}
+	Definition einer Funktion. \\
+	Relationen, Funktionen, Abzählbarkeit \\
+	Relationen \\
+	Relationen schränken ein KP ein und betrachten eine Teilmenge mit bestimmter Beziehung. \\
+	R $\subset$ A x B; x R y
+	\section*{18.12.2020}
+	Eine Relation ist eine Teilmenge eines Kathesischen Produktes. \\
+	Umkehrrelation. \\
+	$R^{-1}$ enthält Paare aus B x A anstatt aus A x B, für alle Paare die in R enthalten sind. \\
+	Komposition verbindet zwei Relationen. \\
+	a-Element aus A b-Element aus C wenn es ein b gibt, dass in B und C verbindet. \\
+	Relationen zwischen gleichen Mengen \\
+	reflexsiv: x R x \\
+	symetrisch: $x R y \to y R x$ \\
+	transitiv: x R y $\land$ y R z $\to$ x R z \\
+	Gleichheitsrelation: x = y \\
+	Symmetrie \\
+	$R^-1 = R$ \\
+	Äquivalenzrelation sind Relationen, dir reflexiv, symmetrisch und transitiv.
+	\section*{08.01.2021}
+	Def. Kongruenz Relation ist $\subset$ des kathesischen Produkts X x X. \\
+	Kongruenz Relation \\
+	$\equiv_n = \{(x, y) \in Z^2 y -x\}$ Ist ein ganzzahliges Vielfaches von n. \\
+	$\equiv_n$ ist eine Äquivalenzrelation und damit transitiv, reflexsiv und symmetrisch. \\
+	Def. modulo ist der kleinste nicht negative Rest, mit einem Teiler $>$ 1. 0 eingeschlossen. \\
+	Def. Äquivalenzklasse sei ~ eine Äquivalenzrelation auf der Menge X und sei x $\in$ X dann heißt die Menge: \{y $\in$ X $|$ y $\tilde{}$ x\} die Äquivalenzklasse von x. \\
+	Anmerkung: Beweisen wird teil der Klausur. Vollständige Indunkttion. \\
+	Äquivalenzklassen sind gleich oder disjunkt. \\
+	Jedes Element x $\in$ X liegt in einer Äquivalenzklasse. \\
+	Def. Partition Menge von Äquivalenzklassen von X sind paarweise disjunktgge Teilmengen von X die zusammen Z ergeben. \\
+	Def. injenktiv Eine Funktion f bildet für zwei x werte auf einen y wert ab. \\
+	Def. surjektiv wenn es für jedes y ein x. Kein y bleibt unbesetzt. \\
+	Def. bijektiv wenn f surjektiv und injektiv. \\
+	Einache Erklärung auf Youtube \\
+%	\url{https://www.youtube.com/watch?v=OMCD3KRp5_k}
+	\section*{15.01.2021}
+	jede bijektive Funktion ist umkehrbar. \\
+	Umkehrfunktion heißt: $f^{-1}(x)$. \\
+	$f^{-1}(x)$ hebt $f(x)$ auf. \\
+	Definitions- und Wertebereich tauschen. \\
+	Funktion umkehren: \\
+	1. ersetze f(x) durch y. \\
+	2. ersetze x durch y. \\
+	3. löse nach y auf. \\
+	Verfahren gilt nur für bijektive Funktionen. \\
+	Falls $f(x)$ nicht bijektiv schränke Definitionsbereich ein!!!!!!! \\
+	Abzählbarkeit \\
+	Def. Zwei Mengen A, B heißen gleich mächtig, wenn es eine bijektive Abbildung (Funktion) von A nach B gibt.
+	Def. Eine Menge heißt Abzählbar, wenn sie endlich ist oder gleichmäßig zu N ist. \\
+	Überabzählbare Menge z.B. Potenzmenge. \\
+	Kapitel 4 Beweise \\
+	Beweisarten, Schubfachprinzip, Vollständige Induktion \\
+	Mathematische Sätze müssen allgemein bewiesen oder durch Gegenbeispiel widerlegt werden. \\
+	Jeder Satz ist eine Wenn-Dann-Aussage (A $\to$ B) \\
+	Aus einer Voraussetzung folgt eine Behauptung. \\
+	Kontraposition Anstatt A $\to$ B wird $\not$ A $\to$ $\not$ B \\
+	Widerspruch um A $\to$ B zu zeigen nimmt man an B ist falsch. Dies führt zu einem Widerspruch. \\
+	Beweis von Äquivalenzen A $\to$ B $\land$ B $\to$ A. Beide Richtungen zeigen. \\
+	\section*{29.01.2021}
+	Kapitel 5 Graphentheorie \\
+	Bäume Planarität \\
+	Graphen bestehen aus Ecken und kannten. Eine Kante verbindet zwei Punkte. \\
+	Ein Graph ist ein Tupel aus der Menge der Knoten und Kanten. \\
+	ungerichteter Graph Linie verbindet zwei Punkte (Teilmenge der Punkte) \\
+	gerichteter Graph Punkte werden durch einen Pfeil verbunden (Relation auf die Eckenmenge) \\
+	Vollständiger Graph alle Ecken sind mit je einer Kante verbunden. \\
+	vollständiger Graph hat n über zwei Kanten. \\
+	Graphen sind zusammenhängend, wenn jede Ecke über eine Folge von Kanten erreicht werden kann. \\
+	Grad einer Ecke ist die Anzahl der ausgehenden Kanten. \\
+	Bei einem vollständigen Graphen $K_n$ hat jede Ecke den Grad n - 1. \\
+	Kantenzug ist eine Folge von Kanten. \\
+	eulerscher Kreis Kantenzug wenn jede Kante unter den Kanten k1 bis ks des Kantenzugs auftaucht. \\
+	zzgl. der letzte Punkt ist der erste Punkt. \\
+	Eulerscher Graph ist ein Graph der einen eulerschen Kreis besitzt. \\
+	Wenn ein Graph eulersch ist hat jede Ecke einen geraden Grad. \\
+	Offene eulersche Linie durchläuft jede Kante einmal. Die Anfangsecke darf aber ungleich der Endecke sein. \\
+	Graph enthält eulersche Linie wenn er genau zwei Ecken ungeraden Grades enthält. \\
+	Bäume \\
+	Ein Baum ist ein Graph, der zusammenhängend ist und keinen Kreis enthält. \\
+	Planarität \\
+	Graph kann ohne Überschneidung von Kanten in der Ebene gezeichnet werden. \\
+	eulersche Polyederformel: n - m + g = 2 \\
+	n Ecken, m Kanten, g Gebiete. \\
+	bipartit ein Graph bekommt schwarze und weiße Ecken. Jede Kante verbindet einen schwarzen und einen weißen Punkt. \\
+	vollständig bipartit wenn alle weißen mit allen schwarzen Ecken verbunden. \\
+	\section*{05.02.2021}
+	Gruppen
+	Abgeschlossenheit, Assoziativität, inverses Element, Kommutativität \\
+	diverse Beispiele für Gruppen. \\
+	Eine Gruppe muss ein neutrales Element enthalten. \\
+	teilerfremd \\
+	Zwei Zahlen sind teilerfremd wenn sie nur die 1 als gemeinsamen Teiler haben. 
+	ggT Algorithmus, größter gemeinsamer Teiler. \\\
+	ggT kann als Vielfachsumme der Originalzahlen dargestellt werden. \\
+	Sind die Originalzahlen teilerfremd kann die 1 als Vielfachsumme dargestellt werden. \\
+	Auf diesen Operationen beruht z.B. der RSA Algorithmus. \\
+	\section*{19.02.2021}
+	Ringe, Körper \\
+	Ring sind diskrete Strukturen in denen man addieren und multiplizieren kann. \\
+	FÜr die Addition müssen alle Gruppenaxiome gelten. \\
+	Addition: abgeschlossen, assoziativ, neutrales Element, kommutativ \\
+	Multiplikation: Abgeschlossenheit, Assoziativität \\
+	Distributivgeseteze \\
+	gerühmter Ring: Menge der ganzen Zahlen. \\
+	Ring: Addition mod n und Multiplikation mod n \\
+	Polynomring R[x] \\
+	Ganze Zahlen und Polynome sind beides Ringe. Darauf basiert Polynomdivision \\
+	algebraischer Körper: alle Gesetze für Ring + multiplikative Inverse \\
+	Beispiel Q und R\\
+	Endliche Körper \\
+	Wenn p eine Primzahl ist ist $Z_p$ ein endlicher Körper \\
+	Es gibt einen Körper mit q Elementen, genau dann wenn q Primzahlpotenz \\
+\end{document}

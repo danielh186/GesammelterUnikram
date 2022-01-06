@@ -1,0 +1,62 @@
+\documentclass{article}
+\usepackage{mathtools}
+\begin{document}
+	\section*{Lsg Vorschlag A+N Ü004 Maximilian Maag}
+	\section*{Aufgabe 1}
+	\subsection*{a)}
+	$\sum\limits_{k=0}^{\infty} \frac{1}{4^{k}} $ \\
+	$\lim\sum\limits_{k=0}^{\infty} \frac{1^{k}}{4^{k}} $ \\
+	$\lim\sum\limits_{k=0}^{\infty} \frac{1}{4}^{k} $ \\
+	q = $\frac{1}{1 - \frac{1}{4}} = 1 * \frac{4}{3}$ \\
+	q = $\frac{4}{3}$
+	\subsection*{b)}
+	Alternierende Reihe \\
+	$\sum\limits_{k=0}^{\infty}(-1)^{k}*q^{k}$ \\
+	$q = \frac{a_{n+1}}{a_{n}}$; $q = \frac{\frac{3}{2}}{3}$ \\
+	$q = \frac{3}{2} * \frac{1}{3} = \frac{3}{6} = \frac{1}{2}$ \\
+	$\sum\limits_{k=0}^{\infty}(-1)^{k}*\frac{1}{2}^{k} * 3$ \\
+	$\lim\sum\limits_{k=0}^{\infty}(-1)^{k}*\frac{1}{2}^{k} * 3$ \\
+	$= \lim(-1)^{k} * \lim\frac{1}{2}^{k} * \lim3$ \\
+	$= \lim(-1)^{k} * 0 * \lim3$, Ein Produkt wird Null wenn einer der Faktoren 0 ist. \\
+	$\lim\sum\limits_{k=0}^{\infty}(-1)^{k}*\frac{1}{2}^{k} * 3 = 0$
+	\subsection*{c)}
+	$\sum\limits_{k=0}^{\infty}\{\frac{2}{5}^{k+1}+\frac{4}{5}^{k}\}$ \\
+	$\lim\sum\limits_{k=0}^{\infty}\{\frac{2}{5}^{k+1}+\frac{4}{5}^{k}\}$ = $\lim\frac{2}{5}^{k+1} + \lim\frac{4}{5}^{k}$ \\
+	$ = \lim\frac{2}{5}^{k+1} + \lim\frac{4}{5}^{k}$ \\
+	$q_{1} = \frac{1}{1 - \frac{2}{5}}$; $q_{2} = \frac{1}{1 - \frac{4}{5}}$ \\
+	$q_{1} = \frac{1}{\frac{3}{5}} = \frac{5}{3}$ \\
+	$q_{2} = \frac{1}{1 - \frac{4}{5}} = \frac{1}{\frac{1}{5}}$ \\
+	$q_{2} = 1 * \frac{5}{1} = 5$ \\
+	$q = \frac{20}{3}$
+	\section*{Aufgabe 2}
+	\subsection*{a)}
+	$\frac{7}{10}* \sum\limits_{k=0}^{\infty}\frac{1}{10}^{k}$ \\
+	$\frac{7}{10}* \lim\sum\limits_{k=0}^{\infty}\frac{1}{10}^{k}$ \\
+	$\frac{7}{10}* \frac{1}{1 - \frac{1}{10}}$ \\
+	$\frac{7}{10}* \frac{1}{\frac{9}{10}}$ \\
+	$\frac{7}{10}* \frac{10}{9}= \frac{70}{90} = \frac{7}{9} $
+	\subsection*{b)}
+	$\frac{84}{100} * \sum\limits_{k=0}^{\infty} \frac{1}{100}^{k}$ \\
+	$\frac{84}{100} * \lim\sum\limits_{k=0}^{\infty} \frac{1}{100}^{k}$ \\
+	$\frac{84}{100} * \frac{1}{1 - \frac{1}{100}}$ \\
+	$\frac{84}{100} * \frac{100}{99} = \frac{8400}{9900}$ \\
+	$= \frac{84}{99}$
+	\subsection*{c)}
+	$\frac{123}{1000} * \lim\sum\limits_{k=0}^{\infty} \frac{1}{1000}^{k}$ \\
+	$\frac{123}{1000} * \frac{1000}{999}$ = $\frac{123000}{999000}$ \\
+	$g = \frac{123}{999}$
+	\section*{Aufgabe 3}
+	\subsection*{a)}
+	Majorantenkriterium. \\
+	$a_{k} = \frac{1}{10^{k} + 10k}$ $b_k = \frac{1}{10^{k}}$ \\
+	$a_{k} < b_{k}$
+	Aus der Konvergenz der Reihe $\sum\limits_{k=0}^{\infty} \frac{1}{10}^{k}$ folgt die Konvergenz von $\sum\limits_{k=0}^{\infty}\frac{1}{10^{k} + 10k}$
+	\subsection*{b)}
+	$\sum\limits_{k=1}^{\infty}(-1)^{k}*\frac{k^2+ 7}{k^3}$ \\
+	$\lim\sum\limits_{k=1}^{\infty} \frac{k^2+ 7}{k^3}$, ist eine Nullfolge es gilt Leibnitz-Kriterium für Konvergenz.
+	\subsection*{c)}
+	$\sum\limits_{k=0}^{\infty}\frac{2^{k}}{k!}$ \\
+	$a_{k} = \frac{2^{k}}{k!}$ \\
+	$\lim\frac{2^{k}}{k!} = 0$, $a_{k}$ ist eine Nullfolge. \\
+	Daraus folgt nach Leibnitz-Kriterium, dass $\sum\limits_{k=0}^{\infty}\frac{2^{k}}{k!}$ konvergiert, da $\sum\limits_{k=0}^{\infty}(-1)^{k}*\frac{2^{k}}{k!}$ ebenfalls konvergiert.
+\end{document}

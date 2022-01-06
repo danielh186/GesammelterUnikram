@@ -1,0 +1,131 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.11.21)  8 DEC 2020 16:39
+entering extended mode
+**./Maag-BWL-05.tex
+(Maag-BWL-05.tex
+LaTeX2e <2020-10-01> patch level 2
+L3 programming layer <2020-10-27> xparse <2020-03-03>
+(C:\Users\maxim\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
+Document Class: article 2020/04/10 v1.4m Standard LaTeX document class
+(C:\Users\maxim\AppData\Local\Programs\MiKTeX\tex/latex/base\size10.clo
+File: size10.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
+)
+\c@part=\count175
+\c@section=\count176
+\c@subsection=\count177
+\c@subsubsection=\count178
+\c@paragraph=\count179
+\c@subparagraph=\count180
+\c@figure=\count181
+\c@table=\count182
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen138
+)
+(C:\Users\maxim\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
+tex.def
+File: l3backend-pdftex.def 2020-09-24 L3 backend support: PDF output (pdfTeX)
+\l__kernel_color_stack_int=\count183
+\l__pdf_internal_box=\box47
+) (Maag-BWL-05.aux)
+\openout1 = `Maag-BWL-05.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+
+Overfull \hbox (2.74129pt too wide) in paragraph at lines 5--11
+\OT1/cmr/m/n/10 Die Dig-i-tal-isierung ist eine der wesentlich-sten Trans-for-m
+a-tio-nen des 21. Jahrhun-
+ []
+
+
+Overfull \hbox (33.01913pt too wide) in paragraph at lines 5--11
+\OT1/cmr/m/n/10 derts. Nach-fol-gend beschreibe ich Veranderungen im tech-nol-
+o-gis-chen, gesellschaftlichen,
+ []
+
+
+Overfull \hbox (21.32478pt too wide) in paragraph at lines 5--11
+\OT1/cmr/m/n/10 isierung entschei-dend verandert. Online-Banking, Video-Chat, 
+SAP-Resourceplaning
+ []
+
+
+Overfull \hbox (0.28293pt too wide) in paragraph at lines 5--11
+\OT1/cmr/m/n/10 Geschwindigkeit min-destens vervier-facht. Alle die diesen Tren
+d nicht mit-machen
+ []
+
+
+Overfull \hbox (20.30614pt too wide) in paragraph at lines 12--14
+\OT1/cmr/m/n/10 Die Sozialver-sicherung teilt sich in Un-fal-lver-sicherung, Re
+nten-ver-sicherung, Kranken-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--14
+
+ []
+
+
+Overfull \hbox (13.48665pt too wide) in paragraph at lines 24--26
+\OT1/cmr/m/n/10 Der Deutsche Gew-erkschafts-bund ist die Da-chor-gan-i-sa-tion 
+der Ar-beit-nehmervertre-
+ []
+
+[1
+
+{C:/Users/maxim/AppData/Local/MiKTeX/pdftex/config/pdftex.map}]
+Overfull \hbox (12.11638pt too wide) in paragraph at lines 28--29
+\OT1/cmr/m/n/10 Eine Gesellschaft mit beschrankter Haf-tung. Sie zahlt zu den
+ Kap-i-talge-sellschaften,
+ []
+
+
+Overfull \hbox (0.92184pt too wide) in paragraph at lines 30--31
+\OT1/cmr/m/n/10 Groten An-teil machen hi-er-bei die Um-satzs-teuer und die Lo
+hn-s-teuer aus. Beson-
+ []
+
+
+Overfull \hbox (6.20885pt too wide) in paragraph at lines 30--31
+\OT1/cmr/m/n/10 ders rel-e-vant fur Un-ternehmen sind die Gewerbesteuer, Lohn-
+s-teuer fur Angestellte
+ []
+
+
+Overfull \hbox (7.30507pt too wide) in paragraph at lines 32--33
+\OT1/cmr/m/n/10 MOST ist ein Pla-nungsin-stru-ment um ver-schiedene Pla-nungseb
+e-nen zu verbinden.
+ []
+
+[2] [3] (Maag-BWL-05.aux) ) 
+Here is how much of TeX's memory you used:
+ 399 strings out of 479799
+ 7311 string characters out of 2869722
+ 277771 words of memory out of 3000000
+ 17470 multiletter control sequences out of 15000+200000
+ 536028 words of font info for 32 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 43i,4n,49p,511b,117s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\maxim\AppData\Local\MiKTeX\fonts/pk/ljfou
+r/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/maxim/AppData/Local/Programs/MiKTeX/
+fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/maxim/AppData/Local/Program
+s/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb>
+Output written on Maag-BWL-05.pdf (3 pages, 44503 bytes).
+PDF statistics:
+ 27 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

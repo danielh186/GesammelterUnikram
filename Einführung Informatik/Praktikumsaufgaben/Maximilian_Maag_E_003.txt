@@ -1,0 +1,286 @@
+Lösungsvorschlag Maag Maximilian Bl_003
+
+Aufgabe 3.1
+
+a)
+
+root@vps797276:/home# ls -aR > ls.txt
+root@vps797276:/home# more ls.txt
+.:
+.
+..
+0.981Tekxit3Server.zip
+Tekkit_Server_v1.2.9g-2.zip
+ls.txt
+tekkit
+ubuntu
+uebung3.tar.gz
+
+./tekkit:
+.
+..
+Tekkit.jar
+Tekkit_Server_v1.2.9g-2.zip
+config
+launch.bat
+launch.sh
+libraries
+minecraft_server.1.6.4.jar
+mods
+server.properties
+
+./tekkit/config:
+.
+..
+APUnofficial.cfg
+AnObsidianPlate.cfg
+AppliedEnergistics.cfg
+AtomicScience.cfg
+Autoutils.cfg
+Backpack.cfg
+BasicComponents.cfg
+BigReactors
+CCTurtle.cfg
+Calclavia.cfg
+Calclavia.cfg.disabled
+CarpentersBlocks.cfg
+ChickenChunks.cfg
+CodeChickenCore.cfg
+ComputerCraft.cfg
+DimDoors.cfg
+DimDoors_Custom_schematics
+EnderStorage.cfg
+ExtraUtilities.cfg
+Galacticraft
+GregsLighting.cfg
+InvTweaks.cfg
+InvTweaksRules.txt
+InvTweaksTree.txt
+IronChest.cfg
+JAKJ_RedstoneInMotion.cfg
+
+b)
+
+.bash_logout
+.bashrc
+.profile
+.ssh
+
+./ubuntu/.ssh:
+.
+..
+authorized_keys
+Dies ist Zeile 1 des Inhalts der Datei meineErsteDatei.
+Dies ist Zeile 2.
+Zeile 3
+Zeile 4
+Dies ist die letzte Zeile der Datei.
+root@vps797276:/home#
+
+c)
+
+root@vps797276:/home# cat > yes
+yroot@vps797276:/home#
+root@vps797276:/home# cat > no
+n
+
+root@vps797276:/home# more no
+n
+root@vps797276:/home# more yes
+y
+
+d)
+
+root@vps797276:/home# cat < no
+n
+
+zeigt den Inhalt der Datei an.
+
+e)
+
+root@vps797276:/home# ls -aR | more
+
+........
+
+APUnofficial.cfg
+AnObsidianPlate.cfg
+AppliedEnergistics.cfg
+AtomicScience.cfg
+Autoutils.cfg
+Backpack.cfg
+BasicComponents.cfg
+BigReactors
+.......
+
+f)
+
+Aufgabe 3.2
+
+root@vps797276:/home# tar -xvzf uebung3.tar.gz
+./uebung3/
+./uebung3/0_Vorspann.pdf
+./uebung3/Aufgabe3.3/
+./uebung3/Aufgabe3.3/test
+./uebung3/Aufgabe3.5/
+./uebung3/Aufgabe3.5/Kafka
+./uebung3/Aufgabe3.7/
+./uebung3/Aufgabe3.7/a
+./uebung3/Aufgabe3.7/b
+./uebung3/Aufgabe3.1
+
+Aufgabe 3.3
+
+a)
+
+root@vps797276:/home/uebung3/Aufgabe3.3# more test
+Dies ist Zeile 1 des Inhalts der Datei test.
+Dies ist Zeile 2.
+Zeile 3
+Zeile 4
+Zeile 5
+Zeile 6
+Zeile 7
+Zeile 8
+Zeile 9
+
+b)
+
+root@vps797276:/home/uebung3/Aufgabe3.3# head -n8 test
+Dies ist Zeile 1 des Inhalts der Datei test.
+Dies ist Zeile 2.
+Zeile 3
+Zeile 4
+Zeile 5
+Zeile 6
+Zeile 7
+Zeile 8
+
+c)
+
+root@vps797276:/home/uebung3/Aufgabe3.3# tail test
+Zeile 41
+Zeile 42
+Zeile 43
+Zeile 44
+Zeile 45
+Zeile 46
+Zeile 47
+Zeile 48
+Zeile 49
+Dies ist die letzte Zeile der Datei.
+
+d)
+
+root@vps797276:/home/uebung3/Aufgabe3.3# head -n15 test | tail -n6
+Zeile 10
+Zeile 11
+Zeile 12
+Zeile 13
+Zeile 14
+Zeile 15
+
+Aufgabe 3.4
+
+root@vps797276:/home/uebung3# file 0_Vorspann.pdf
+0_Vorspann.pdf: PDF document, version 1.5
+
+root@vps797276:/home/uebung3# file /etc/passwd
+/etc/passwd: ASCII text
+
+root@vps797276:/home/uebung3# file Aufgabe3.3/test
+Aufgabe3.3/test: ASCII text
+
+Aufgabe 3.5
+
+a)
+
+root@vps797276:/home/uebung3/Aufgabe3.5# wc -w Kafka
+2546 Kafka
+
+b)
+
+root@vps797276:/home/uebung3/Aufgabe3.5# wc -l Kafka
+280 Kafka
+
+c)
+
+root@vps797276:/home/uebung3/Aufgabe3.5# wc -m Kafka
+16134 Kafka
+
+d)
+
+root@vps797276:/home/uebung3/Aufgabe3.5# wc -c Kafka
+16134 Kafka
+
+Aufgabe 3.6
+
+a)
+root@vps797276:/home/uebung3/Aufgabe3.5# grep Kafka -e Waechter > Aufgabe3.5.Waechter
+root@vps797276:/home/uebung3/Aufgabe3.5# ls
+Aufgabe3.5.Waechter  Kafka
+
+b)
+root@vps797276:/home/uebung3/Aufgabe3.5# grep Aufgabe3.5.Waechter -e Waechter | wc -w
+201
+
+c)
+root@vps797276:/home/uebung3/Aufgabe3.5# grep Kafka -e Waechter -v > Aufgabe3.5.NichtWaechter
+root@vps797276:/home/uebung3/Aufgabe3.5# grep Aufgabe3.5.NichtWaechter -e Waechter
+root@vps797276:/home/uebung3/Aufgabe3.5#
+
+Aufgabe 3.8
+kann mit pdfgre, evince gesehen werden und enthält das Einleitungsskript zur Veranstaltung Einführung Informatik.
+
+Aufgabe 3.9
+a) Es handlet sich um eine Postscript datei.
+b) root@vps797276:/home/uebung3# evince ref-emacs.ps
+Unable to init server: Could not connect: Connection refused
+Cannot parse arguments: Cannot open display:
+sollte normalerweise mit evince eigentlich gehen. Finde den Fehler am aktuellen System gerade nicht.
+
+Aufgabe 3.10
+a)
+root@vps797276:/home/uebung3/Aufgabe3.10# ls -l
+total 8
+-rw-r--r-- 2 ubuntu ubuntu 59 Nov  9  2016 text1
+lrwxrwxrwx 1 ubuntu ubuntu  5 Oct 29  2010 text2 -> text1
+-rw-r--r-- 2 ubuntu ubuntu 59 Nov  9  2016 text3
+
+b)
+Dei Textdateien sind abhängig von Text1.
+Der Inhalt der übrigen Dateien ist ebenfalls verschwunden weil Abhängig von Text1.
+
+c)
+touch: text1
+nano text1. Und dann den Eingangstext hineinschreiben.
+
+Aufgabe 3.11
+
+a)
+
+root@vps797276:/home# ls | wc -c
+139
+
+b)
+mmaag001@scooter:~$ wc -c
+
+
+Aufgabe 3.12
+
+a)
+root@vps797276:/home# tar -cf myuebung3.tar uebung3
+root@vps797276:/home# ls
+-C                      Tekkit_Server_v1.2.9g-2.zip  myuebung3.tar  test.txt  uebung3.tar.gz
+0.981Tekxit3Server.zip  ls.txt                       no             ubuntu    yes
+Material                meineErsteDatei              tekkit         uebung3
+root@vps797276:/home# ls > ls.txt
+
+b)
+
+wurde durch tar bereits erledigt.
+
+c)
+
+mit mount lassen sich geräte an einen Mountpoint mounten.
+
+

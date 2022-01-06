@@ -1,0 +1,75 @@
+\documentclass{article}
+\usepackage{graphicx}
+\begin{document}
+	\section*{Lsg Vorschlag E I Ü009 Maximilian Maag}
+	\section*{Aufgabe 9.1}
+	Komplementdarstellung \\
+	Verwendung der 9er Komplementdarstellung \\
+	a: -14790 \\
+	b: 27583 \\
+	\\
+	+$99999999$ \\
+	-$00014760$ \\
+	+$99985239$ 9-er Komplement zu -14790 \\
+	$00027583 + 99985239 = 12582 + 1$ \\
+	$12583$
+
+	\section*{Aufgabe 9.2}
+	-29, 106, -106, 232, 19, -131
+	\subsection*{a)}
+	Bestimme Wertebereich für 8-Bit Maschinenwort. \\
+	\\
+	W:$-2^{n-1} \to 2^{n-1} - 1$ \\
+	W: $-2^7 \to 2^7 - 1$ \\
+	W: $-128 \to 127$ \\
+	\\
+	Daraus folgt: 232 und -131 sind nicht darstellbar. \\
+	\\
+	$-29_{10}$ \\
+	$z = 29_{10}$ \\
+	$29_{10} = 00011101_2$ \\
+	$29_{10} = 11100010_2$ \\
+	$-29 = 11100011_2$ \\
+	\\
+	$106_{10} =  01101010_2$ \\
+	$-106_{10} \to 106_{10}$ \\
+	$106_{10} = 01101010$ \\
+	$z = 10010101_2 + 1_2$ \\
+	$-106_{10} = 10010110_2$ \\
+	\\
+	$19_{10} = 00010011_2$ \\
+	
+	\subsection*{b)}
+	Um einen Speicherüberlauf zu verursachen muss die Addition den Wertebereich (siehe a)) verlassen. Das kann an der Aufgabenstellung abgelesen werden. \\
+	\\
+	i) ok; ii) overflow; iii) ok; iv) overflow
+	\section*{Aufgabe 9.3}
+	\begin{tabular}[h]{c|c|c|c|c|c}
+		& vrzls. Ganzzahl & vorzb. Darstellung & Excess-4 & 1-er-Komplement & 2-er-Komplement \\
+		\hline
+		000 & 0 & 0 & -4& 0 & 0\\
+		001 & 1 & 1 & -3& 1 & 1\\
+		010 & 2 & 2 & -2& 2 & 2\\
+		011 & 3 & 3 & -1& 3 & 3\\
+		100 & 4 & -0 & 0& -3 & -4\\
+		101 & 5 & -1 & 1& -2 & -3\\
+		110 & 6 & -2 & 2& -1 & -2\\
+		111 & 7 & -3 & 3& -0 & -1
+	\end{tabular}
+	
+
+	\section*{Aufgabe 9.4}
+	\subsection*{a)}
+	Der Speicherbedarf der BCD Darstellung ist abhängig von der Prozessorarchitektur. \\
+	Im IBM Mainframe 360 werden zum Beispiel 2 BCD Ziffern in einem Byte gespeichert. Bei 5 Ziffern für drei Stellen vor dem Komma und zwei Nachkommastellen ergibt sich ein Bedarf von drei Byte. (Da es kein halbes Byte als adressierbare Einheit gibt.) Im letzten Byte werden darüber hinaus die Vorzeichen Nibbles Verwaltet.
+	\subsection*{b)}
+	\includegraphics{"94b"}
+	\section*{Aufgabe 9.5}
+	\subsection*{a)}
+	$-12,5_{10} \to 0xCA40_{16}$ \\
+	\includegraphics{"95a1"} \\
+	$1,875_{10} \to 0x8F00_{16}$ \\
+	\includegraphics[width=\linewidth]{"95a2"} \\
+	\subsection*{b)}
+	\includegraphics[width=\linewidth]{"95b"}
+\end{document}

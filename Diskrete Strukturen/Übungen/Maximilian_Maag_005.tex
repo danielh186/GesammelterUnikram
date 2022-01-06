@@ -1,0 +1,32 @@
+\documentclass{article}
+\usepackage{mathtools}
+\begin{document}
+	\section*{Lsg Vorschlag DS Ü005 Maximilian Maag}
+	\section*{Aufgabe 1}
+	Vorhanden sind insgesamt Drei Spalten mit Wörtern, die jeweils 16 Wörter enthalten. Setzt man weiter voraus, dass man durch freie Kombination Phrasen kombinieren darf bei denen die Reihenfolge der Wörter keine Rolle spielt so gibt es 16 * 16 * 16 = $16^3$ Möglichkeiten eine Phrase zu bilden. Das kathesische Produkt aller Wörter ergibt eine Menge die Alle Phrasen enthält, welche aus den vorhanden Wörtern gebildet werden können.
+	\section*{Aufgabe 2}
+	Def. A * B = $\bar{A \cup B}$
+	\subsection*{a)}
+	$\bar A \cup \bar{A} = \bar{A}$ \\
+	$\bar{A} = \bar{A}$ \\
+	\subsection*{b)}
+	(A * A) * (B * B) = A $\cap$ B \\
+	$ = (\bar{A \cup A}) * (\bar{B \cup B})$ \\
+	$ = \bar{A} * \bar{B}$ \\
+	$ = \bar{A} \bar{\cup} \bar{B}$ \\
+	$ = B \cap A$ \\
+	$ = A \cap B$ \\
+	\subsection*{c)}
+	$ = (\bar{A \cup B}) * (\bar{A \cup B})$ \\
+	$ = (\bar{A \cap B}) \cap (\bar{A \cap B})$ \\
+	$ = (A \cup B) \cap (A \cup B)$ \\
+	$ = A \cup B$
+	\section*{Aufgabe 3}
+	Def. A = Leichtaltethik, B = Fußball,  C = Handball \\
+	\subsection*{a)}
+	$A \cap \not B \cap \not C$ = 5 Studenten
+	\subsection*{b)}
+	$\bar{A}$ = 100 - 16 = 84 Studenten
+	\subsection*{c)}
+	$B \cap \bar{C} = \{\}$
+\end{document}

@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html class="js size-tiny size-small size-medium"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title data-original="Lernmodul: Einführung in die Informatik - Files">Lernmodul: Einführung in die Informatik - Files - Hochschule RheinMain</title>
+    <script>
+        CKEDITOR_BASEPATH = "https://studip.hs-rm.de/assets/javascripts/ckeditor/";
+        String.locale = "en-GB";
+    </script>
+            <link rel="localization" hreflang="en-GB" href="https://studip.hs-rm.de/dispatch.php/localizations/en_GB" type="application/vnd.oftn.l10n+json">
+    
+    <script>
+    document.querySelector('html').className = 'js';
+    window.STUDIP = {
+        ABSOLUTE_URI_STUDIP: "https://studip.hs-rm.de/",
+        ASSETS_URL: "https://studip.hs-rm.de/assets/",
+        CSRF_TOKEN: {
+            name: 'security_token',
+            value: '1BUOcfuCQ2sWKqcIFeYQtIxumrA4QI44+pDG6dY5kbtcn5kqag=='
+        },
+        STUDIP_SHORT_NAME: "Stud.IP",
+        URLHelper: {
+            base_url: "https://studip.hs-rm.de/",
+            parameters: {"cid":"41fa797db653a1ce5f23ba1ea2989621"}        },
+        jsupdate_enable: true,
+        wysiwyg_enabled: true,
+        server_timestamp: 1613675630    }
+    </script>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="https://studip.hs-rm.de/assets/images/apple-touch-icon.png">
+<link rel="icon" type="image/svg+xml" href="https://studip.hs-rm.de/assets/images/favicon.svg">
+<link rel="icon" type="image/png" sizes="64x64" href="https://studip.hs-rm.de/assets/images/favicon-64x64.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://studip.hs-rm.de/assets/images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://studip.hs-rm.de/assets/images/favicon-16x16.png">
+<link rel="manifest" href="https://studip.hs-rm.de/assets/images/manifest.json">
+<link rel="mask-icon" href="https://studip.hs-rm.de/assets/images/safari-pinned-tab.svg">
+<link rel="preload" href="https://studip.hs-rm.de/assets/fonts/LatoLatin/LatoLatin-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+<link rel="preload" href="https://studip.hs-rm.de/assets/fonts/LatoLatin/LatoLatin-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+<meta name="TileColor" content="#2b5797">
+<meta name="TileImage" content="https://studip.hs-rm.de/assets/images/mstile-144x144.png">
+<meta name="msapplication-config" content="https://studip.hs-rm.de/assets/images/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="help" href="https://hilfe.studip.de/help/4.5/de/Basis.VerschiedenesFormat" class="text-format" title="Hilfe zur Textformatierung">
+<link media="screen" rel="stylesheet" href="Lernmodul%20Einf%C3%BChrung%20in%20die%20Informatik%20-%20Files%20-%20Hochschule%20RheinMain-Dateien/studip-base.css">
+<script src="Lernmodul%20Einf%C3%BChrung%20in%20die%20Informatik%20-%20Files%20-%20Hochschule%20RheinMain-Dateien/studip-base.js">
+</script>
+<link media="print" rel="stylesheet" href="Lernmodul%20Einf%C3%BChrung%20in%20die%20Informatik%20-%20Files%20-%20Hochschule%20RheinMain-Dateien/print.css">
+<link rel="stylesheet" href="Lernmodul%20Einf%C3%BChrung%20in%20die%20Informatik%20-%20Files%20-%20Hochschule%20RheinMain-Dateien/studip-wysiwyg.css">
+<script src="Lernmodul%20Einf%C3%BChrung%20in%20die%20Informatik%20-%20Files%20-%20Hochschule%20RheinMain-Dateien/studip-wysiwyg.js">
+</script><style>.cke{visibility:hidden;}</style>
+<link rel="stylesheet" href="Lernmodul%20Einf%C3%BChrung%20in%20die%20Informatik%20-%20Files%20-%20Hochschule%20RheinMain-Dateien/HSRMMod.css">
+<link rel="stylesheet" href="Lernmodul%20Einf%C3%BChrung%20in%20die%20Informatik%20-%20Files%20-%20Hochschule%20RheinMain-Dateien/ffda5bda53e889feed4602945cc2aa51.css" type="text/css">
+
+    <script>
+    window.STUDIP.editor_enabled = true && CKEDITOR.env.isCompatible;
+    </script>
+<script charset="utf-8" src="Lernmodul%20Einf%C3%BChrung%20in%20die%20Informatik%20-%20Files%20-%20Hochschule%20RheinMain-Dateien/vendorstablesorter-6ae029fc50e04b83762d.js"></script><script charset="utf-8" src="Lernmodul%20Einf%C3%BChrung%20in%20die%20Informatik%20-%20Files%20-%20Hochschule%20RheinMain-Dateien/tablesorter-9a3f1245f921ec514b4c.js"></script><style>body.tablesorter-disableSelection { -ms-user-select: none; -moz-user-select: -moz-none;-khtml-user-select: none; -webkit-user-select: none; user-select: none; }.tablesorter-resizable-container { position: relative; height: 1px; }.tablesorter-resizable-handle { position: absolute; display: inline-block; width: 8px;top: 1px; cursor: ew-resize; z-index: 3; user-select: none; -moz-user-select: none; }</style></head>
+
+<body id="course-files-index">
+<div id="layout_wrapper" style="overflow-x: initial;">
+            
+    
+<!-- Leiste unten -->
+<div id="barBottomContainer">
+    <div id="barBottomLeft">
+        <input type="checkbox" id="barTopMenu-toggle">
+        <label for="barTopMenu-toggle">
+            Menu        </label>
+            </div>
+    <div id="barTopFont">
+        Hochschule RheinMain    </div>
+
+    <!-- Dynamische Links ohne Icons -->
+    <div id="barBottomright">
+        <ul>
+
+                            
+                                    <li id="quicksearch_item">
+                    <script>
+                        var selectSem = function (seminar_id, name) {
+                            document.location = "https://studip.hs-rm.de/dispatch.php/course/details/?cid=41fa797db653a1ce5f23ba1ea2989621&send_from_search=1&send_from_search_page=https%3A%2F%2Fstudip.hs-rm.de%2Fdispatch.php%2Fsearch%2Fcourses%3Fcid%3D41fa797db653a1ce5f23ba1ea2989621%26keep_result_set%3D1&sem_id=" + seminar_id;
+                        };
+                    </script>
+                    <div id="globalsearch-searchbar">
+    <input class="hidden-small-down" type="text" name="globalsearchterm" id="globalsearch-input" placeholder="What are you looking for?">
+    <img id="globalsearch-clear" class="hidden-small-down icon-role-inactive icon-shape-decline" src="Lernmodul%20Einf%C3%BChrung%20in%20die%20Informatik%20-%20Files%20-%20Hochschule%20RheinMain-Dateien/decline_002.svg" alt="decline" width="16" height="16">    <input type="image" id="globalsearch-icon" src="Lernmodul%20Einf%C3%BChrung%20in%20die%20Informatik%20-%20Files%20-%20Hochschule%20RheinMain-Dateien/search_002.svg" alt="search" class="icon-role-info_alt icon-shape-search" width="16" height="16">    <div id="globalsearch-list">
+        <a href="#" id="globalsearch-togglehints" data-toggle-text="Hide hints">
+            Show hints        </a>
+        <article id="globalsearch-hints">
+    <section>
+        <header>
+            Information        </header>
+        <p>
+            The quick search retrieves only results from the current semester.        </p>
+    </section>
+    <section>
+        <header>
+            [CRTL] + [Space]        </header>
+        <p>
+            Key combination for opening and closing        </p>
+    </section>
+    <section>
+        <header>
+            Placeholder        </header>
+        <p>
+            "_" is a placeholder for one arbitrary character.            <br>
+            "%" is a placeholder for an arbitrary amount of characters.            <br>
+            "bl_ck" will find results for "black" and "block". "b__ck" 
+will also find "brick". "b%ck" will find all the results mentioned 
+before and results for "back", too.        </p>
+    </section>
+    <section>
+        <header>
+            Klick on headline        </header>
+        <p>
+            Extends the selected search category to display more search 
+results from this category. Another click will again show results from 
+all categories.        </p>
+    </section>
+    <section>
+        <header>
+            File search        </header>
+        <p>
+            The file search can be refined using a slash (/). Example: 
+"My courses/file" will display all files which contain the word "file" 
+and which are placed inside "My courses". The course can also be reduced
+ (e.g. "courses/file") or it can be limited to its capital letters or 
+its abbreviation (e.g. "MC/file" or "C/file").        </p>
+    </section>
+</article>
+        <div id="globalsearch-searching">
+            Searching...        </div>
+        <div id="globalsearch-results" data-more-results="display all" data-no-result="No results found." data-current-semester="1604185200" data-results-per-type="5"></div>
+    </div>
+</div>
+                </li>
+                    
+                    
+            <!-- User-Avatar -->
+            <li class="header_avatar_container " id="barTopAvatar">
+
+                                                            <div id="notification_container" class="hoverable">
+                                        <div id="notification_marker" title="Notifications" data-lastvisit="1613590594">
+                        4                    </div>
+                    <div class="list below" id="notification_list">
+                        <a class="mark-all-as-read " href="https://studip.hs-rm.de/dispatch.php/jsupdater/mark_notification_read/all?cid=41fa797db653a1ce5f23ba1ea2989621&amp;return_to=%2Fdispatch.php%2Fcourse%2Ffiles%2Findex%2Fc33da9f80979014fc405c59193a89bb1%3Fcid%3D41fa797db653a1ce5f23ba1ea2989621">
+                            Mark all notifications as read                        </a>
+                        <a class="enable-desktop-notifications" href="#" style="display: none;">
+                            Desktop-Benachrichtigungen aktivieren                        </a>
+                        <ul>
+                                                    <li class="notification item" data-id="1064722" data-timestamp="1612786487">
+    <a class="options mark_as_read" href="#">
+        <img title="Mark as read" src="Lernmodul%20Einf%C3%BChrung%20in%20die%20Informatik%20-%20Files%20-%20Hochschule%20RheinMain-Dateien/decline.svg" alt="decline" class="icon-role-clickable icon-shape-decline" width="12" height="12">    </a>
+    <a class="content" href="https://studip.hs-rm.de/dispatch.php/jsupdater/mark_notification_read/1064722?cid=41fa797db653a1ce5f23ba1ea2989621" data-dialog="">
+            <div class="avatar" style="background-image: url(https://studip.hs-rm.de/assets/images/icons/blue/blubber.svg);"></div>
+            Matti Kleinheins Barroso hat eine Nachricht geschrieben.    </a>
+    <div class="more">
+        ... and 10 more    </div>
+</li>
+                                                    <li class="notification item" data-id="1087842" data-timestamp="1613003589">
+    <a class="options mark_as_read" href="#">
+        <img title="Mark as read" src="Lernmodul%20Einf%C3%BChrung%20in%20die%20Informatik%20-%20Files%20-%20Hochschule%20RheinMain-Dateien/decline.svg" alt="decline" class="icon-role-clickable icon-shape-decline" width="12" height="12">    </a>
+    <a class="content" href="https://studip.hs-rm.de/dispatch.php/jsupdater/mark_notification_read/1087842?cid=41fa797db653a1ce5f23ba1ea2989621" data-dialog="">
+            <div class="avatar" style="background-image: url(https://studip.hs-rm.de/assets/images/icons/blue/blubber.svg);"></div>
+            Ibrahim Osman hat eine Nachricht geschrieben.    </a>
+</li>
+                                                    <li class="notification item" data-id="1098554" data-timestamp="1613126072">
+    <a class="options mark_as_read" href="#">
+        <img title="Mark as read" src="Lernmodul%20Einf%C3%BChrung%20in%20die%20Informatik%20-%20Files%20-%20Hochschule%20RheinMain-Dateien/decline.svg" alt="decline" class="icon-role-clickable icon-shape-decline" width="12" height="12">    </a>
+    <a class="content" href="https://studip.hs-rm.de/dispatch.php/jsupdater/mark_notification_read/1098554?cid=41fa797db653a1ce5f23ba1ea2989621" data-dialog="">
+            <div class="avatar" style="background-image: url(https://studip.hs-rm.de/assets/images/icons/blue/blubber.svg);"></div>
+            Vincent Steiner hat eine Nachricht geschrieben.    </a>
+    <div class="more">
+        ... and 64 more    </div>
+</li>
+                                                    <li class="notification item" data-id="1103956" data-timestamp="1613176470">
+    <a class="options mark_as_read" href="#">
+        <img title="Mark as read" src="Lernmodul%20Einf%C3%BChrung%20in%20die%20Informatik%20-%20Files%20-%20Hochschule%20RheinMain-Dateien/decline.svg" alt="decline" class="icon-role-clickable icon-shape-decline" width="12" height="12">    </a>
+    <a class="content" href="https://studip.hs-rm.de/dispatch.php/jsupdater/mark_notification_read/1103956?cid=41fa797db653a1ce5f23ba1ea2989621" data-dialog="">
+            <div class="avatar" style="background-image: url(https://studip.hs-rm.de/assets/images/icons/blue/blubber.svg);"></div>
+            Roxana Rachel Vogl hat eine Nachricht geschrieben.    </a>
+</li>
+                                                </ul>
+                    </div>
+                                    <audio id="audio_notification" preload="none">
+                        <source src="Lernmodul%20Einf%C3%BChrung%20in%20die%20Informatik%20-%20Files%20-%20Hochschule%20RheinMain-Dateien/blubb.ogg" type="audio/ogg">
+                        <source src="Lernmodul%20Einf%C3%BChrung%20in%20die%20Informatik%20-%20Files%20-%20Hochschule%20RheinMain-Dateien/blubb.mp3" type="audio/mpeg">
+                    </audio>
+                                </div>
+            
+                            <div id="header_avatar_menu">
+                                <nav class="action-menu avatar-menu" data-action-menu-reposition="false">
+    <a class="action-menu-icon" title="Maximilian Jakob Maag" aria-expanded="false" aria-label="Profile menu" href="#">
+        <img src="Lernmodul%20Einf%C3%BChrung%20in%20die%20Informatik%20-%20Files%20-%20Hochschule%20RheinMain-Dateien/nobody_medium2x_002.png" class="avatar-medium user-mamaagxa recolor" title="Maximilian Jakob Maag" alt="Maximilian Jakob Maag">    </a>
+    <div class="action-menu-content">
+    	        <div class="action-menu-title">
+            Maximilian Jakob Maag        </div>
+                <ul class="action-menu-list">
+                    <li class="action-menu-item">
+                            <a href="https://studip.hs-rm.de/dispatch.php/profile/index">
+
+                                                            <img src="Lernmodul%20Einf%C3%BChrung%20in%20die%20Informatik%20-%20Files%20-%20Hochschule%20RheinMain-Dateien/person.svg" alt="person" class="icon-role-clickable icon-shape-person" width="16" height="16">                                                        Profile                </a>
+                        </li>
+                    <li class="action-menu-item">
+                            <a href="https://studip.hs-rm.de/dispatch.php/settings/account">
+
+                                                            <img src="Lernmodul%20Einf%C3%BChrung%20in%20die%20Informatik%20-%20Files%20-%20Hochschule%20RheinMain-Dateien/key.svg" alt="key" class="icon-role-clickable icon-shape-key" width="16" height="16">                                                        Personal details                </a>
+                        </li>
+                    <li class="action-menu-item">
+                            <a href="https://studip.hs-rm.de/dispatch.php/settings/general">
+
+                                                            <img src="Lernmodul%20Einf%C3%BChrung%20in%20die%20Informatik%20-%20Files%20-%20Hochschule%20RheinMain-Dateien/admin.svg" alt="admin" class="icon-role-clickable icon-shape-admin" width="16" height="16">                                                        Settings                </a>
+                        </li>
+                    <li class="action-menu-item">
+                            <a href="https://studip.hs-rm.de/logout.php">
+
+                                                            <img src="Lernmodul%20Einf%C3%BChrung%20in%20die%20Informatik%20-%20Files%20-%20Hochschule%20RheinMain-Dateien/door-leave.svg" alt="door-leave" class="icon-role-clickable icon-shape-door-leave" width="16" height="16">                                                        Logout                </a>
+                        </li>
+                </ul>
+    </div>
+</nav>
+                </div>
+                        </li>
+        
+        </ul>
+    </div>
+</div>
+<!-- Ende Header -->
+
+<!-- Start Header -->
+<div id="flex-header">
+    <!--<div id='barTopLogo'>
+        <img alt="Logo Uni Göttingen" src="https://studip.hs-rm.de/assets/images/logos/logoneu.jpg">    </div>
+     -->
+
+        <ul id="barTopMenu" role="navigation" class="overflown">
+            
+<li id="nav_start">
+    <a href="https://studip.hs-rm.de/dispatch.php/start" title="To the start page - 11 new announcements" data-badge="11">
+        <img class="headericon original icon-role-navigation icon-shape-home" src="Lernmodul%20Einf%C3%BChrung%20in%20die%20Informatik%20-%20Files%20-%20Hochschule%20RheinMain-Dateien/home.svg" alt="To the start page - 11 new announcements" width="16" height="16">        <div class="navtitle">Start</div>
+    </a>
+</li>
+            
+<li id="nav_course" class="active">
+    <a href="https://studip.hs-rm.de/dispatch.php/my_courses" title="My courses and institutes">
+        <img class="headericon original icon-role-navigation icon-shape-seminar" src="Lernmodul%20Einf%C3%BChrung%20in%20die%20Informatik%20-%20Files%20-%20Hochschule%20RheinMain-Dateien/seminar.svg" alt="My courses and institutes" width="16" height="16">        <div class="navtitle">Courses</div>
+    </a>
+</li>
+            
+<li id="nav_messaging">
+    <a href="https://studip.hs-rm.de/dispatch.php/messages/overview" title="You have 3 new unread messages" data-badge="3">
+        <img class="headericon original icon-role-navigation icon-shape-mail" src="Lernmodul%20Einf%C3%BChrung%20in%20die%20Informatik%20-%20Files%20-%20Hochschule%20RheinMain-Dateien/mail.svg" alt="You have 3 new unread messages" width="16" height="16">        <div class="navtitle">Messages</div>
+    </a>
+</li>
+            
+<li id="nav_community">
+    <a href="https://studip.hs-rm.de/dispatch.php/blubber" title="Another 989 users are online">
+        <img class="headericon original icon-role-navigation icon-shape-community" src="Lernmodul%20Einf%C3%BChrung%20in%20die%20Informatik%20-%20Files%20-%20Hochschule%20RheinMain-Dateien/community.svg" alt="Another 989 users are online" width="16" height="16">        <div class="navtitle">Community</div>
+    </a>
+</li>
+            
+<li id="nav_profile">
+    <a href="https://studip.hs-rm.de/dispatch.php/profile">
+        <img class="headericon original icon-role-navigation icon-shape-person" src="Lernmodul%20Einf%C3%BChrung%20in%20die%20Informatik%20-%20Files%20-%20Hochschule%20RheinMain-Dateien/person.svg" alt="person" width="16" height="16">        <div class="navtitle">Profile</div>
+    </a>
+</li>
+            
+<li id="nav_calendar">
+    <a href="https://studip.hs-rm.de/dispatch.php/calendar/schedule" title="Timetable">
+        <img class="headericon original icon-role-navigation icon-shape-schedule" src="Lernmodul%20Einf%C3%BChrung%20in%20die%20Informatik%20-%20Files%20-%20Hochschule%20RheinMain-Dateien/schedule_002.svg" alt="Timetable" width="16" height="16">        <div class="navtitle">Planner</div>
+    </a>
+</li>
+            
+<li id="nav_search">
+    <a href="https://studip.hs-rm.de/dispatch.php/search/globalsearch" title="Search">
+        <img class="headericon original icon-role-navigation icon-shape-search" src="Lernmodul%20Einf%C3%BChrung%20in%20die%20Informatik%20-%20Files%20-%20Hochschule%20RheinMain-Dateien/search.svg" alt="Search" width="16" height="16">        <div class="navtitle">Search</div>
+    </a>
+</li>
+            
+<li id="nav_tools">
+    <a href="https://studip.hs-rm.de/dispatch.php/news/admin_news" title="Tools">
+        <img class="headericon original icon-role-navigation icon-shape-tools" src="Lernmodul%20Einf%C3%BChrung%20in%20die%20Informatik%20-%20Files%20-%20Hochschule%20RheinMain-Dateien/tools.svg" alt="Tools" width="16" height="16">        <div class="navtitle">Tools</div>
+    </a>
+</li>
+            
+<li id="nav_files_dashboard">
+    <a href="https://studip.hs-rm.de/dispatch.php/files_dashboard" title="File dashboard">
+        <img class="headericon original icon-role-navigation icon-shape-files" src="Lernmodul%20Einf%C3%BChrung%20in%20die%20Informatik%20-%20Files%20-%20Hochschule%20RheinMain-Dateien/files_002.svg" alt="File dashboard" width="16" height="16">        <div class="navtitle">Files</div>
+    </a>
+</li>
+            
+<li id="nav_schwarzesbrettplugin">
+    <a href="https://studip.hs-rm.de/plugins.php/schwarzesbrettplugin/category" alt="Notice board">
+        <img class="headericon original icon-role-navigation icon-shape-billboard" src="Lernmodul%20Einf%C3%BChrung%20in%20die%20Informatik%20-%20Files%20-%20Hochschule%20RheinMain-Dateien/billboard.svg" alt="billboard" width="16" height="16">        <div class="navtitle">Notice board</div>
+    </a>
+</li>
+            
+<li id="nav_feedBack">
+    <a href="https://studip.hs-rm.de/plugins.php/feedbackManagement/show">
+        <img class="headericon original icon-role-clickable" src="Lernmodul%20Einf%C3%BChrung%20in%20die%20Informatik%20-%20Files%20-%20Hochschule%20RheinMain-Dateien/consultation_neu.png" alt="consultation_neu.png" width="16" height="16">        <div class="navtitle">Feedback</div>
+    </a>
+</li>
+            <li class="overflow">
+            <input type="checkbox" id="header-sink">
+            <label for="header-sink">
+                <a class="canvasready" href="#" data-badge="0">
+                    <img class="headericon original icon-role-navigation icon-shape-action" title="" alt="action" src="Lernmodul%20Einf%C3%BChrung%20in%20die%20Informatik%20-%20Files%20-%20Hochschule%20RheinMain-Dateien/action.svg" width="28" height="28">                    <div class="navtitle">
+                        More…
+                    </div>
+                </a>
+            </label>
+
+            <ul><li id="nav_mitfahrzentrale">
+    <a href="https://studip.hs-rm.de/plugins.php/mitfahrzentrale/bessermitfahren/von">
+        <img class="headericon original icon-role-clickable icon-shape-group2" src="Lernmodul%20Einf%C3%BChrung%20in%20die%20Informatik%20-%20Files%20-%20Hochschule%20RheinMain-Dateien/group2.svg" alt="group2" width="16" height="16">        <div class="navtitle">Mitfahrzentrale</div>
+    </a>
+</li><li id="nav_iliasNavigation">
+    <a href="https://studip.hs-rm.de/ilias3_referrer.php?client_id=DeveloperWiesbaden&amp;cms_select=ilias4&amp;target=login" target="_blank">
+        <img class="headericon original icon-role-clickable" src="Lernmodul%20Einf%C3%BChrung%20in%20die%20Informatik%20-%20Files%20-%20Hochschule%20RheinMain-Dateien/Logo_ILIAS_sw_32_neu.svg" alt="Logo_ILIAS_sw_32_neu.svg" width="16" height="16">        <div class="navtitle">ILIAS</div>
+    </a>
+</li><li id="nav_mathemediatheNavigation">
+    <a href="https://studip.hs-rm.de/ilias3_referrer.php?client_id=DeveloperWiesbaden&amp;cms_select=ilias4&amp;ref_id=53691&amp;type=webr&amp;target=start" target="_blank">
+        <img class="headericon original icon-role-clickable" src="Lernmodul%20Einf%C3%BChrung%20in%20die%20Informatik%20-%20Files%20-%20Hochschule%20RheinMain-Dateien/StudIP_MM_Icon_bold-01.svg" alt="StudIP_MM_Icon_bold-01.svg" width="16" height="16">        <div class="navtitle">Mathemediathek</div>
+    </a>
+</li><li id="nav_anmeldelinksNavigation">
+    <a href="https://studip.hs-rm.de/dispatch.php/siteinfo/show/4">
+        <img class="headericon original icon-role-clickable" src="Lernmodul%20Einf%C3%BChrung%20in%20die%20Informatik%20-%20Files%20-%20Hochschule%20RheinMain-Dateien/Anmeldung_sw_32_neu.svg" alt="Anmeldung_sw_32_neu.svg" width="16" height="16">        <div class="navtitle">CCC/SPZ Anmeldung</div>
+    </a>
+</li><li id="nav_bibliothekNavigation">
+    <a href="https://hds.hebis.de/hsrm/" target="_blank">
+        <img class="headericon original icon-role-clickable" src="Lernmodul%20Einf%C3%BChrung%20in%20die%20Informatik%20-%20Files%20-%20Hochschule%20RheinMain-Dateien/Logo_Bibiliothek.svg" alt="Logo_Bibiliothek.svg" width="16" height="16">        <div class="navtitle">Bibliothek</div>
+    </a>
+</li><li id="nav_arsnovaNavigation">
+    <a href="https://arsnova.hs-rm.de/" target="_blank">
+        <img class="headericon original icon-role-clickable" src="Lernmodul%20Einf%C3%BChrung%20in%20die%20Informatik%20-%20Files%20-%20Hochschule%20RheinMain-Dateien/ARSnova_lightblue_neu.png" alt="ARSnova_lightblue_neu.png" width="16" height="16">        <div class="navtitle">ARSnova</div>
+    </a>
+</li>
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                        </ul>
+        </li>
+    </ul>
+
+    <!-- Stud.IP Logo -->
+    <a class="studip-logo" id="barTopStudip" href="https://www.hs-rm.de/" title="Homepage der Hochschule RheinMain" target="_blank" rel="noopener noreferrer">
+        Stud.IP Homepage
+    </a>
+</div>
+
+        <div id="layout_page">
+
+    
+            <nav class="secondary-navigation">
+                                                <a href="https://studip.hs-rm.de/dispatch.php/my_courses/groups?cid=41fa797db653a1ce5f23ba1ea2989621" data-dialog="" class="colorblock gruppe7"></a>
+                                        <div id="layout_context_title">
+                            <img class="context_icon icon-role-info icon-shape-seminar" src="Lernmodul%20Einf%C3%BChrung%20in%20die%20Informatik%20-%20Files%20-%20Hochschule%20RheinMain-Dateien/seminar_003.svg" alt="seminar" width="20" height="20">                Lernmodul: Einführung in die Informatik                        </div>
+        
+                    <div class="tabs_wrapper">
+        <ul id="tabs" role="navigation">
+                                            <li id="nav_course_main">
+                                                                                        <a href="https://studip.hs-rm.de/dispatch.php/course/overview?cid=41fa797db653a1ce5f23ba1ea2989621">
+                                                            <img class="tab-icon icon-role-info_alt icon-shape-seminar" title="Overview" src="Lernmodul%20Einf%C3%BChrung%20in%20die%20Informatik%20-%20Files%20-%20Hochschule%20RheinMain-Dateien/seminar_002.svg" alt="seminar" width="16" height="16">                                                        <span title="Overview" class="tab-title">Overview</span>
+                        </a>
+                        
+                                                
+                                                            </li>
+                                                <li id="nav_course_members">
+                                                                                        <a href="https://studip.hs-rm.de/dispatch.php/course/members?cid=41fa797db653a1ce5f23ba1ea2989621">
+                                                            <img class="tab-icon icon-role-info_alt icon-shape-persons" title="Participants" src="Lernmodul%20Einf%C3%BChrung%20in%20die%20Informatik%20-%20Files%20-%20Hochschule%20RheinMain-Dateien/persons.svg" alt="persons" width="16" height="16">                                                        <span title="Participants" class="tab-title">Participants</span>
+                        </a>
+                        
+                                                
+                                                            </li>
+                                                <li id="nav_course_files" class="current">
+                                                                                        <a href="https://studip.hs-rm.de/dispatch.php/course/files?cid=41fa797db653a1ce5f23ba1ea2989621">
+                                                            <img class="tab-icon icon-role-info icon-shape-files" title="Files" src="Lernmodul%20Einf%C3%BChrung%20in%20die%20Informatik%20-%20Files%20-%20Hochschule%20RheinMain-Dateien/files.svg" alt="files" width="16" height="16">                                                        <span title="Files" class="tab-title">Files</span>
+                        </a>
+                                                            </li>
+                                                <li id="nav_course_schedule">
+                                                                                        <a href="https://studip.hs-rm.de/dispatch.php/course/dates?cid=41fa797db653a1ce5f23ba1ea2989621">
+                                                            <img class="tab-icon icon-role-info_alt icon-shape-schedule" title="Schedule" src="Lernmodul%20Einf%C3%BChrung%20in%20die%20Informatik%20-%20Files%20-%20Hochschule%20RheinMain-Dateien/schedule.svg" alt="schedule" width="16" height="16">                                                        <span title="Schedule" class="tab-title">Schedule</span>
+                        </a>
+                        
+                                                
+                                                            </li>
+                                                <li id="nav_course_scm">
+                                                                                        <a href="https://studip.hs-rm.de/dispatch.php/course/scm?cid=41fa797db653a1ce5f23ba1ea2989621">
+                                                            <img class="tab-icon icon-role-info_alt icon-shape-infopage" title="Information" src="Lernmodul%20Einf%C3%BChrung%20in%20die%20Informatik%20-%20Files%20-%20Hochschule%20RheinMain-Dateien/infopage.svg" alt="infopage" width="16" height="16">                                                        <span title="Information" class="tab-title">Information</span>
+                        </a>
+                                                            </li>
+                                                <li id="nav_course_blubber">
+                                                                                        <a href="https://studip.hs-rm.de/plugins.php/blubber/messenger/course?cid=41fa797db653a1ce5f23ba1ea2989621">
+                                                            <img class="tab-icon icon-role-info_alt icon-shape-blubber" title="Blubber" src="Lernmodul%20Einf%C3%BChrung%20in%20die%20Informatik%20-%20Files%20-%20Hochschule%20RheinMain-Dateien/blubber.svg" alt="blubber" width="16" height="16">                                                        <span title="Blubber" class="tab-title">Blubber</span>
+                        </a>
+                                                            </li>
+                                                <li id="nav_course_videos">
+                                                                                        <a href="https://studip.hs-rm.de/plugins.php/hsrmvideoplattform/video/index?cid=41fa797db653a1ce5f23ba1ea2989621">
+                                                            <img class="tab-icon icon-role-info_alt icon-shape-video" title="Videos" src="Lernmodul%20Einf%C3%BChrung%20in%20die%20Informatik%20-%20Files%20-%20Hochschule%20RheinMain-Dateien/video.svg" alt="video" width="16" height="16">                                                        <span title="Videos" class="tab-title">Videos</span>
+                        </a>
+                                                            </li>
+                               </ul>
+            <div class="helpbar-container">
+    <input type="checkbox" id="helpbar-sticky">
+    <div class="helpbar">
+        <h2 class="helpbar-title">
+            <label for="helpbar-sticky">
+                Hints &amp; help            </label>
+        </h2>
+        <ul class="helpbar-widgets">
+                    <li>
+                            <img class="helpbar-widget-icon icon-role-info_alt icon-shape-link-extern" src="Lernmodul%20Einf%C3%BChrung%20in%20die%20Informatik%20-%20Files%20-%20Hochschule%20RheinMain-Dateien/link-extern.svg" alt="link-extern" width="16" height="16">                                <a rel="noopener noreferrer" target="_blank" href="https://hilfe.studip.de/help/4.5/en/Basis.Dateien">Further help</a>                <div class="helpbar-widget-admin-icons">
+                                                                </div>
+            </li>
+                </ul>
+    </div>
+</div>
+    </div>
+                </nav>
+    
+                <div id="page_title_container" class="hidden-medium-up">
+            <div id="current_page_title">
+                                    Files                                            </div>
+        </div>
+
+        <div id="layout_container">
+            <div id="layout-sidebar">
+    <section class="sidebar">
+        <div class="sidebar-image sidebar-image-with-context">
+                    <div class="sidebar-context">
+                                <img src="Lernmodul%20Einf%C3%BChrung%20in%20die%20Informatik%20-%20Files%20-%20Hochschule%20RheinMain-Dateien/nobody_medium2x.png" class="course-avatar-medium course-41fa797db653a1ce5f23ba1ea2989621" title="Einführung in die Informatik" alt="Einführung in die Informatik">                        </div>
+                    <div class="sidebar-title">
+                Files            </div>
+        </div>
+
+                        <div class="sidebar-widget ">
+    <div class="sidebar-widget-header">
+            Views    </div>
+    <div class="sidebar-widget-content">
+        <ul class="widget-list widget-links sidebar-views">
+            <li id="index" class="active">
+        <a class="active" href="https://studip.hs-rm.de/dispatch.php/course/files/index?cid=41fa797db653a1ce5f23ba1ea2989621">Folder view</a>    </li>
+            <li id="flat">
+        <a href="https://studip.hs-rm.de/dispatch.php/course/files/flat?cid=41fa797db653a1ce5f23ba1ea2989621">All documents</a>    </li>
+</ul>
+    </div>
+</div>
+        </section>
+</div>
+            <div id="layout_content" role="main" aria-labelledby="layout_content_landmark_label">
+                                            
+<form method="post" action="https://studip.hs-rm.de/dispatch.php/file/bulk/c33da9f80979014fc405c59193a89bb1?cid=41fa797db653a1ce5f23ba1ea2989621">
+<input type="hidden" name="security_token" value="1BUOcfuCQ2sWKqcIFeYQtIxumrA4QI44+pDG6dY5kbtcn5kqag=="><input type="hidden" name="parent_folder_id" value="c33da9f80979014fc405c59193a89bb1">
+<table class="default documents sortable-table tablesorter tablesorter-default tablesorterd4312b8ef1bb48" data-sortlist="[[2, 0]]" data-folder_id="c33da9f80979014fc405c59193a89bb1" data-shiftcheck="" role="grid" aria-labelledby="tablesorterd4312b8ef1bb48caption">
+    <caption id="tablesorterd4312b8ef1bb48caption">
+        <div class="caption-container">
+                        <div>
+                <a href="https://studip.hs-rm.de/dispatch.php/course/files/index/a5a3770923b4c0851a1614a1e3181f4e?cid=41fa797db653a1ce5f23ba1ea2989621" title="Go to main folder">
+                    <img class="text-bottom icon-role-clickable icon-shape-folder-home-full" src="Lernmodul%20Einf%C3%BChrung%20in%20die%20Informatik%20-%20Files%20-%20Hochschule%20RheinMain-Dateien/folder-home-full.svg" alt="folder-home-full" width="30" height="30">                                    </a>
+                                    
+                                            /<a href="https://studip.hs-rm.de/dispatch.php/course/files/index/c33da9f80979014fc405c59193a89bb1?cid=41fa797db653a1ce5f23ba1ea2989621">
+                            Theoretische Übungen                        </a>
+                                                </div>
+        </div>
+                <div style="font-size: small">
+        <div style="font-style: italic">
+    <div>A folder for materials which are only available for download.</div>
+    <div>
+        Only lecturers and tutors may modify the folder's content.    </div>
+</div>
+    
+                </div>
+    </caption>
+        <colgroup>
+        <col data-filter-ignore="" width="30px">
+        <col data-filter-ignore="" width="20px">
+        <col>
+        <col class="responsive-hidden" data-filter-ignore="" width="100px">
+            <col class="responsive-hidden" width="150px">
+        <col class="responsive-hidden" data-filter-ignore="" width="120px">
+        <col data-filter-ignore="" width="80px">
+    </colgroup>
+    <thead>
+        <tr class="sortable ui-sortable tablesorter-headerRow" role="row">
+            <th data-sort="false" data-column="0" class="tablesorter-header sorter-false tablesorter-headerUnSorted" scope="col" role="columnheader" aria-disabled="true" unselectable="on" style="user-select: none;" aria-sort="none" aria-label=": No sort applied, sorting is disabled"><div class="tablesorter-header-inner">
+                <input type="checkbox" class="studip-checkbox" data-proxyfor="table.documents tbody :checkbox" data-activates="table.documents tfoot .multibuttons .button" id="all_files_checkbox">
+                <label for="all_files_checkbox"></label>
+            </div></th>
+            <th data-sort="htmldata" data-column="1" class="tablesorter-header tablesorter-headerUnSorted" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" style="user-select: none;" aria-sort="none" aria-label="Type: No sort applied, activate to apply an ascending sort"><div class="tablesorter-header-inner">Type</div></th>
+            <th data-sort="text" data-column="2" class="tablesorter-header tablesorter-headerAsc" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" style="user-select: none;" aria-sort="ascending" aria-label="Name: Ascending sort applied, activate to apply a descending sort" data-sortedby="sorton"><div class="tablesorter-header-inner">Name</div></th>
+            <th data-sort="htmldata" class="responsive-hidden tablesorter-header tablesorter-headerUnSorted" data-column="3" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" style="user-select: none;" aria-sort="none" aria-label="Size: No sort applied, activate to apply an ascending sort"><div class="tablesorter-header-inner">Size</div></th>
+                    <th data-sort="text" class="responsive-hidden tablesorter-header tablesorter-headerUnSorted" data-column="4" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" style="user-select: none;" aria-sort="none" aria-label="Author: No sort applied, activate to apply an ascending sort"><div class="tablesorter-header-inner">Author</div></th>
+            <th data-sort="htmldata" class="responsive-hidden tablesorter-header tablesorter-headerUnSorted" data-column="5" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" style="user-select: none;" aria-sort="none" aria-label="Date: No sort applied, activate to apply an ascending sort"><div class="tablesorter-header-inner">Date</div></th>
+            <th data-sort="false" data-column="6" class="tablesorter-header sorter-false tablesorter-headerUnSorted" scope="col" role="columnheader" aria-disabled="true" unselectable="on" style="user-select: none;" aria-sort="none" aria-label="Actions: No sort applied, sorting is disabled"><div class="tablesorter-header-inner">Actions</div></th>
+        </tr>
+    </thead>
+
+    <tbody class="subfolders" aria-live="polite" aria-relevant="all">
+        
+        <tr class="empty" data-sort-fixed="" style="display: none;" role="row">
+            <td colspan="7">
+                This folder is empty            </td>
+        </tr></tbody>
+    <tbody class="files" aria-live="polite" aria-relevant="all">
+                        
+                    
+                    
+                    
+                    
+                    
+                    
+                <tr class="" id="fileref_08b8e787c3e675731279eeaddb6fcbad" role="row" data-permissions="dr">
+    <td>
+            <input type="checkbox" class="studip-checkbox" name="ids[]" id="file_checkbox_08b8e787c3e675731279eeaddb6fcbad" value="08b8e787c3e675731279eeaddb6fcbad" data-proxiedby="#all_files_checkbox,#all_files_checkbox,#all_files_checkbox">
+        <label for="file_checkbox_08b8e787c3e675731279eeaddb6fcbad"></label>
+        </td>
+    <td class="document-icon" data-sort-value="3958419076">
+            <a href="https://studip.hs-rm.de/sendfile.php?type=0&amp;file_id=08b8e787c3e675731279eeaddb6fcbad&amp;file_name=Bl_07.pdf" target="_blank" rel="noopener noreferrer">
+            <img src="Lernmodul%20Einf%C3%BChrung%20in%20die%20Informatik%20-%20Files%20-%20Hochschule%20RheinMain-Dateien/file-pdf.svg" alt="file-pdf" class="icon-role-clickable icon-shape-file-pdf" width="24" height="24">        </a>
+        </td>
+    <td data-sort-value="Bl_07.pdf">
+            <a href="https://studip.hs-rm.de/dispatch.php/file/details/08b8e787c3e675731279eeaddb6fcbad?cid=41fa797db653a1ce5f23ba1ea2989621&amp;file_navigation=1" data-dialog="">
+            Bl_07.pdf        </a>
+            </td>
+    <td title="74.612 Byte" data-sort-value="74612" class="responsive-hidden">
+            72.9 kB        </td>
+    <td data-sort-value="Werntges, Heinz" class="responsive-hidden">
+            <a href="https://studip.hs-rm.de/dispatch.php/profile?cid=41fa797db653a1ce5f23ba1ea2989621&amp;username=hwerntge">
+            Werntges, Heinz        </a>
+        </td>
+    <td title="19/12/20 00:03:12" data-sort-value="1608332592" class="responsive-hidden">
+        2 months ago    </td>
+    <td class="actions">
+            <nav class="action-menu">
+    <a class="action-menu-icon" title="Actions" aria-expanded="false" aria-label="Action menu" href="#">
+        <div></div>
+        <div></div>
+        <div></div>
+    </a>
+    <div class="action-menu-content">
+        <div class="action-menu-title">
+            Actions        </div>
+        <ul class="action-menu-list">
+                    <li class="action-menu-item ">
+                            <a href="https://studip.hs-rm.de/dispatch.php/file/details/08b8e787c3e675731279eeaddb6fcbad/1?cid=41fa797db653a1ce5f23ba1ea2989621" data-dialog="">
+                                            <img src="Lernmodul%20Einf%C3%BChrung%20in%20die%20Informatik%20-%20Files%20-%20Hochschule%20RheinMain-Dateien/info-circle.svg" alt="info-circle" class="icon-role-clickable icon-shape-info-circle" width="20" height="20">                                        Information                </a>
+                        </li>
+                    <li class="action-menu-item ">
+                            <a href="https://studip.hs-rm.de/dispatch.php/file/choose_destination/copy/08b8e787c3e675731279eeaddb6fcbad?cid=41fa797db653a1ce5f23ba1ea2989621" data-dialog="size=auto">
+                                            <img src="Lernmodul%20Einf%C3%BChrung%20in%20die%20Informatik%20-%20Files%20-%20Hochschule%20RheinMain-Dateien/file.svg" alt="file+add" class="icon-role-clickable icon-shape-file+add" width="20" height="20">                                        Copy file                </a>
+                        </li>
+                    <li class="action-menu-item ">
+                            <a href="https://studip.hs-rm.de/sendfile.php?type=0&amp;file_id=08b8e787c3e675731279eeaddb6fcbad&amp;file_name=Bl_07.pdf" class="copyable-link">
+                                            <img src="Lernmodul%20Einf%C3%BChrung%20in%20die%20Informatik%20-%20Files%20-%20Hochschule%20RheinMain-Dateien/group.svg" alt="group" class="icon-role-clickable icon-shape-group" width="16" height="16">                                        Copy link                </a>
+                        </li>
+                </ul>
+    </div>
+</nav>
+    </td>
+</tr><tr class="" id="fileref_982a394d8cae70ff704ba8919f7a9548" role="row" data-permissions="dr">
+    <td>
+            <input type="checkbox" class="studip-checkbox" name="ids[]" id="file_checkbox_982a394d8cae70ff704ba8919f7a9548" value="982a394d8cae70ff704ba8919f7a9548" data-proxiedby="#all_files_checkbox,#all_files_checkbox,#all_files_checkbox">
+        <label for="file_checkbox_982a394d8cae70ff704ba8919f7a9548"></label>
+        </td>
+    <td class="document-icon" data-sort-value="3958419076">
+            <a href="https://studip.hs-rm.de/sendfile.php?type=0&amp;file_id=982a394d8cae70ff704ba8919f7a9548&amp;file_name=Bl_08.pdf" target="_blank" rel="noopener noreferrer">
+            <img src="Lernmodul%20Einf%C3%BChrung%20in%20die%20Informatik%20-%20Files%20-%20Hochschule%20RheinMain-Dateien/file-pdf.svg" alt="file-pdf" class="icon-role-clickable icon-shape-file-pdf" width="24" height="24">        </a>
+        </td>
+    <td data-sort-value="Bl_08.pdf">
+            <a href="https://studip.hs-rm.de/dispatch.php/file/details/982a394d8cae70ff704ba8919f7a9548?cid=41fa797db653a1ce5f23ba1ea2989621&amp;file_navigation=1" data-dialog="">
+            Bl_08.pdf        </a>
+            </td>
+    <td title="51.574 Byte" data-sort-value="51574" class="responsive-hidden">
+            50.4 kB        </td>
+    <td data-sort-value="Werntges, Heinz" class="responsive-hidden">
+            <a href="https://studip.hs-rm.de/dispatch.php/profile?cid=41fa797db653a1ce5f23ba1ea2989621&amp;username=hwerntge">
+            Werntges, Heinz        </a>
+        </td>
+    <td title="08/01/21 23:08:08" data-sort-value="1610143688" class="responsive-hidden">
+        1 month ago    </td>
+    <td class="actions">
+            <nav class="action-menu">
+    <a class="action-menu-icon" title="Actions" aria-expanded="false" aria-label="Action menu" href="#">
+        <div></div>
+        <div></div>
+        <div></div>
+    </a>
+    <div class="action-menu-content">
+        <div class="action-menu-title">
+            Actions        </div>
+        <ul class="action-menu-list">
+                    <li class="action-menu-item ">
+                            <a href="https://studip.hs-rm.de/dispatch.php/file/details/982a394d8cae70ff704ba8919f7a9548/1?cid=41fa797db653a1ce5f23ba1ea2989621" data-dialog="">
+                                            <img src="Lernmodul%20Einf%C3%BChrung%20in%20die%20Informatik%20-%20Files%20-%20Hochschule%20RheinMain-Dateien/info-circle.svg" alt="info-circle" class="icon-role-clickable icon-shape-info-circle" width="20" height="20">                                        Information                </a>
+                        </li>
+                    <li class="action-menu-item ">
+                            <a href="https://studip.hs-rm.de/dispatch.php/file/choose_destination/copy/982a394d8cae70ff704ba8919f7a9548?cid=41fa797db653a1ce5f23ba1ea2989621" data-dialog="size=auto">
+                                            <img src="Lernmodul%20Einf%C3%BChrung%20in%20die%20Informatik%20-%20Files%20-%20Hochschule%20RheinMain-Dateien/file.svg" alt="file+add" class="icon-role-clickable icon-shape-file+add" width="20" height="20">                                        Copy file                </a>
+                        </li>
+                    <li class="action-menu-item ">
+                            <a href="https://studip.hs-rm.de/sendfile.php?type=0&amp;file_id=982a394d8cae70ff704ba8919f7a9548&amp;file_name=Bl_08.pdf" class="copyable-link">
+                                            <img src="Lernmodul%20Einf%C3%BChrung%20in%20die%20Informatik%20-%20Files%20-%20Hochschule%20RheinMain-Dateien/group.svg" alt="group" class="icon-role-clickable icon-shape-group" width="16" height="16">                                        Copy link                </a>
+                        </li>
+                </ul>
+    </div>
+</nav>
+    </td>
+</tr><tr class="" id="fileref_ac4076c6d2d7b0ca4b6822511c5f3c61" role="row" data-permissions="dr">
+    <td>
+            <input type="checkbox" class="studip-checkbox" name="ids[]" id="file_checkbox_ac4076c6d2d7b0ca4b6822511c5f3c61" value="ac4076c6d2d7b0ca4b6822511c5f3c61" data-proxiedby="#all_files_checkbox,#all_files_checkbox,#all_files_checkbox">
+        <label for="file_checkbox_ac4076c6d2d7b0ca4b6822511c5f3c61"></label>
+        </td>
+    <td class="document-icon" data-sort-value="3958419076">
+            <a href="https://studip.hs-rm.de/sendfile.php?type=0&amp;file_id=ac4076c6d2d7b0ca4b6822511c5f3c61&amp;file_name=Bl_09.pdf" target="_blank" rel="noopener noreferrer">
+            <img src="Lernmodul%20Einf%C3%BChrung%20in%20die%20Informatik%20-%20Files%20-%20Hochschule%20RheinMain-Dateien/file-pdf.svg" alt="file-pdf" class="icon-role-clickable icon-shape-file-pdf" width="24" height="24">        </a>
+        </td>
+    <td data-sort-value="Bl_09.pdf">
+            <a href="https://studip.hs-rm.de/dispatch.php/file/details/ac4076c6d2d7b0ca4b6822511c5f3c61?cid=41fa797db653a1ce5f23ba1ea2989621&amp;file_navigation=1" data-dialog="">
+            Bl_09.pdf        </a>
+            </td>
+    <td title="42.147 Byte" data-sort-value="42147" class="responsive-hidden">
+            41.2 kB        </td>
+    <td data-sort-value="Werntges, Heinz" class="responsive-hidden">
+            <a href="https://studip.hs-rm.de/dispatch.php/profile?cid=41fa797db653a1ce5f23ba1ea2989621&amp;username=hwerntge">
+            Werntges, Heinz        </a>
+        </td>
+    <td title="15/01/21 15:54:57" data-sort-value="1610722497" class="responsive-hidden">
+        1 month ago    </td>
+    <td class="actions">
+            <nav class="action-menu">
+    <a class="action-menu-icon" title="Actions" aria-expanded="false" aria-label="Action menu" href="#">
+        <div></div>
+        <div></div>
+        <div></div>
+    </a>
+    <div class="action-menu-content">
+        <div class="action-menu-title">
+            Actions        </div>
+        <ul class="action-menu-list">
+                    <li class="action-menu-item ">
+                            <a href="https://studip.hs-rm.de/dispatch.php/file/details/ac4076c6d2d7b0ca4b6822511c5f3c61/1?cid=41fa797db653a1ce5f23ba1ea2989621" data-dialog="">
+                                            <img src="Lernmodul%20Einf%C3%BChrung%20in%20die%20Informatik%20-%20Files%20-%20Hochschule%20RheinMain-Dateien/info-circle.svg" alt="info-circle" class="icon-role-clickable icon-shape-info-circle" width="20" height="20">                                        Information                </a>
+                        </li>
+                    <li class="action-menu-item ">
+                            <a href="https://studip.hs-rm.de/dispatch.php/file/choose_destination/copy/ac4076c6d2d7b0ca4b6822511c5f3c61?cid=41fa797db653a1ce5f23ba1ea2989621" data-dialog="size=auto">
+                                            <img src="Lernmodul%20Einf%C3%BChrung%20in%20die%20Informatik%20-%20Files%20-%20Hochschule%20RheinMain-Dateien/file.svg" alt="file+add" class="icon-role-clickable icon-shape-file+add" width="20" height="20">                                        Copy file                </a>
+                        </li>
+                    <li class="action-menu-item ">
+                            <a href="https://studip.hs-rm.de/sendfile.php?type=0&amp;file_id=ac4076c6d2d7b0ca4b6822511c5f3c61&amp;file_name=Bl_09.pdf" class="copyable-link">
+                                            <img src="Lernmodul%20Einf%C3%BChrung%20in%20die%20Informatik%20-%20Files%20-%20Hochschule%20RheinMain-Dateien/group.svg" alt="group" class="icon-role-clickable icon-shape-group" width="16" height="16">                                        Copy link                </a>
+                        </li>
+                </ul>
+    </div>
+</nav>
+    </td>
+</tr><tr class="" id="fileref_01f28a49450b62927b6a4179298d3a05" role="row" data-permissions="dr">
+    <td>
+            <input type="checkbox" class="studip-checkbox" name="ids[]" id="file_checkbox_01f28a49450b62927b6a4179298d3a05" value="01f28a49450b62927b6a4179298d3a05" data-proxiedby="#all_files_checkbox,#all_files_checkbox,#all_files_checkbox">
+        <label for="file_checkbox_01f28a49450b62927b6a4179298d3a05"></label>
+        </td>
+    <td class="document-icon" data-sort-value="3958419076">
+            <a href="https://studip.hs-rm.de/sendfile.php?type=0&amp;file_id=01f28a49450b62927b6a4179298d3a05&amp;file_name=Bl_10.pdf" target="_blank" rel="noopener noreferrer">
+            <img src="Lernmodul%20Einf%C3%BChrung%20in%20die%20Informatik%20-%20Files%20-%20Hochschule%20RheinMain-Dateien/file-pdf.svg" alt="file-pdf" class="icon-role-clickable icon-shape-file-pdf" width="24" height="24">        </a>
+        </td>
+    <td data-sort-value="Bl_10.pdf">
+            <a href="https://studip.hs-rm.de/dispatch.php/file/details/01f28a49450b62927b6a4179298d3a05?cid=41fa797db653a1ce5f23ba1ea2989621&amp;file_navigation=1" data-dialog="">
+            Bl_10.pdf        </a>
+            </td>
+    <td title="74.415 Byte" data-sort-value="74415" class="responsive-hidden">
+            72.7 kB        </td>
+    <td data-sort-value="Werntges, Heinz" class="responsive-hidden">
+            <a href="https://studip.hs-rm.de/dispatch.php/profile?cid=41fa797db653a1ce5f23ba1ea2989621&amp;username=hwerntge">
+            Werntges, Heinz        </a>
+        </td>
+    <td title="21/01/21 19:17:56" data-sort-value="1611253076" class="responsive-hidden">
+        28 days ago    </td>
+    <td class="actions">
+            <nav class="action-menu">
+    <a class="action-menu-icon" title="Actions" aria-expanded="false" aria-label="Action menu" href="#">
+        <div></div>
+        <div></div>
+        <div></div>
+    </a>
+    <div class="action-menu-content">
+        <div class="action-menu-title">
+            Actions        </div>
+        <ul class="action-menu-list">
+                    <li class="action-menu-item ">
+                            <a href="https://studip.hs-rm.de/dispatch.php/file/details/01f28a49450b62927b6a4179298d3a05/1?cid=41fa797db653a1ce5f23ba1ea2989621" data-dialog="">
+                                            <img src="Lernmodul%20Einf%C3%BChrung%20in%20die%20Informatik%20-%20Files%20-%20Hochschule%20RheinMain-Dateien/info-circle.svg" alt="info-circle" class="icon-role-clickable icon-shape-info-circle" width="20" height="20">                                        Information                </a>
+                        </li>
+                    <li class="action-menu-item ">
+                            <a href="https://studip.hs-rm.de/dispatch.php/file/choose_destination/copy/01f28a49450b62927b6a4179298d3a05?cid=41fa797db653a1ce5f23ba1ea2989621" data-dialog="size=auto">
+                                            <img src="Lernmodul%20Einf%C3%BChrung%20in%20die%20Informatik%20-%20Files%20-%20Hochschule%20RheinMain-Dateien/file.svg" alt="file+add" class="icon-role-clickable icon-shape-file+add" width="20" height="20">                                        Copy file                </a>
+                        </li>
+                    <li class="action-menu-item ">
+                            <a href="https://studip.hs-rm.de/sendfile.php?type=0&amp;file_id=01f28a49450b62927b6a4179298d3a05&amp;file_name=Bl_10.pdf" class="copyable-link">
+                                            <img src="Lernmodul%20Einf%C3%BChrung%20in%20die%20Informatik%20-%20Files%20-%20Hochschule%20RheinMain-Dateien/group.svg" alt="group" class="icon-role-clickable icon-shape-group" width="16" height="16">                                        Copy link                </a>
+                        </li>
+                </ul>
+    </div>
+</nav>
+    </td>
+</tr><tr class="" id="fileref_5625d38850aaf01081c2ef223d5c6972" role="row" data-permissions="dr">
+    <td>
+            <input type="checkbox" class="studip-checkbox" name="ids[]" id="file_checkbox_5625d38850aaf01081c2ef223d5c6972" value="5625d38850aaf01081c2ef223d5c6972" data-proxiedby="#all_files_checkbox,#all_files_checkbox,#all_files_checkbox">
+        <label for="file_checkbox_5625d38850aaf01081c2ef223d5c6972"></label>
+        </td>
+    <td class="document-icon" data-sort-value="3958419076">
+            <a href="https://studip.hs-rm.de/sendfile.php?type=0&amp;file_id=5625d38850aaf01081c2ef223d5c6972&amp;file_name=Bl_11.pdf" target="_blank" rel="noopener noreferrer">
+            <img src="Lernmodul%20Einf%C3%BChrung%20in%20die%20Informatik%20-%20Files%20-%20Hochschule%20RheinMain-Dateien/file-pdf.svg" alt="file-pdf" class="icon-role-clickable icon-shape-file-pdf" width="24" height="24">        </a>
+        </td>
+    <td data-sort-value="Bl_11.pdf">
+            <a href="https://studip.hs-rm.de/dispatch.php/file/details/5625d38850aaf01081c2ef223d5c6972?cid=41fa797db653a1ce5f23ba1ea2989621&amp;file_navigation=1" data-dialog="">
+            Bl_11.pdf        </a>
+            </td>
+    <td title="53.565 Byte" data-sort-value="53565" class="responsive-hidden">
+            52.3 kB        </td>
+    <td data-sort-value="Werntges, Heinz" class="responsive-hidden">
+            <a href="https://studip.hs-rm.de/dispatch.php/profile?cid=41fa797db653a1ce5f23ba1ea2989621&amp;username=hwerntge">
+            Werntges, Heinz        </a>
+        </td>
+    <td title="29/01/21 00:34:34" data-sort-value="1611876874" class="responsive-hidden">
+        20 days ago    </td>
+    <td class="actions">
+            <nav class="action-menu">
+    <a class="action-menu-icon" title="Actions" aria-expanded="false" aria-label="Action menu" href="#">
+        <div></div>
+        <div></div>
+        <div></div>
+    </a>
+    <div class="action-menu-content">
+        <div class="action-menu-title">
+            Actions        </div>
+        <ul class="action-menu-list">
+                    <li class="action-menu-item ">
+                            <a href="https://studip.hs-rm.de/dispatch.php/file/details/5625d38850aaf01081c2ef223d5c6972/1?cid=41fa797db653a1ce5f23ba1ea2989621" data-dialog="">
+                                            <img src="Lernmodul%20Einf%C3%BChrung%20in%20die%20Informatik%20-%20Files%20-%20Hochschule%20RheinMain-Dateien/info-circle.svg" alt="info-circle" class="icon-role-clickable icon-shape-info-circle" width="20" height="20">                                        Information                </a>
+                        </li>
+                    <li class="action-menu-item ">
+                            <a href="https://studip.hs-rm.de/dispatch.php/file/choose_destination/copy/5625d38850aaf01081c2ef223d5c6972?cid=41fa797db653a1ce5f23ba1ea2989621" data-dialog="size=auto">
+                                            <img src="Lernmodul%20Einf%C3%BChrung%20in%20die%20Informatik%20-%20Files%20-%20Hochschule%20RheinMain-Dateien/file.svg" alt="file+add" class="icon-role-clickable icon-shape-file+add" width="20" height="20">                                        Copy file                </a>
+                        </li>
+                    <li class="action-menu-item ">
+                            <a href="https://studip.hs-rm.de/sendfile.php?type=0&amp;file_id=5625d38850aaf01081c2ef223d5c6972&amp;file_name=Bl_11.pdf" class="copyable-link">
+                                            <img src="Lernmodul%20Einf%C3%BChrung%20in%20die%20Informatik%20-%20Files%20-%20Hochschule%20RheinMain-Dateien/group.svg" alt="group" class="icon-role-clickable icon-shape-group" width="16" height="16">                                        Copy link                </a>
+                        </li>
+                </ul>
+    </div>
+</nav>
+    </td>
+</tr><tr class="" id="fileref_22281922104a9cc1003c26fc19222231" role="row" data-permissions="dr">
+    <td>
+            <input type="checkbox" class="studip-checkbox" name="ids[]" id="file_checkbox_22281922104a9cc1003c26fc19222231" value="22281922104a9cc1003c26fc19222231" data-proxiedby="#all_files_checkbox,#all_files_checkbox,#all_files_checkbox">
+        <label for="file_checkbox_22281922104a9cc1003c26fc19222231"></label>
+        </td>
+    <td class="document-icon" data-sort-value="3958419076">
+            <a href="https://studip.hs-rm.de/sendfile.php?type=0&amp;file_id=22281922104a9cc1003c26fc19222231&amp;file_name=Bl_12.pdf" target="_blank" rel="noopener noreferrer">
+            <img src="Lernmodul%20Einf%C3%BChrung%20in%20die%20Informatik%20-%20Files%20-%20Hochschule%20RheinMain-Dateien/file-pdf.svg" alt="file-pdf" class="icon-role-clickable icon-shape-file-pdf" width="24" height="24">        </a>
+        </td>
+    <td data-sort-value="Bl_12.pdf">
+            <a href="https://studip.hs-rm.de/dispatch.php/file/details/22281922104a9cc1003c26fc19222231?cid=41fa797db653a1ce5f23ba1ea2989621&amp;file_navigation=1" data-dialog="">
+            Bl_12.pdf        </a>
+            </td>
+    <td title="62.855 Byte" data-sort-value="62855" class="responsive-hidden">
+            61.4 kB        </td>
+    <td data-sort-value="Werntges, Heinz" class="responsive-hidden">
+            <a href="https://studip.hs-rm.de/dispatch.php/profile?cid=41fa797db653a1ce5f23ba1ea2989621&amp;username=hwerntge">
+            Werntges, Heinz        </a>
+        </td>
+    <td title="05/02/21 13:03:45" data-sort-value="1612526625" class="responsive-hidden">
+        13 days ago    </td>
+    <td class="actions">
+            <nav class="action-menu">
+    <a class="action-menu-icon" title="Actions" aria-expanded="false" aria-label="Action menu" href="#">
+        <div></div>
+        <div></div>
+        <div></div>
+    </a>
+    <div class="action-menu-content">
+        <div class="action-menu-title">
+            Actions        </div>
+        <ul class="action-menu-list">
+                    <li class="action-menu-item ">
+                            <a href="https://studip.hs-rm.de/dispatch.php/file/details/22281922104a9cc1003c26fc19222231/1?cid=41fa797db653a1ce5f23ba1ea2989621" data-dialog="">
+                                            <img src="Lernmodul%20Einf%C3%BChrung%20in%20die%20Informatik%20-%20Files%20-%20Hochschule%20RheinMain-Dateien/info-circle.svg" alt="info-circle" class="icon-role-clickable icon-shape-info-circle" width="20" height="20">                                        Information                </a>
+                        </li>
+                    <li class="action-menu-item ">
+                            <a href="https://studip.hs-rm.de/dispatch.php/file/choose_destination/copy/22281922104a9cc1003c26fc19222231?cid=41fa797db653a1ce5f23ba1ea2989621" data-dialog="size=auto">
+                                            <img src="Lernmodul%20Einf%C3%BChrung%20in%20die%20Informatik%20-%20Files%20-%20Hochschule%20RheinMain-Dateien/file.svg" alt="file+add" class="icon-role-clickable icon-shape-file+add" width="20" height="20">                                        Copy file                </a>
+                        </li>
+                    <li class="action-menu-item ">
+                            <a href="https://studip.hs-rm.de/sendfile.php?type=0&amp;file_id=22281922104a9cc1003c26fc19222231&amp;file_name=Bl_12.pdf" class="copyable-link">
+                                            <img src="Lernmodul%20Einf%C3%BChrung%20in%20die%20Informatik%20-%20Files%20-%20Hochschule%20RheinMain-Dateien/group.svg" alt="group" class="icon-role-clickable icon-shape-group" width="16" height="16">                                        Copy link                </a>
+                        </li>
+                </ul>
+    </div>
+</nav>
+    </td>
+</tr><tr class="new" id="fileref_33401e17aed4adb91741b9441e27731c" role="row" data-permissions="dr">
+    <td>
+            <input type="checkbox" class="studip-checkbox" name="ids[]" id="file_checkbox_33401e17aed4adb91741b9441e27731c" value="33401e17aed4adb91741b9441e27731c" data-proxiedby="#all_files_checkbox,#all_files_checkbox,#all_files_checkbox">
+        <label for="file_checkbox_33401e17aed4adb91741b9441e27731c"></label>
+        </td>
+    <td class="document-icon" data-sort-value="3958419076">
+            <a href="https://studip.hs-rm.de/sendfile.php?type=0&amp;file_id=33401e17aed4adb91741b9441e27731c&amp;file_name=Bl_13.pdf" target="_blank" rel="noopener noreferrer">
+            <img src="Lernmodul%20Einf%C3%BChrung%20in%20die%20Informatik%20-%20Files%20-%20Hochschule%20RheinMain-Dateien/file-pdf.svg" alt="file-pdf" class="icon-role-clickable icon-shape-file-pdf" width="24" height="24">        </a>
+        </td>
+    <td data-sort-value="Bl_13.pdf">
+            <a href="https://studip.hs-rm.de/dispatch.php/file/details/33401e17aed4adb91741b9441e27731c?cid=41fa797db653a1ce5f23ba1ea2989621&amp;file_navigation=1" data-dialog="">
+            Bl_13.pdf        </a>
+            </td>
+    <td title="49.345 Byte" data-sort-value="49345" class="responsive-hidden">
+            48.2 kB        </td>
+    <td data-sort-value="Werntges, Heinz" class="responsive-hidden">
+            <a href="https://studip.hs-rm.de/dispatch.php/profile?cid=41fa797db653a1ce5f23ba1ea2989621&amp;username=hwerntge">
+            Werntges, Heinz        </a>
+        </td>
+    <td title="11/02/21 16:49:26" data-sort-value="1613058566" class="responsive-hidden">
+        7 days ago    </td>
+    <td class="actions">
+            <nav class="action-menu">
+    <a class="action-menu-icon" title="Actions" aria-expanded="false" aria-label="Action menu" href="#">
+        <div></div>
+        <div></div>
+        <div></div>
+    </a>
+    <div class="action-menu-content">
+        <div class="action-menu-title">
+            Actions        </div>
+        <ul class="action-menu-list">
+                    <li class="action-menu-item ">
+                            <a href="https://studip.hs-rm.de/dispatch.php/file/details/33401e17aed4adb91741b9441e27731c/1?cid=41fa797db653a1ce5f23ba1ea2989621" data-dialog="">
+                                            <img src="Lernmodul%20Einf%C3%BChrung%20in%20die%20Informatik%20-%20Files%20-%20Hochschule%20RheinMain-Dateien/info-circle.svg" alt="info-circle" class="icon-role-clickable icon-shape-info-circle" width="20" height="20">                                        Information                </a>
+                        </li>
+                    <li class="action-menu-item ">
+                            <a href="https://studip.hs-rm.de/dispatch.php/file/choose_destination/copy/33401e17aed4adb91741b9441e27731c?cid=41fa797db653a1ce5f23ba1ea2989621" data-dialog="size=auto">
+                                            <img src="Lernmodul%20Einf%C3%BChrung%20in%20die%20Informatik%20-%20Files%20-%20Hochschule%20RheinMain-Dateien/file.svg" alt="file+add" class="icon-role-clickable icon-shape-file+add" width="20" height="20">                                        Copy file                </a>
+                        </li>
+                    <li class="action-menu-item ">
+                            <a href="https://studip.hs-rm.de/sendfile.php?type=0&amp;file_id=33401e17aed4adb91741b9441e27731c&amp;file_name=Bl_13.pdf" class="copyable-link">
+                                            <img src="Lernmodul%20Einf%C3%BChrung%20in%20die%20Informatik%20-%20Files%20-%20Hochschule%20RheinMain-Dateien/group.svg" alt="group" class="icon-role-clickable icon-shape-group" width="16" height="16">                                        Copy link                </a>
+                        </li>
+                </ul>
+    </div>
+</nav>
+    </td>
+</tr></tbody>
+            <tfoot>
+            <tr role="row">
+                <td colspan="7" data-column="0">
+                    <span class="multibuttons">
+                        <button type="submit" class="button" data-activates-condition="table.documents tr[data-permissions*=d] :checkbox:checked" name="download" disabled="disabled">Download</button>                                                                <button type="submit" class="button" data-activates-condition="table.documents tr[data-permissions*=r] :checkbox:checked" data-dialog="size=auto" formaction="https://studip.hs-rm.de/dispatch.php/file/choose_destination/copy/bulk?cid=41fa797db653a1ce5f23ba1ea2989621" name="copy" disabled="disabled">Copy</button>                                                            </span>
+
+                                                </td>
+            </tr>
+        </tfoot>
+    </table>
+</form>
+
+    <div class="file_uploader">
+    <div class="file_upload_window">
+        <div class="errorbox" style="display: none;">
+            <div class="messagebox messagebox_error ">
+    <div class="messagebox_buttons">
+                <a class="close" href="#" title="Close message box">
+            <span>Close message box</span>
+        </a>
+        </div>
+    <span class="errormessage"></span></div>
+        </div>
+        <ul class="filenames clean"></ul>
+        <div class="uploadbar">
+            <img class="ufo icon-role-info_alt icon-shape-ufo" src="Lernmodul%20Einf%C3%BChrung%20in%20die%20Informatik%20-%20Files%20-%20Hochschule%20RheinMain-Dateien/ufo.svg" alt="ufo" width="30" height="30">            <img src="Lernmodul%20Einf%C3%BChrung%20in%20die%20Informatik%20-%20Files%20-%20Hochschule%20RheinMain-Dateien/upload.svg" alt="upload" class="icon-role-info_alt icon-shape-upload" width="30" height="30">        </div>
+    </div>
+</div>
+    <div class="files_source_selector" data-folder_id="c33da9f80979014fc405c59193a89bb1" style="display: none;">
+    Select source    <div class="file_select_possibilities">
+        <a href="#" onclick="jQuery('.file_selector input[type=file]').first().click(); return false;">
+            <img src="Lernmodul%20Einf%C3%BChrung%20in%20die%20Informatik%20-%20Files%20-%20Hochschule%20RheinMain-Dateien/computer.svg" alt="computer" class="icon-role-clickable icon-shape-computer" width="50" height="50">            My computer        </a>
+        <a href="https://studip.hs-rm.de/dispatch.php/file/add_url/c33da9f80979014fc405c59193a89bb1?cid=41fa797db653a1ce5f23ba1ea2989621&amp;to_folder_id=c33da9f80979014fc405c59193a89bb1&amp;from_plugin=" data-dialog="">
+            <img src="Lernmodul%20Einf%C3%BChrung%20in%20die%20Informatik%20-%20Files%20-%20Hochschule%20RheinMain-Dateien/globe.svg" alt="globe" class="icon-role-clickable icon-shape-globe" width="50" height="50">            Web address        </a>
+        <a href="https://studip.hs-rm.de/dispatch.php/file/choose_file/0a38566995df2e12b0a5cf0c93b1e869?cid=41fa797db653a1ce5f23ba1ea2989621&amp;to_folder_id=c33da9f80979014fc405c59193a89bb1&amp;from_plugin=" data-dialog="">
+            <img src="Lernmodul%20Einf%C3%BChrung%20in%20die%20Informatik%20-%20Files%20-%20Hochschule%20RheinMain-Dateien/files_002.svg" alt="files" class="icon-role-clickable icon-shape-files" width="50" height="50">            My documents        </a>
+        <a href="https://studip.hs-rm.de/dispatch.php/file/choose_file_from_course/c33da9f80979014fc405c59193a89bb1?cid=41fa797db653a1ce5f23ba1ea2989621&amp;to_folder_id=c33da9f80979014fc405c59193a89bb1&amp;from_plugin=" data-dialog="">
+            <img src="Lernmodul%20Einf%C3%BChrung%20in%20die%20Informatik%20-%20Files%20-%20Hochschule%20RheinMain-Dateien/seminar.svg" alt="seminar" class="icon-role-clickable icon-shape-seminar" width="50" height="50">            My courses        </a>
+        </div>
+    <div>
+        You are allowed to upload files of a size up to <b>150 Megabytes</b> in this area.    </div>
+            <div>
+            You are not allowed to upload the file type <b>exe,php,sql,js</b>!        </div>
+            <form style="display: none;" class="file_selector">
+
+        <input type="file" name="files[]" multiple="" onchange="STUDIP.Files.upload(this.files);">
+    </form>
+</div>
+
+<div style="display: none;">
+    Do you want to unzip the uploaded ZIP file?</div>
+            </div>
+        </div>
+    </div> 
+    <!-- Beginn Footer -->
+<div id="layout_footer">
+    <div id="footer">
+        you are signed in as mamaagxa (autor)        |
+        18/02/21, 20:13:50        </div>
+
+    <ul>
+                                        <li>
+            <a href="https://studip.hs-rm.de/dispatch.php/sitemap/?cid=41fa797db653a1ce5f23ba1ea2989621">Sitemap</a>
+            </li>
+                                        <li>
+                <a href="mailto:'service-itmz@hs-rm.de'?subject=Stud.IP Probleme beim Login&amp;body=Liebes Service Desk Team,%0Aich habe folgendes Problem/folgende Frage bez%C3%BCglich Stud.IP: XXXXXXXXXXXXXXXXXXXXXXXXXX%0 XXXXXXXXXXXXXXXXXXXXXXXXXX nicht weiter. %0AMeine Matrikelnummer ist: XXXXXXX, %0Amein HDS Account ist XXXXXXXX. %0AViele Gr%C3%BC%C3%9Fe%0A">
+                    Frage an Servicedesk                </a>
+            </li>
+                                                <li>
+            <a href="https://studip.hs-rm.de/dispatch.php/siteinfo/show?cid=41fa797db653a1ce5f23ba1ea2989621&amp;cancel_login=1">Legal information</a>
+            </li>
+                                                <li>
+            <a href="https://www.hs-rm.de/de/datenschutz/" target="_blank" rel="noopener noreferrer">Data protection</a>
+            </li>
+                                                <li>
+            <a href="https://www.hs-rm.de/fileadmin/Home/Hochschule/Veroeffentlichungen/Amtliche_Mitteilungen/fuenfter_teil_AM_54-99/FHW_Amtl_Mitt_89.pdf" target="_blank" rel="noopener noreferrer">IT-Benutzerordnung</a>
+            </li>
+                </ul>
+</div>
+<script>
+STUDIP.Navigation = {"activated":["course","course\/files"]};
+</script>
+<!-- Ende Footer -->
+    <!-- Ende Page -->
+    </div>
+
+
+    
+
+</body></html>

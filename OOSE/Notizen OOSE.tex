@@ -1,0 +1,326 @@
+\documentclass{article}
+\begin{document}
+	\section*{Notizen OOSE}
+	\subsection*{17.11.2020}
+	Modellierung Implementierung. Der Weg zu einer Klasse. Compiler übersetzt Quellcode in Maschinencode. Übersetzt Quelltext in Maschinenprogramme. \\
+	
+	Datenzusammenfassen und mit Ihnen rechnen. Klasse Konstruktor, Felder Methoden. ToString Methode. \\
+	
+	Methoden sind Funktionen, die sich immer auf ein Objekt und dessen Daten. Settermethoden, setzt Werte für ein Objekt. Methoden können in Java Objekte verändern. assert sichert zu kann in der Settermethode genutzt werden um eine Bedingung zu überprüfen. Verheiraten Daten zu Objekten zusammenfassen und mit ihnen Rechnen.
+	
+	\subsection*{19.11.2020}
+	Anweisungen = Statement; Butter und Brot einer Programmiersprache. \\
+	Methoden = Unterprogramme wiederverwendbare Teilprogramme mit anderen Parametern \\
+	Funktion eindeutige Zuordnung \\
+	Funktionen bestehen in Java aus Methoden \\
+	Anweisung bisher return \\
+	Methode auch Signatur \\
+	statische Methoden ohne Objekt Objekt-Methode mit Objekt \\
+	Objektmethoden müssen mit einem Objekt aufgerufen werden. \\
+	Methoden müssen sich nicht wie Funktionen verhalten. Stichwort Seiteneffekt \\
+	Verändern Objekte \\
+	Seiteneffekte vielseitig  \\
+	Deshalb lieber Methoden sagen als Funktionen \\
+	Parameter gilt nur in Methodenrumpf!!!!! \\
+	void-Methoden berechnen keinen Wert haben nur Seiteneffekte \\
+	Java ist statisch getypt \\
+	Anweisungen bisher nur return  \\
+	Fälle unterscheiden mit if, else, Schleifen etc. \\
+	 Anweisungen steuern Programme \\
+	 Beachte Blockbildung bei if und else \\
+	 Es gibt keine if-Schleifen \\
+	 Schleifen wiederholen code \\
+	 Iteration \\
+	 \subsection*{24.11.2020}
+	 \paragraph*{Ausdrücke}
+	 Statement \\
+	 Unterschiedlich zu Anweisung \\
+	 Ausdrücke expressions \\
+	 Wann immer Daten erzeugt werden wird ein Ausdruck benötigt. \\
+	 Ein Ausdcruck hat immer ein Rechenergebnis. \\
+	 Alles was "System.out.println();" zulässt ist ein Ausdruck. \\
+	 Ausdrücke können in Ausrücken verschachtelt werden. \\
+	 Literale: einfach hinschreiben 42 \\
+	 Operatoren Fakultät \\
+	 Methoden. \\
+	Erzeugung Objekte mit Constructer ist ein Ausdruck. \\
+	Beispiele für Literale \\
+	Strings sind eine Klasse die in "" aufgerufen werden kann. \\
+	Das darf keine andere Klasse. \\
+	Fluchtsequenzen für verschiedene Sonderzeichen wie Tabulator. \\
+	Opeatoren sind infix. Operator steht zwischen Operatoren. \\
+	42+"" ergibt String. \\
+	Bitoperatoren. \\
+	Wann immer Daten erzeugt werden braucht Ausdrücke, die zu einem Ergebnis auswerten. \\
+	
+	\paragraph*{Anweisungen}
+	statement \\
+	z.B. If-Bedingungen oder Schleifen. \\
+	Ausdrücke werten zu Rechenergebnissen aus Anweisungen nicht. \\
+	Anweisungen steuern den Kontrollfluss. \\
+	Anweisungen sind prozedural. \\
+	Zuweisung = Anweisung. \\
+	Es gibt Ausnahmen: Werfen, Abfangen. \\
+	Nach einer return Anweisung kann nichts stehen. \\
+	Break kann schleife verlassen. \\
+	continue srpingt zum nächsten Schleifendurchgang. \\
+	
+	\paragraph*{}
+	Switch case kann Ausdruck und Anweisung sein. \\
+	
+	\section*{26.11.2020}
+	Rekursion \\
+	Methoden können sich innerhalb sich selbst aufrufen. \\
+	Fakultät lässt sich als rekursive Methode schreiben. \\
+	Basisfall und terminierenden Fall überlegen.
+	Rekursion kann Stackoverflow verursachen. \\
+	Stack = interner Speicher. \\
+	Reduktion von hand kann in Klausur kommen. \\
+	Java kann nicht beliebig tiefe Rekursion aufrufen. \\
+	Rekursionen können als Schleifen geschrieben werden.
+	 	
+	\section*{01.12.2020}
+	Arrays sind Reihung. \\
+	Datenfeld \\
+	Arrays lassen beliebige Datentypen zu. \\
+	Arrays fangen bei 0 an zu zählen. \\
+	Einzelne Variable aufrufen array[Elementindex] \\
+	Arraylänge ist statisch. \\
+	Arrays können wie Variablen verwendet werden. \\
+	zweidimensionale Arrays als Aufzählung. \\
+	Klassenaufruf \\
+	Class wochentage \\
+	mit Objekt Sonntag \\
+	kann aufgerufen werden mi wochentage.SO
+	privat heist nicht benutzen. \\
+	final class mit privat constructer und darin Objekten für Aufzählung bis Java 1.5 \\
+	pattern =  Lösungsvorschlag	\\
+	enum Kurzschreibweise für Aufzählungsspattern. \\
+	
+	\section*{03.12.2020}
+	Essenz der Objektorientierung \\
+	switch case kann über enum-Werte gemacht werden. \\
+	don't repeat your self \\
+	Studenten sind personen deshalb Class Student extends Person \\
+	Bei extend Klassen superzeile im Constructer beachten!!!
+	Super Zeile macht ersten Aufruf in erweiterter Klasse \\
+	Objekt vergisst nicht dass es als Student erzeugt wurde. Es kann als Person gespeichert werden aber nutzt die Methoden von Student. \\
+	Typzusicherung \\
+	Vererbung Knopflogik und ToUpper \\
+	Jedes Objekt aus ToUpper ist ein Objekt von Knoplogik. \\
+	\section*{08.12.2020}
+	Vererbung \\
+	Klassen sind Mengen von Objekten. \\
+	Unterklassen sind Teilmengen von Klassen. \\
+	Unterklasse kann neue Methoden und Felder definieren. \\
+	Unterklasse erbt alle Methoden und Felder der Oberklasse. \\
+	Das objekt wird gefragt was es für ein Objekt ist. Dass Verhalten der Methode richtet sich danach. \\
+	Late Binding \\
+	strg shift f um layout zu reparieren in Eclipse. \\
+	abstrakte klassen sind haben keine Implementierung um in Unterklassen verwendet zu werden.
+	\section*{10.12.2020}
+	@override und @overload \\
+	Anwenden auf zwei gleichnamige Methoden \\
+	override überschreibt Methode aus der Oberklasse. \\
+	overload überschreibt Methode in der Gleichen klasse mit anderen Parametertypen. \\
+	Auflösung überschriebene Methoden: Late Binding!!! \\
+	overload hat kein late binding \\
+	bei overload überlegen ob die überladene Methode nicht einfach durch die ursprüngliche Methode aufgerufen werden kann. \\
+	Konstruktoren können überladen werden. \\
+	wird mit this und parameter aufgerufen. Darf nur als erster Befehl in einem Konstruktor passieren. \\
+	Überladung von Feldern, Felder können nicht überladen werden !!!!!!!!!!!!! \\
+	Geerbte Felder nicht nochmal deklarieren. \\
+	überschriebene Methoden werden dynamisch während der Laufzeit aufgelöst. \\
+	\subsection*{Interfaces}
+	Schnittstellen \\
+	Listet Funktionen für objekte Auf. Methoden werden in anderen Klassen implementiert. \\
+	Klassen können mehrere Interfaces implementieren. \\
+	Interfaces haben keine konkreten Methoden. \\
+	Ein Interface ist keine Klasse. \\
+	\section*{15.12.2020}
+	Klassen leben in Paketen. \\
+	Objektorientierung  \\
+	\section*{17.12.2020}
+	Projekt umsetzen kleiens Spiel. \\
+	Framwork dokument lesen. \\
+	SimpleGame starten für Testspiel. \\
+	ressourcen zum builpath hinzufügen. \\
+	Generics. \\
+	Logic in Do-Checks methode implementieren. \\
+	\section*{05.01.2021}
+	listen basierte Klasse \\
+	Liste hat Reihenfolge \\
+	Arrays haben das Problem nicht dynamisch wachsen zu können. \\
+	Beispiel Implementierung Listenklasse. \\
+	Dynamisches Wachstum beachten. \\
+	generische Typen. \\
+	container klassen enthalten beliebige Objekte. \\
+	Typvariablen deklarieren für Containerklassen. \\
+	\section*{07.01.2021}
+	\section*{12.01.2021}
+	Hinweise auf Klausur. \\
+	Gleich; selbe Gattung, dasselbe genau eindeutige Objekt. \\
+	setzt sich in Java fort mit == für dasselbe und equals für das gleiche. \\
+	Strings können nur einmal erzeugt werden und bleiben dann konstant. \\
+	get.class Gettermethode für die Klasse eines Objekts. \\
+	record Klasse enthält nur Konstruktor. \\
+	enthält out of the box toString und equals. \\
+	\subsection*{14.01.2021}
+	Java-Bibliothek JavaSwing für GUI. \\
+	Aufgaben GUI-Bibliothek kennenlernen \\
+	Bibliotheken sind Sammlungen nützlicher Klassen. \\
+	Framework umfasst mehr als Bibliothek. \\
+	Nutze Swing anstatt AWT. \\
+	GUI Elemente \\
+	Swingelemente starten mit J. \\
+	Top Fenster etc \\
+	elementar button etc \\
+	Strukturkomponenten. \\
+	Jframe Rahmen. \\
+	Jbutton \\
+	Jpanel geben Struktur \\
+	Frame frame = new JFrame(); \\
+	!frame.setVisible(true); \\
+	Interaktion in Swing ist ein EVENT. Komponent erhält listener. \\
+	annonyme Klasse und innere Klassen \\
+	Graphische Komponenten: \\
+	-top-level:Fenster oder Dialoge, die \\ alles enthalten \\
+	-automare Komponenten: Fertige \\ Komponenten, die keine Unterkomponenten haben (z.B. Knöpfe) \\
+	-unsichtbare Komponenten: \\ Strukturkomponenten \\
+	Swing unterscheidet dies jedoch nicht \\
+	
+	Swing-Komponenten \\
+	JFrame: Fensterrahmen, Titel \\
+	JButton: Knöpfe \\
+	JTextArea: Text \\
+	JLabel: Eingabeforderung \\
+	JPanel: Ordnungseinteilungen \\
+	
+	Bibliothek(library): Sammlung von Klassen die jemand/man schon programmiert hat. \\
+	framework: Hat mehr als eine Bibliothek(Zusatztools z.B. generiert Code für jemand) \\
+	gui (z.B. Java Swing) = Fenster(rahmen), Beispiel: \\
+	
+	gui stellt Klassen bereit um diese Objekte zu erzeugen (z.B. die Knöpfe, Eingabefenster…) \\
+	
+	\section*{19.01.2021}
+	SWING API jframe kann nur ein Objekt enthalten. Muss jpanel enthalten und das kann mehrere Objekte enthalten. \\
+	
+	\subsection*{Graphische Komponenten:}
+	-top-level:Fenster oder Dialoge, die alles enthalten
+	-automare Komponenten: Fertige Komponenten, die keine Unterkomponenten haben (z.B. Knöpfe)
+	-unsichtbare Komponenten: Strukturkomponenten
+	Swing unterscheidet dies jedoch nicht
+	
+	\subsection*{Swing-Komponenten}
+	JFrame: Fensterrahmen, Titel
+	JButton: Knöpfe
+	JTextArea: Text
+	JLabel: Eingabeforderung 
+	JPanel: Ordnungseinteilungen
+	
+	\subsection*{Bibliothek(library): }
+	Sammlung von Klassen die jemand/man schon porgrammiert hat
+	framework: Hat mehr als eine Bibliothek(Zusatztools z.B. generiert Code für jemand)
+	gui (z.B. Java Swing) = Fenster(rahmen), Beispiel:
+	
+	gui stellt Klassen bereit um diese Objekte zu erzeugen (z.B. die Knöpfe, Eingabefenster…)
+	\\ \\
+	Windowlistener um Aktion für Fenter schließen zu implementieren. \\
+	\\
+	Sebastian Silberbauer Einführung Java OOP 2. Auflage \\
+	\\
+	Layoutgestaltung mit SWING \\
+	flow layout dynmisch und ändert sich mit Fenster - Standard für SWING Komponenten \\
+	\\
+	Border Layout unterteilt enthaltenen container in 5 Positionen. \\
+	Position wird mit North, east, west south oder central fest codiert und ändert sich nicht mit der Fenstergröße. \\
+	Ein Model für ein Taschenrechner \\
+	soll Stand bisheriger Eingaben Speichern. \\
+	\section*{21.01.2021}
+ 	mit refactor kann man Code umformen. \\
+ 	Beispiel für Taschenrechner GUI. \\
+ 	Panitz Equipment leider ausgefallen.  \\
+ 	Anschluss an die Vorlesung verloren. \\
+ 	Key listener komplex \\
+ 	key listener reagiert nur auf fokusierten Fenster. \\
+ 	Wer hat den Fokus? \\
+ 	Muss gesetzt werden. \\
+ 	Programmiermuster pattern Muster für wiederkehrende Lösungen. \\
+ 	\section*{26.01.2021}
+	Vorlesung zur Übung mit Java 16. \\
+	Änderungen in Java 16 \\
+	verbesserungen für Instanceof und equals \\
+	record erzeugt klasse die Daten enthalten soll. Kann als careerer genutzt werden. \\
+	sealed ermöglicht versiegeln von klassen und interfaces. Darin kann festgelegt werden welche Klassen dass Interface implementieren dürfen bzw. welche Klasse eine sealed class erben darf. \\
+	Hierarchie Baumstruktur für Klassen \\
+	Beispiel einfache Arithmetik \\
+	\section*{28.01.2021}
+	Fernkommunikation \\
+	I/O input und output \\
+	Sachen empfangen = Input \\
+	Sachen senden = Output \\
+	in Java writer und outputstream \\
+	in Java reader und inputstream \\
+	\\
+	reader und writer nutzen chars \\
+	ouput- inputstream nutzen bytedaten \\
+	Einlesen ist ein int. Das int ist eine unicode zahl.\\
+	inputstreamwriterReader und outputstreamwriter \\
+	übersetzen zwischen bytes und chars \\
+	encoding Abbildung von chars auf eine Folge von Bytes. \\
+	BufferedReader \\
+	\section*{02.02.2021}
+	I/O \\
+	Sender macht Output Empfänger Input \\
+	Transport ist immer Byteweise. Für senden zerlegen für Empfangen Zusammensetzen. \\
+	Ähnlich beamen auf die Enterprise in Startrek. \\
+	Folge von gleichen Bytes Serialisierung.
+	Informationen müssen vor Übertragung serialisiert werden. \\
+	I/O Ist Transport über Zeit oder Raum. \\
+	transient als Schlüsselwort für nicht serialisierbar. \\
+	\section*{04.02.2021}
+	Ausnahmen in Java. \\
+	Exceptions IO, ClassNotFound \\
+	Exeptions sind Klassen. \\
+	Alle Exceptions sind Unterklassen von JavaLangException. \\
+	Notfallpläne festlegen damit Progamm nicht abstürzt. \\
+	try und catch \\
+	Bei Exception wird sofort unterbrochen. \\
+	StackTrace ist eine Debugginginformation. \\
+	throw new Ausnahmeobjekt. \\
+	Error sind Ausnahmen die nicht überbrückt werden können. \\
+	RuntimeExceptions = AlltagsAusnahmen \\
+	Ausnahmen für die es üblicherweise keine Notfallpläne gibt. \\
+	typisch: Rekursion zu tief, Stackoverflow; Nullpointer; OutofBounce \\
+	Try braucht ein catch und umgekehrt. \\
+	finally Block nach letztem catch. finnally findet immer statt. \\
+	\section*{09.02.2021}
+	Thema Qualitätssicherung \\
+	Code Walkthrough \\
+	Tests \\
+	TestFirstSzenario \\
+	Create JuniTestcase \\
+	Teste auf erwarteten Output \\
+	Erst Test schreiben dann Code. \\
+	Code nur so schreiben, dass Tests erfüllt werden. \\
+	Wenn Test erfolgreich entweder neuer Test oder refactoring \\
+	\section*{11.02.2021}
+	Besprechung einer Probeklausur \\
+	\section*{18.02.2021}
+	Browsergame mit Java GWT\\
+	1. JAVA GWT libaries ziehen. \\
+	2. Subatogameframework holen. und in GWT Ordner extrahieren. GWT/Backend/source/main/java \\
+	3. Speichere die neue pom.xml Datei in GWT-Ordner. \\
+	4. Spiel in GWT/source/main/java speichern und dafür sorgen, dass sie in einem Paket sind das Unterpaket ist von name.panitz.game.example \\
+	5. in Klasse unbedingt package Bezeichnung ändern. \\
+	6. mvn package, beten und Fehler korrigieren. \\
+	note: ändere webapp zu super!!! \\
+	\\
+	troubleshooting \\
+	SWING oder FX werden nicht unterstützt. \\
+	keine zusätzlichen Timer. \\
+	Ressourchen in Superordner kopieren nicht vergessen. \\
+	Packagenamen ändern (Unterpaket). \\
+	Groß- und Kleinschreibung von Dateinamen beachten. \\
+	
+\end{document}

@@ -1,0 +1,150 @@
+\documentclass{article}
+\usepackage{mathtools}
+\begin{document}
+	\section*{Lsg Vorschlag E I Ü008 Maximilian Maag}
+	\section*{Aufgabe 8.1}
+	a = 01001011; b = 11001110;
+	\subsection*{a)}
+	NAND(a,b) $\equiv$ $\not(a \land b)$ \\
+	a = 01001011; $\not$a = 10110100 \\
+	\begin{tabular}[h]{c|c}
+		a & $\not$ a \\
+		0 & 1 \\
+		1 & 0 \\
+		0 & 1 \\
+		0 & 1 \\
+		1 & 0 \\
+		0 & 1 \\
+		1 & 0 \\
+		1 & 0 \\
+	\end{tabular} \\
+	Nach De Morgan gilt: $\not$(a $\land$ b) $\equiv$ $\not$ a $\lor$ $\not$ b. Daraus folgt die Lösung der Aufgabe $\not$ a.
+	\subsection*{b}
+	RotateRight(a OR (NOT(b)) \\
+	RotateRight(a) \\
+	a = 01001011; RotateRight(a) = 10100101;
+	\section*{Aufgabe 8.2}
+	\subsection*{a)}
+	$\not(A \lor B) = \not A \land \not B$ \\
+	\begin{tabular}[h]{c|c|c|c|c}
+		A &  B &  $\not A \land \not B$  & $\not(A \lor B)$  & \\
+		1 & 1 & 0 & 0 \\
+		1 & 0 & 0 & 0 \\
+		0 & 1 & 0 & 0 \\
+		0 & 0 & 1 & 1
+		
+	\end{tabular}
+	\subsection*{b)}
+	$\not A \land \not B = \not(A \lor B)$ \\
+	\begin{tabular}[h]{c|c|c|c|c}
+		A &  B & $\not(A \lor B)$   & $\not A \land \not B$ & \\
+		1 & 1 & 0 & 0 \\
+		1 & 0 & 0 & 0 \\
+		0 & 1 & 0 & 0 \\
+		0 & 0 & 1 & 1
+		
+	\end{tabular}
+	\section*{Aufgabe 8.3}
+	\subsection*{a)}
+	\begin{tabular}[h]{c|c|c}
+		R & $\frac{R}{b}$ & $b^i$ \\
+		423 & $2^8$ & 1 \\
+		167 & $2^7$ & 1 \\
+		39 & $2^6$ & 0 \\
+		39 & $2^5$ & 1 \\
+		7 & $2^4$ & 0 \\
+		7 & $2^3$ & 0 \\
+		7 & $2^2$ & 1 \\
+		4 & $2^1$ & 1 \\
+		2 & $2^0$ & 1 \\
+	\end{tabular}
+	$423_{10} = 110100111_2$ \\
+	\begin{tabular}[h]{c|c}
+		R : b & Rest \\
+		423 : 3 = 141 & 0 \\
+		141 : 3 = 47 & 0 \\
+		47 : 3 = 15 & 2 \\
+		15 : 3 = 5 & 0 \\
+		5 : 3 = 1 & 2 \\
+		1 : 3 = 0 & 1
+	\end{tabular}
+	$423_{10} = 120200_3$ \\
+	\begin{tabular}[h]{c|c}
+		R : b & Rest \\
+		423 : 16 = 26 & 7 \\
+		26 : 16 = 1 & A (10) \\
+		1 : 16 = 0 & 1
+	\end{tabular}
+	$423_{10} = 1A7_{16}$ \\
+	\begin{tabular}[h]{c|c}
+		R : b & Rest \\
+		423 : 8 = 52 & 7 \\
+		52 : 8 = 6 & 4 \\
+		6 : 8 = 0 & 6
+	\end{tabular}
+	$423_{10} = 647_8$ \\
+	\begin{tabular}[h]{c|c}
+		R : b & Rest \\
+		423 : 9 = 47 & 0 \\
+		47 : 9 = 5 & 2 \\
+		2 : 9 = 0 & 2
+	\end{tabular}
+	$423_{10} = 220_9$
+	\subsection*{b)}
+	a = 19,627; \\
+	Umwandlung in Zielsystem zur Basis 2. \\
+	\begin{tabular}[h]{c|c}
+		R : b & Rest \\
+		19 : 2 = 9 & 1 \\
+		9 : 2 = 4 & 1 \\
+		4 : 2 = 0 & 0
+	\end{tabular}
+	\begin{tabular}[h]{c|c|c|c|c}
+		Ziffern & 6 & 2 & 7 & , \\
+		+ & - & 1 & 3,5& 10,5 * 0,5   \\
+		$\sum$  & 6 & 7 & 10,5 & 5,25
+	\end{tabular}
+	\section*{Aufgabe 8.4}
+	\subsection*{a)}
+	a = $1011010_2$; \\
+	\begin{tabular}[h]{c|c|c|c|c|c|c|c|c}
+		Zeichen & 1 & 0 & 1 & 1 & 0 & 1 & 0 & ,\\
+		+ & 0 & 2*1 & 2*2 +  1 & 2 * 5 + 1 & 11*2 + 0 & 22 * 2 + 1 & 45 * 2\\
+		$\sum$ 2 & 1 & 4 & 5 &  11 & 22 & 45 & 90
+	\end{tabular}
+	a = 2AF; \\
+	\begin{tabular}[h]{c|c|c|c}
+	Zeichen & 2 & A & F \\
+	+ & 0 & 16 * 2 + 10 & 42 * 16 + 15 \\
+	$\sum$ 16 & 2 & 42 & 687
+	\end{tabular}
+	\subsection*{b)}
+	a = 24,372; \\
+	\begin{tabular}[h]{c|c|c}
+		Zeichen & 2 &  4 \\
+		+ & 0  & 8*2 + 4 \\
+		$\sum$ 8 & 2 & 20
+	\end{tabular}
+	\begin{tabular}[h]{c|c|c|c}
+		Zeichen & 3 &  7 & 2 \\
+		+ & 0  &3*8 + 7 & 31 * 8 +2  \\
+		$\sum$ 8 & 3 & 31 & 250
+	\end{tabular} \\
+	$24,372_8 = 20,250_{10}$
+	\section*{Aufgabe 8.5}
+	\subsection*{a)}
+	$a = 13,5_8$; \\
+	\begin{tabular}[h]{c|c|c}
+		Zeichen & 1 & 3 \\
+		+ & 0 & 8 + 3\\
+		$\sum$ 8 & 1 & 11
+	\end{tabular}
+	$13,5_8 = 11,5_{10} = 1011,101_2  $ \\
+	$1011,101 + 1101,1101 = 11011,0111$
+	\subsection*{b)}
+	$4,2_8 = 100,10_2$ \\
+	$1101,1101 * 100,10 = 111101101,01$ \\
+	
+	\section*{Aufgabe 8.6}
+	X86 Prozessor ist eine Little-Endian und der Sun-Sparc eine Big-Endian. Eine Little Endian liest das höchstwertige Byte als erstes ein, also genau gegenteilig zur Big-Endian. Damit würde der X86 Prozessor die Zahl genau umgekehrt einlesen.
+\end{document}

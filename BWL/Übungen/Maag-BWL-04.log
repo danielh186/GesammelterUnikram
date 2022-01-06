@@ -1,0 +1,116 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.11.21)  1 DEC 2020 19:45
+entering extended mode
+**./Maag-BWL-04.tex
+(Maag-BWL-04.tex
+LaTeX2e <2020-10-01> patch level 2
+L3 programming layer <2020-10-27> xparse <2020-03-03>
+(C:\Users\maxim\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
+Document Class: article 2020/04/10 v1.4m Standard LaTeX document class
+(C:\Users\maxim\AppData\Local\Programs\MiKTeX\tex/latex/base\size10.clo
+File: size10.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
+)
+\c@part=\count175
+\c@section=\count176
+\c@subsection=\count177
+\c@subsubsection=\count178
+\c@paragraph=\count179
+\c@subparagraph=\count180
+\c@figure=\count181
+\c@table=\count182
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen138
+)
+(C:\Users\maxim\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
+tex.def
+File: l3backend-pdftex.def 2020-09-24 L3 backend support: PDF output (pdfTeX)
+\l__kernel_color_stack_int=\count183
+\l__pdf_internal_box=\box47
+) (Maag-BWL-04.aux)
+\openout1 = `Maag-BWL-04.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+
+Overfull \hbox (26.24155pt too wide) in paragraph at lines 6--7
+\OT1/cmr/m/n/10 allerd-ings mit ihrem Pri-vatvermogen bei Zahlung-sunfahigkei
+t haften. Um-gangssprach-
+ []
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 8.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 8.
+
+Underfull \hbox (badness 10000) in paragraph at lines 10--11
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 20--21
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 22--23
+
+ []
+
+[1
+
+{C:/Users/maxim/AppData/Local/MiKTeX/pdftex/config/pdftex.map}]
+Overfull \hbox (13.30608pt too wide) in paragraph at lines 24--25
+\OT1/cmr/m/n/10 bere-its bei der En-twick-lung dafur zu sor-gen, dass ver-wen-
+dete Ma-te-ri-alien wiederver-
+ []
+
+
+Overfull \hbox (13.05618pt too wide) in paragraph at lines 27--28
+\OT1/cmr/m/n/10 wal-tung, der Kern-marken und des Be-trieb-srates zusam-men um 
+das Nachhaltigkeits-
+ []
+
+
+Overfull \hbox (22.01915pt too wide) in paragraph at lines 30--31
+\OT1/cmr/m/n/10 ve-storen und Mi-tar-beiter sowie In-ter-essen-verbande. Lokal
+e Stakeholder-Engagements
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 40--42
+
+ []
+
+[2] [3] (Maag-BWL-04.aux) ) 
+Here is how much of TeX's memory you used:
+ 399 strings out of 479799
+ 7404 string characters out of 2869722
+ 276771 words of memory out of 3000000
+ 17470 multiletter control sequences out of 15000+200000
+ 536028 words of font info for 32 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 43i,4n,49p,838b,122s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\maxim\AppData\Local\MiKTeX\fonts/pk/ljfou
+r/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/maxim/AppData/Local/Programs/MiKTeX/
+fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/maxim/AppData/Local/Program
+s/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/maxim/AppData/Loca
+l/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/maxim/AppD
+ata/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb>
+Output written on Maag-BWL-04.pdf (3 pages, 58955 bytes).
+PDF statistics:
+ 33 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

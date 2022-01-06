@@ -1,0 +1,82 @@
+\documentclass{article}
+\usepackage{mathtools}
+\begin{document}
+	\section*{Lsg Vorschlag Ü003 A+N Maximilian Maag}
+	\section*{Aufgabe A}
+	Richtig, die Schranke stellt den Grenzwert dar und eine Folge mit Grenzwert heißt konvergent. \\
+	Richtig, die Schranke stellt bei einer konvergenten Folge den Grenzwert dar.
+	Falsch, gegen Beispiel alternierende Folge kann konvergieren. \\
+	Richtig, Schranken zwei beschränkter Folgen addieren sich. \\
+	Richtig, Folgen addieren sich. \\
+	
+	\section*{Aufgabe B}
+	$a_{n} = n$:  Schranke nach unten, monoton, divergent: n wird immer größer. \\
+	$a_{n} = (-1)^{n} * n$: nicht monoton durch $(-1)^{n}$, divergent wird für großer Zahlen immer größer, dem entsprechend keine Schranken und divergent. \\
+	$a_{n} = \frac{(-1)^{n}}{n}$: $(-1)^{n}$ sorgt für Vorzeichenwechsel also nicht monoton. Teiler wird immer größer Folge konvergiert gegen 0, nach oben und unten beschränkt \\
+	$a_{n} = 1 + \frac{1}{n}$: konvergiert gegen 1 durch $\frac{1}{n}$, Schranke nach oben und unten ($a_{n} \leq 1$), steigt monoton, weil kein Vorzeichenwechsel.
+	\section*{Aufgabe C}
+	\subsection*{a)}
+	$\sum\limits_{n=1}^{n=5} \frac{1}{n} = 2,28333$
+	\subsection*{b)}
+	$\sum\limits_{n=1}^{n=5} n^{2} = 55$
+	\subsection*{c)}
+	$\sum\limits_{n=1}^{n=100} n = (100 + 1) * 50  = 5050$
+	\section*{Aufgabe 1}
+	\subsection*{a)}
+	$\sqrt{5}$ mit Heron-Verfahren Startwert 5 \\
+	$x_{0} = 1$; $y_{0} = \frac{5}{x_{0} = 5}$ \\
+	$x_{1} = \frac{1}{2} * (1 + \frac{5}{1}) = 3$ \\
+	$x_{2} = \frac{1}{2} * (3 + \frac{5}{3}) = 2,33333$ \\
+	$x_{3} = \frac{1}{2}*(2,33333 + \frac{5}{2,33333}) = 2,2381$ \\
+	$x_{4} = \frac{1}{2} * (2,2381 + \frac{5}{2,2381}) = 2,2360689$ \\
+	$x_{5} = \frac{1}{2}*(2,2360689 + \frac{5}{2,2360689}) = 2,236067978$ \\
+	$x_{6} = \frac{1}{2}*(2,236067978 + \frac{5}{2,236067978}) = 2,236067978$ \\
+	$\sqrt{5} = 2,236067977$
+	\subsection*{b)}
+	$\sqrt{5}$; $x_{0} = 100$ \\
+	$x_{1} = \frac{1}{2} * (100 + \frac{5}{100}) = 50,025$ \\
+	$x_{2} = 25,062475012494$ \\
+	$x_{3} = 12,630988229141$ \\
+	$x_{4} = 6,5134200372811$ \\
+	$x_{5} = 3,6405329543165$ \\
+	$x_{6} = 2,5069791182389$ \\
+	$x_{7} = 2,2507056834229$ \\
+	$x_{8} = 2,2361155764454$ \\
+	$x_{9} = 2,2360679780064$ \\
+	$\sqrt{5} = 2,236067977$
+	\subsection*{c)}
+	$x_{0} = -1$; $\sqrt{5}$ \\
+	$x_{1} = \frac{1}{2} * (-1 + \frac{5}{-1}) = -3$ \\
+	$x_{2} = -2,3333333333333$ \\
+	$x_{3} = -2,2380952380952$ \\
+	$x_{4} = -2,2360688956434$ \\
+	$x_{5} = -2,2360679775$ \\
+	$x_{6} = -2,2360679774998$ \\
+	$-\sqrt{5} = -2,2360679774998$ \\
+	$\sqrt{5} = 2,236067977$
+	\section*{Aufgabe 2}
+	\subsection*{a)}
+	$a_{0} = 1; a_{1} = 2, a_{2} = 4$ \\
+	$q = \frac{a_{n+1}}{a_{n}}$ \\
+	$q = \frac{4}{2} = 2$ \\
+	$a_{n} = a_{0} * q^{n}$ \\
+	$a_{n} = 1 * 2^{n}$ \\
+	$\sum\limits_{n=0}^{n=64} 1 * 2^{n} = 2^{0} + 2^{1} + 2^{2} + 2^{3} + 2^{4} + 2^{5} + 2^{6} + 2^{7} + 2^{8} + 2^{9} + 2^{10} + 2^{11} + 2^{12} + 2^{13} + 2^{14} + 2^{15} + 2^{16} + 2^{17} + 2^{18} + 2^{19} + 2^{20} + 2^{21}  + 2^{22} + 2^{23} + 2^{24} + 2^{25} + 2^{26} + 2^{27} + 2^{28} + 2^{29} + 2^{30} + 2^{31}  + 2^{32} + 2^{33} + 2^{34} + 2^{35} + 2^{36} + 2^{37} + 2^{38} + 2^{39} + 2^{40} + 2^{41}  + 2^{42} + 2^{43} + 2^{44} + 2^{45} + 2^{46} + 2^{47} + 2^{48} + 2^{49} + 2^{50} + 2^{51}  + 2^{52} + 2^{53} + 2^{54} + 2^{55} + 2^{56} + 2^{57} + 2^{58} + 2^{59} + 2^{60} + 2^{61} + 2^{62} + 2^{63} + 2^{64}$ \\
+	$= 3,6893488147419 * 10^{19}$ Reiskörner
+	
+	\subsection*{b)}
+	$a_{0} = 40$ \\
+	$a_{2} = 45$ \\
+	$a_{n+1} = a_{n} + 5$ \\
+	$a_{n} = 40 + 5n$ \\
+	$a_{250} = 40 + 5 * 250 = 1290$ Sitze \\
+	$\sum\limits_{n=0}^{n=250} 40 + 5n$ \\
+	$(\sum\limits_{n=0}^{n=250})*5 + 40 = N$ \\
+	$\frac{250*(250+1)}{2} * 5 + 40 = N$ \\
+	$N = 156915$ Sitze im Theater.
+	
+	\section*{Aufgabe 3}
+	Tenärzahl 22222 22222 22222 22222 in dezimal. \\
+	$\sum\limits_{n=0}^{n=20} 2*3^{n} = 3486784400$
+
+\end{document}

@@ -1,0 +1,64 @@
+\documentclass{article}
+\usepackage{mathtools}
+\begin{document}
+	\section*{Lsg Vorschlag DS Ü007 Maximilian Maag}
+	\section*{Aufgabe A}
+	\subsection*{a)}
+	$R^{-1} = \{(x,a), (x,b), (y,c), (z,c)\}$ \\
+	$S^{-1} = \{(u,x), (v,z)\}$
+	\subsection*{b)}
+	$R o S = \{(a,u), (b,u), (c,v)\}$
+	\subsection*{c)}
+	$B x C = \{(u, x), (u,y), (u,z), (v,x), (v,y), (v,z)\}$ \\
+	$\overline{S} = \{(u,y), (u,z), (v,x), (v,y)\}$
+	\section*{Aufgabe B}
+	$A = \{0,1,2,3\}$ \\
+	$R_< = \{(0<1), (0<2), (0<3), (1<2), (1<3), (2<3)\}$ (absolut) transitiv \\
+	$R_= = \{(0 = 0), (1 = 1), (2 = 2), (3 = 3)\}$ reflexiv, symmetrisch, transitiv \\
+	$R_\geq = \{\}$ transitiv, reflexsiv \\
+	$R_\neq = \{\}$ symmetrisch
+	\section*{Aufgabe 1}
+	\subsection*{a)}
+	Max hat zwei Kinder. Moritz ist annas Opa.
+	\subsection*{b)}
+	R o S =  \{(Max, Bert), (Max, Eva), (Moritz, Hilde)\} \\
+	Petra ist mit Moritz verheiratet also die Oma von Anna. Die Relation R o S gibt das Verhältnis Schwiegereltern Schwiegersohn/Tochter an.
+	\section*{Aufgabe 2}
+	\subsection*{a}
+	symmetrisch, denn $y^2 = x^2$ ist zulässig. \\
+	reflexiv $x^2 = x^2$ \\
+	transitiv durch Gleichheit und damit äquivalent.
+	\subsection*{b}
+	$x+y = 42 \equiv y+x = 42$ symmetrisch \\
+	$x + x = 42$ reflexiv nicht erfüllt für z.B. x = 20 und y = 22  \\
+	nicht äquivalent
+	\subsection*{c}
+	transitiv $x + y = z, z$ ist gerade $\equiv x + y$ ist gerade \\
+	reflexiv $x + y \to$ ist gerade $\equiv y + x \to$ ist gerade. \\
+	Eine gerade Zahl sei $x + y$, symmetrisch. \\
+	äquivalent
+	\subsection*{d}
+	$y * x$ ist gerade. symmetrisch \\
+	$x * x$ ist gerade. reflexiv für (3,2) nicht erfüllt \\
+	nicht äquivalent
+	\subsection*{e}
+	$R = \{(x,y) \in Z^2 | x \leq y\}$ \\
+	Diese Relation enthält u.a. das Tupel (-2,1) für das keine Symmetrie festgestellt werden kann, daher kann die Relation R auch nicht äquivalent sein.
+	\section*{Aufgabe 3}
+	\subsection*{a}
+	$R_1 = \{(x,y) | x,y \in R, x^2 + y^2 \leq 1\}$
+	\subsection*{b}
+	$R_2 = \{(x,y) | x,y \in R, x \geq 1, y \geq 1\}$
+	\subsection*{c}
+	Unterteilung der Fläche im Graphen c in zwei Hilfsflächen mit eigener Relation: \\
+	h1: Dreieck: \\
+	$R_{h1} = \{(a,b) | \in R, 0 \leq a \leq 1, 0 \leq b \leq 1, (a * b)\frac{1}{2} \leq \frac{1}{2} \}$ \\
+	h2: $\frac{1}{4}$Kreis im oberen rechten Quadranten.	(Überdeckt Dreieck): \\
+	$R_{h2} = \{(c,d) | \in R, 0 \leq c \leq 1, 0 \leq d \leq 1, x^2 + y^2 \leq 1 \}$ \\
+	Daraus ergibt sich: legt man die Relation für den Kreis an und subrahiert ein Dreieck mit der richtigen Größe so ergibt sich die markierte Fläche. \\
+	Das Dreieck mit der richtigen Größe muss folgende Punkte enthalten A(0,0), B(0,1), C(1,0). Die Fläche dieses Dreiecks lässt sich bestimmen und ist $\frac{1}{2}$. \\
+	Die Relation aus a wird angepasst sodass sie einen viertel Kreis im 1. Quadranten ergibt. Davon wird das Dreieck h1 abgezogen. \\	
+	$R_{h2 - h1} = \{(c,d) | \in R, ((c^2 + d^2) - \frac{1}{2} \leq 1), 0 \leq c \leq 1, 0 \leq d \leq 1\}$ \\
+	Diese Relation ergibt mit x und y geschrieben. \\
+	$R_3 = \{(x,y) | \in R, ((x^2 + y^2) - \frac{1}{2} \leq 1), 0 \leq x \leq 1, 0 \leq y \leq 1\}$ \\
+\end{document}

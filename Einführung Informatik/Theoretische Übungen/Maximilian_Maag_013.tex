@@ -1,0 +1,63 @@
+\documentclass{article}
+\begin{document}
+	\section*{Lsg Vorschlag E I Ü013 Maximilian Maag}
+	\section*{Aufgabe 13.1}
+	Nachstehend gehe ich auf die Sichtweise eines Betriebssystems als Virtuelle Maschine bzw. als Betriebsmittelverwalter ein. \\ \\
+	Als virtuelle Maschine erfüllt das Betriebssystem im Wesentlichen die Aufgabe von der Komplexität der genutzten Hardware abzuschirmen. Einfach zu verstehende Abstraktionen wie Datei, Prozess oder Thread sorgen dafür, dass Anwender auch ohne fundierte Kenntnisse einen Computer mindestens bedienen können. \\ \\
+	Als Verwalter von Betriebsmitteln ist es die Aufgabe des Betriebssystems die zur Verfügung stehenden Ressourcen gemäß der Anforderungen durch Programme oder Benutzer zu verteilen. Das OS gewährleistet die gemeinsame Nutzung von Hardware und sichert den  Zugang zu Information gemäß gesetzter Berechtigungen zu.
+	
+	\section*{Aufgabe 13.2}
+	\subsection*{a)}
+	Ein grundlegender Von-Neumann-Rechner ist in der Lage für eine Eingabe eine Ausgabe zu erzeugen. \\
+	Diese Architektur sieht dafür immer ein Ein/Ausgabewerk vor. \\
+	Eine zentrale Recheneinheit übernimmt die Ausführung der Berechnungen. Sie verfügt über ein Steuerwerk um den Ablauf der Rechenoperationen zuz steuern und ein Rechenwerk um Rechenoperationen durchführen zu können. \\
+	Die Befehle die Auszuführen sind liegen dabei im Speicherwerk. \\
+	Dieses hält das auszuführende Programm währen der Laufzeit vor. \\
+	Die einzelnen Elemente de Von-Neumann-Rechners kommunizieren über einen Bus der dafür zuständig ist den Datentransport zu ermöglichen.
+	\subsection*{b)}
+	Ein Von-Neumann-Rechner arbeitet streng sequenziell und zyklisch. \\
+	Es erfolgt immer erst eine Befehlsholphase und anschließend die Ausführung des Befehls. \\
+	Für eine Addition liest der Rechner als erstes den Inhalt der Speicherzelle die ¸der Befehlszähler angibt. \\
+	Befehlszähler bestimmt nächste Speicheradresse \\
+	Decodierung im Befehlsregister \\
+	Anschließend erfolgt die Ausführung des Befehls. \\
+	Bei Addition: wird als erstes die Speicheradresse des Operanten aus dem Befehl gelesen. \\
+	Dann wird der Operant aus dem Speicher gelesen. \\
+	Anschließend Ausführung der Operation. \\
+	Zuletz wird das Ergebniss gespeichert. \\
+	Bei Sprungbefehlen: \\
+	Als Überprüfung der Sprungbedingung. \\
+	Durchführung durch Laden der durch die Sprungbedingung bestimmten Speicheradresse.
+	\section*{Aufgabe 13.3}
+	\subsection*{a)}
+	Um die nötigen Steuersignale für die Ausführung von Befehlen zu generieren kann ein steuerwerk ein Mikro-Programm verwenden. Das Programm wird i.d.R auf einem ROM gespeichert und erzeugt duch seine Ausführung Steuerwörter. Es ist auch von einem Rechner im Rechner die Rede.
+	\subsection*{b)}
+	Mithilfe des Pipelinings sollen Befehle innerhalb einer CPU Parallel bearbeitet werden. \\
+	Während ein Befehl sich in der Ausführung befindet wird der nächste Befehl bereits eingelesen.
+	\subsection*{c)}
+	CISC Prozessoren versuchen eine möglichst großen Satz an komplexen Befehlen in ihrer Hardware zu realisieren. \\
+	Im Gegensatz dazu sind RISC Prozessoren darauf ausgelegt einen möglichst einfachen Befehlsatz mit geringem Hardwareaufwand zu realisieren. 
+	\subsection*{d)}
+	Bedingt durch Zugriffszeiten werden Speicher geordnet: \\ \\
+	CPU register: extrem schnell (Nanosekunden) \\
+	Cache (L1 bis L3) können mit der CPU gerade so mithalten und sind sehr klein. \\
+	Hauptspeicher: Langsamer als Cache kann aber größe Datenmengen halten. \\
+	Massenspeicher: Hält viele Daten über lange Zeit. Muss dafür aber mit langsamen Zugriffen auskommen.
+	\section*{Aufgabe 13.4}
+	\subsection*{a)}
+	Nach Flynn werden Architekturen nach Instruktions- und Datenströmen auf denen Instruktionen ausgeführt werden klassifiziert. \\
+	Zu unterscheiden sind: \\
+	Single Data (SD) / Multi Data (MD) \\ \\
+	Single instruction (SI) / Multi Instruction (MI) \\
+	Diese Klassen können zum Beispiel zu einem System mit mehreren Instruktionen auf einem Datensatz (MISD) kombiniert werden.
+	\subsection*{b)}
+	Ein Kommerzielles SMP-System ist ein Multiprozessorsystem mit einem Bus der alle Prozessoren miteinander verbindet. Durch Caches wird der Von-Neumann-Flaschenhals weitgehend ausgeglichen. Das System ist jedoch nicht für eine hohe Anzahl von Prozessoren gedacht.
+	\subsection*{c)}
+	Die Art der Kopplung von Prozessoren ist Abhängig von deren Kommunikationsverhalten. \\
+	Teilen sich Prozessoren einen gemeinsamen Speicher sind sie eng gekoppelt. \\
+	Tun sie das nicht und kommunizieren über message passing o.ä. sind sie lose gekoppelt. 
+	\section*{Aufgabe 13.5}
+	Gitter-Topologie \\
+	LAN \\
+	Hypercube
+\end{document}

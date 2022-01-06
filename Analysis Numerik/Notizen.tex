@@ -1,0 +1,308 @@
+\documentclass{article}
+
+\usepackage{mathtools}
+\usepackage[
+colorlinks=true,
+urlcolor=blue,
+linkcolor=green
+]{hyperref}
+\begin{document}
+	
+	\section*{Notizen Analysis und Numerik}
+	\section*{17.11.2020}
+	\subsection*{Folgen}
+	explizit und rekursiv.
+	arithmetische und geometrische Folgen.
+	explizit $a_n$ kann direkt berechnet werden. Rekursiv Rückbezüglich Folgeglied wird aus vorangegenen Glied berechnet. \linebreak
+	
+	Rekursive Funktionen können sich selbst aufrufen. Brauchen einen Startwert und eine Abbruchbedingung. \linebreak
+	
+	wechsel zwischen Darstellungen von Folgen. explizit: $a_n = 3 * 7^n$ rekursiv $a_n = 7 * a_{n-1}$. Bei anderen Folgen schwieriger. Bei arithmetisch und geometrisch einfach. Es gibt Folgen bei dem Wechsel nicht möglich ist. \linebreak
+	
+	Fakultät wird rekursiv definiert. Akkermannfunktion $A(m,n)$ Testfunktion für Computerleistung. Ackermannfunktion und n! kann nicht expliziet angegeben werden. \linebreak
+	
+	\subsection*{Grenzwerte}
+	Folgen bieten eine tolle Möglichkeit Grenzwerte anzunähern. Kochsche Schneeflocke. Umfang wächst gegen unendlich. Fläche nähert sich einem Grenzwert. Genauer Grenzwert für Fläche A = $\frac{2}{5} * \sqrt{3}$ \\
+	Eine reele Zahl g heißt Grenzwert der Folge ($a_n$), wenn für jede Zahl $\epsilon$ $>$ 0 die Ungleichung $|a_n -g| < \epsilon$ von einer gewissen Indexzahl N an erfüllt ist. Abstand von $a_n$ zu g muss also kleiner als $\epsilon$ werden. \\
+	\section*{24.11.2020}
+	Koch'sche Schneefolge mit Logo programmiert. (Nachreichung).  \\
+	Umfang konvergiert gegen $\infty$ die Fläche hingegen einen bestimmten Grenzwert. \\
+	Der Grenzwert kann erreicht werden. Beispiel $a_{n} = n - n; \epsilon = 0$
+	\subsection*{Grenzwertsätze}
+	Suche Grenzwerte der einzelnen Bestandteile.
+	$\lim\limits_{n \to \infty} = \lim(n + m) = \lim(m) + \lim(n)$ \\
+	$\lim(\frac{n}{m})$ n in der höchsten Potenz ausklammern \\
+	$\lim\limits_{n \to \infty}$ $= \lim(n * m) = \lim(n) * \lim(n)$
+	\subsection*{Nullfolge}
+	Nullfolge ist eine Folge die gegen $0$ konvergiert. \\
+	Altanierende Folgen. \\
+	\subsection*{}
+	Folgen ohne Grenzwert divergent mit Grenzwert konvergent \\
+	Eine Folge kann nur einen Grenzwert haben!!!!!! \\
+	Deshalb besonders vorsichtig bei alternierenden Folgen. \\
+	Def. eine Folge heißt nach oben beschränkt, wenn es eine Zahl $k$ gibt, sodass für alle Folgenglieder gilt $a_{n} \leq k$ heißt sie nach oben beschränkt. \\ 
+	Analog ist sie nach unten beschränkt wenn gilt $a_{n} \geq k$. \\
+	 Ist eine Folge nach unten und oben beschränkt heißt sie beschränkt. \\
+	Ein Punkt darf die Schranke berühren, da gilt $\leq k$ und $\geq k$. \\
+	Def. Eine Folge wächst monoton, wenn gilt $a_{n+1} \geq a_{n}$. \\
+	Anlaog gilt streng monoton steigend: $a_{n+1} > a_{n}$ \\
+	Analog dazu gilt monoton fallend und streng monoton fallend mit $\leq a_{n}$ und $< a_{n}$ \\
+	Eine monotone beschränkte Folge hat immer einen Grenzwert. \\
+	Grenzwertgleichung $\lim(x_{n}) = \lim(x_{n-1})$ \\
+	Wurzel kann durch Folge angenähert werden. \\
+	\subsection*{Heron-Verfahren} 
+	Für Annäherung beliebiger Wurzel.
+	Quadrat mit a hat die Seitenlänge $\sqrt{a}$.
+	Beginn mit Rechteck 1 * a mit quadriert. \\
+	$x_{n} = \frac{1}{2}*(x_{n-1} + \frac{a}{x_{n-1}}))$ mit $x_{0} = 1$ \\
+	Quadratische Konvergenz. \\
+	Diese Rechnung wird durchgeführt bis das Ergebnis die gewünschte Näherung erreicht hat. \\
+	Jede reelle zahl kann durch eine rationale Zahlen angenähert werden. Z.B. e oder $\pi$.
+	
+	\paragraph*{Reihen}
+	Addition vieler reeller zahlen. \\
+	$\sum\limits_{i=0}^{n} 2n$
+	\subsection*{}
+	Folge partialsummen, geometrische Summe \\
+	Geometrische Summenfolge $s_{n} = \frac{1 - q^{n +1}}{1 - q}$ \\
+	Def unendliche Reihe: $\sum\limits_{k=1}^{\infty}a_{k}$
+	\section*{01.12.2020}
+	Partialsummen sind Folgen bei denen alle Folgeglieder aufsummiert werden. \\
+	geometrische Summe $\sum\limits_{k=0}^{n} q^{n}$
+	hat einen Grenzwert. \\
+	Reihen konvergieren, wenn die folge der Partialsummen der Reihe konvergiert. \\
+	Geometrische Reihe konvergiert für q zwischen 1 und -1. \\
+	Grenzwert für geometrische Folge wenn -1$\le$q$\le$1 = $\frac{1}{1 - q}$ \\
+	 Perioden können als geometrische Folge geschrieben werden und der Grenzwert ist dann der dazugehörige Bruch.
+	 Bsp: 0,999999999 ..... = 0,9 + 0,09 + 0,009 ... \\
+	 0,9 * (0,1 + 0,01 + 0,001) \\
+	 weitere Kriterien für Konvergenz: \\
+	 notwendig: Eine Reihe muss hinter dem Sigma eine Nullfolge haben. $\sum\limits_{k=0}^{\infty} a_{k}$ muss $a_{k}$ eine Nullfolge sein. Wenn $a_{k}$ eine Nullfolge ist muss die zugehörige Reihe nicht konvergieren. \\
+	 harmonische Reihe divergiert $\sum\limits_{k=0}^{\infty} \frac{1}{k}$
+	 harmonische Reihe enthält Nullfolge aber divergiert. \\
+	  Leibnitz-Kriterium. \\
+	  $\sum\limits_{k=0}^{\infty} (-1)^{k} * a_{n}$
+	  Wenn $a_{n}$ eine Nullfolge ist konvergiert die Reihe. \\
+	  Majorantenkriterium, Qoutientenkriterium, Wurzelkriterium. \\
+	  Grenzwert von Funktionen \\
+	  \section*{08.12.2020}
+	  Kapitel 2 Differenzialrechnung \\
+	  Funktionen werden benötigt. \\
+	  Grenzwert von Funktionen. \\
+	  Def über Grenzwerte von Folgen. \\
+	  setze allgemeine Testfolge ein. \\
+	  Testfolge konvergiert gegen $\infty$ \\
+	  Es entsteht eine Folge für die ein Grenzwert bestimmt werden kann mit Grenzwertsätzen. \\
+	  Def. die Folge f hat für x  $\to$ $\infty$ den Grenzwert g wen gilt: ---- \\
+	  Definitionslücke Annähern \\
+	  Funktionen haben zusätzlich einen Grenzwert gegen eine Definitionslücke. \\
+	  uneigentlicher Grenzwert $\infty$ \\
+	  Funktionen mit Sprungstelle haben an der Sprungstelle keinen Grenzwert. \\
+	 Stetigkeit Eine Funktion ist stätig wenn der Graph der Funktion gezeichnet werden kann ohne den Stift abzusetzen. \\
+	 Def. eine Funktion heist stätig an einer Stelle $x_{0}$ wenn folgende Bedingungen gelten. \\
+	 \begin{itemize}
+	 	\item f ist an $x_{0}$  definiert
+	 	\item Grenzwert an der stelle $x_{0}$ und
+	 	\item Der Grenzwert ist gleich dem Funktionswert an der Stelle $x_{0}$.
+	 \end{itemize}
+	Definition gilt für die Stelle x. Ist f im gesamten Definitionsbereich stetig ist die Funktion f stetig. \\
+	Bisektionsverfahren. \\
+	f muss stetig sein. \\
+	Im Intervall (a, b) müssen alle Funktionswerte zwischen f(a) und f(b) liegen. \\
+	Nehme zwei Startwerte mit unterschiedlichem Vorzeichen. Teile das Intervall in der Mitte.
+	Wenn f(a) und f(m) unterschiedliche Vorzeichen haben such in der linken Hälfte nach Nullstellen. Sonst suche in der rechten Hälfte. \\
+	\section*{15.12.2020}
+	Herleitung Ableitung \\
+	Differentialkoeffizient \\
+	Limes h  gegen 0. \\
+	Def Grenzwert $\frac{f(x_{0} + h) - f(x_{0})}{h}$ \\
+	Ableitungsregeln für Polynomfunktionen \\
+	Produktregel: U * V' + U' * V
+	Kettenregel: innere * äußere Ableitung
+	Summanten werden einzelnen abgeleitet
+	\section*{05.01.2021}
+	Beispiel Kettenregel $f(x) = (3x + 7)^{100}$ $f'(x) = 3 * 100 * (3x+7)^{99}$
+	Quotientenregel
+	$(\frac{u}{v})' = \frac{u' * v - u * v'}{v^2}$ \\
+	$tan(x) = \frac{sin(x)}{cos(x)}$ \\
+	trigonometrischer Pythagoras \\
+	$tan'(x) = \frac{1}{cos^2(x)}$ oder $tan'(x) = 1 + tan^2(x)$ \\
+	Ableitung Exponentialfunktion
+	am besten mit e. \\
+	$(e^x)' = e^x$ \\
+	$a^x = e^{ln(a^x)}$ \\
+	$(a^x)' = ln(a) * a^x$ \\
+	Ableitung Umkehrfunktion \\
+	$(f^{-1})'(x) = \frac{1}{f'(f^{-1}(x))}$ \\
+	$(log_a(x))' = \frac{1}{ln(a) * x}$ \\
+	De L'Hospitalregel
+	\section*{12.01.2021}
+	Funktionsuntersuchungen \\
+	Monotonie
+	für f'(x) $>$ 0 streng monoton steigend. \\
+	für f'(x) $<$ 0 streng monoton fallend. \\
+	für f'(x) $\geq$ 0 monoton steigend. \\
+	für f'(x) $\leq$ 0 monotn fallend. \\
+	Extrema, Wendepunkte, Krümmung \\
+	Rechts- in Linkskrümmung LRWP. \\
+	Rechts- in Linkskrümmung RLWP. \\
+	Wendepunkt Nullstelle der zweiten Ableitung. \\
+	Extrema Nullstellen der ersten Ableitung. \\
+	Rechtskrümmung f' fällt streng monoton. \\
+	Linkskrümmung f' steigt streng monoton. \\
+	Globales Maximum auf einem Intervall der größte Wert. \\
+	Lokales Maximum größter Wert in einer Umgebung. \\
+	Lokales Minimum analog. \\
+	Globales Minimum kleinster Wert im Intervall. \\
+	An Extremstellen ist die Steigung = 0. \\
+	Krümmung entscheidet über Hoch- oder Tiefpunkt. \\
+	Rechtskrümmung = Tiefpunkt. \\
+	Linkskrümmung = Hochpunkt. \\
+	Waagerechte Tangente und Krümmungsreich = Sattelpunkt. \\
+	Eine Playlist von Simple Club zu diesem Thema: \url{https://www.youtube.com/watch?v=4L9s2GHZCq0&list=PLjaA00udJtOohSQL16R4UAQioBsqq_4n-} \\
+	Wendestelle ist Extremstelle der Ableitung f'(x). \\
+	Bei Funktionen wie $x^4$ versagt hinreichendes Kriterium. \\
+	Deshalb allgemeines Kriterium: \\
+	Ableiten bis Ableitung ungleich Null. Dann gilt: \\
+	Es entscheidet wie oft abgeleitet wird. \\
+	für gerade n: Minimum oder Maximum.\\
+	Wenn n ungerade Sattelpunkt. \\
+	Anwendung der Ableitung Gleichungen lösen. \\
+	Transzendente Gleichungen Lösen näherungsweise mit Nullstellen. \\
+	Gleichung in Nullstellenproblem umwandeln. \\
+	Newton-Verfahren. \\
+	Tangente anlegen. \\
+	Nullstelle der Tangente bestimmen. \\
+	An dieser Nullstelle Tangente anlegen. \\
+	Nullstellen der Tangenten nähern sich der Nullstelle der approximierten Funktion numerisch an. \\
+	Einfache Erklärung von Simple Club: \url{https://www.youtube.com/watch?v=xGemDmrCqEk} \\
+	Newton's Näherungsformel: \\
+	$x_{n+1} = x_n - \frac{f(x_n)}{f'(x_n)}$ \\
+	Newten-Verfahren liefert nur eine Nullstelle. \\
+	Für mehrere Nullstellen mehrere Startwerte verwenden. \\
+	\section*{19.01.2021}
+	Kapitel 3 Approximation und Interpolation \\
+	Approximation durch Polynome \\
+	Taylorreihen Potenzreihen Konvergenzradius \\
+	Eine Funktion f(x) wird an der stelle $x_0$ und dessen Umgebung durch Taylorrpolynom approximiert \\
+	Ableitungen und Funktionswert f(x) und Taylorrpolynom g(x) müssen an $x_0$ übereinstimmen. \\
+	Je mehr Ableitungen übereinstimmen desto genauer die Approximation.
+	Taylorrpolynom bestimmen durch Bedingungen der Taylorrgleichungen. \\
+	1. Grad der Genauigkeit festlegen. \\
+	2. Gleichungen für Bedingungen aufstellen. \\
+	Beispiel f(0) = g(0) f'(0) = g'(0) usw. \\
+	3. Aus sich ergebenden LGS alle Parameter bestimmen. \\
+	4. alle Parameter in Ursprungsform einsetzen um Taylorpolynom zu erhalten. \\
+	allgemeine Formel Taylorpolynom: \\
+	 $f(x) = \frac{f^{(n)}(x)}{n!} * x^n + \frac{f^{(n-1)}(x)}{(n-1)!}*x^{n-1}$..... $ + \frac{f(0)}{0!}*x^0$ \\
+	 Sinus kann durch Polynom nie genau dargestellt werden. \\
+	 für n $\to \infty$ wird aus Taylorpolynom eine Taylorreihe. \\
+	 $\sum\limits_{k=0}^{\infty} \frac{f^{n}(x_0)}{x!}(x - x_0)^k$ \\
+	 Taylorreihe ist ein Beispiel für Potenzreihen \\
+	 Jede Potenzreihe hat einen um die Entwicklungsstelle symmetrischen Bereich für den sie konvergiert. \\
+	 Interpolation: gesucht ist ein Stützpolynom das bestimmte oder gemessene Punkte verbindet. \\
+	 Malen nach Zahlen. \\
+	 für x Werte gibt es ein Polynom mit dem Grad $\leq$ n. \\
+	 1. Methode LGS. \\
+	 2. Newton-Ansatz \\
+	 \section*{22.01.2021}
+	 Vollständige Indunktion \\
+	 bewiesen werden Aussagen die von natürlichen Zahlen n abhängen. \\
+	 Aussage hängt von n ab A(n). Zu zeigen ist, dass die Aussage A(n) für ein Startwert gilt (Indunktionsbasis) . \\
+	 zusätzlich wird gezeigt, dass A(n+1) gilt.(Induktionsschritt) \\
+	 \\
+	 nehme an A(n) gilt und notiere A(n+1) ordentlich. Induktionsvoraussetzung anwenden und umformen.
+	 \section*{26.01.2021}
+	 Kapitel 4 Mehrdimensionale Funktionen \\ \\
+	 Darstellung, Netzlinien, Niveaulinien \\
+	 Tangential ebene Extrema, Gradienten Hesse-Matrix \\
+	 Darstellung f(x,y). Darstellung als Fläche über x-y-Ebene. \\
+	 Paraboloid $f(x,y) = x^2 + y^2$ \\
+	 Netzlinien: für x Linien y festsetzen. für x Werte einsetzen. \\
+	 wiederhole für andere y-Werte. \\
+	 anschließend x festsetzen und y bestimmen für verschiedene x Werte. \\
+	 ergibt Schrägdarstellung der Funktion \\
+	 \\
+	 Höhenlinien \\
+	 horizontale Schnitte auf verschiedenen Ebenen. \\
+	 Für Niveaulinie setze Term = Radius \\
+	 Beispiel Niveau $1 = x^2 + y^2$ \\
+	 Grundriss, Aufriss, Sattelfläche \\
+	 Niveaulinien sehen von Oben wie Hyperbeln aus. \\
+	 \\
+	 Ableitung Mehrdimensionaler Funktionen \\
+	 partielle Ableitungen sind Ableitungen in bestimmte Richtung \\
+	 setze eine Variable fest und leite normal ab. \\
+	 betrachte beim ableiten alle anderen nicht abgeleiteten Variablen als Zahl!!! \\
+	 $f(x,y) = x^2 + y^2$ $f_x(x) = 2x$ \\
+	 Tangentialebene als Ableitung einer Mehrdimensionalen Funktion. \\
+	 Gleichung Tangentialebene: $f(x_0,y_0) + f_x(x,y) * (x-x_0) + f_y(x,y) * (y - y_0)$ \\
+	 Gradient ist Vektor der Partielen Ableitungen der Mehrdimensionalen Funktion \\
+	 Gradient zeigt in die steillste Richtung und stehtt senkrecht auf den Höhenlinien. \\
+	 \section*{02.02.2021}
+	 Steigung einer mehrdimensionalen Funktion.
+	 normierter Vektor. \\
+	 df nach dr. \\
+	 grad(f) * r = f * cos(a) + f * sin(a) \\
+	 Bilde Ableitung nach x und nach y \\
+	 Richtungsableitung maximal wenn r in Richtung von Gradient zeigt. \\
+	 Gradient steht senkrecht auf Höhenlinien. \\
+	 Gradient zeigt in die Richtung des steilsten Anstiegs. \\
+	 Gradientenfeld \\
+	 $grad(f) = \vec{f_x, f_y}$ und Punkt einsetzen für Steigung an diesem Punkt. \\
+	 Gradient kann auch angewendet werden auf mehrfach abgeleitete Funktionen angewendet werden. \\
+	 $f_{xy} \equiv f_{yx}$ \\
+	 Funktion kann zuerst nach x und dann nach y abgeleitet werden oder umgekehrt. \\
+	 Extrema \\
+	 $f_x$ und $f_y$ müssen = 0 sein für notwendiges Kriterium Extrema. \\
+	 Daraus Folgt Gradient muss Nullvektor sein. \\
+	 Für hinreichendes Kriterium gibt es vier zweite Ableitungen. Hesse Matrix \\
+	 Determinante von Hesse Matrix nutzen \\
+	 Wenn grad(f) = 0 dann ist Delta hinchreichend \\
+	 $\delta$ und $f_xx$ $>$ 0 isoliertes Minimum für $f_xx$$<$ 0 isoliertes Maximium. \\
+	 $\delta$ $<$ 0 Sattelpunkt. \\
+	 $\delta = 0$ keine Aussage. \\
+	 Gradientenabstiegsverfahren. \\
+	 Gesucht Minimum. \\
+	 Wähle Startpunkt \\
+	 Bestimmte Steigung \\
+	 Wenn positiv suche links davon und negativ suche rechts. \\
+	 Schrittweite proportional zur Steigung
+	 Steigung wird immer kleiner, wenn klein Genug Abbruch. \\
+	 $x_{n+1} = x_n -s * f'(x_n)$ \\
+	 \section*{09.02.2021}
+	 Gradientabstieg mehrdimensional: \\
+	 Startstelle wählen \\
+	 negativen Gradienten bestimmen \\
+	 Für den nächsten Schritt ergibt sich die Folge: \\
+	 $\vec{x}_{n+1} = \vec{x}_n - s * grad(f)$ \\
+	 evtl. Schritweite s anpassen. Abbruchbedingung festlegen zum Beispiel Betrag grad(f) < 0,01. \\
+	 \\
+	 Kapitel 5 - Integralrechnung \\
+	 Obersumme Untersumme, Trapezverfahren, Keplersche Fassregel, Simpson-Verfahren \\
+	 Obersumme, Untersumme \\
+	 Funktion in Rechtecke unterteilen. \\
+	 kleinste Funktionswerte geben Untersumme, größte Obersumme \\
+	 Obersumme ein wenig zu groß Untersumme ein wenig zu klein. \\
+	 Def. Bestimmtes Integral ist der Grenzwert der Ober- und Untersumme \\
+	 $\int_{a}^{b}f(x)dx$ \\
+	 Integration ist Umkehrung von Ableitung \\
+	 Def. Stammfunktion: Eine Stammfunktion F(x) ist Stammfunktion von f(x) wenn F'(x) = f(x) \\
+	 Def. Menge aller Stammfunktionen von f ist ein unbestimmtes Integral. \\
+	 $\int_{a}^{b}f(x)dx = F(x) + c$ \\
+	 bestimmtes Integral: $\int_{a}^{b}f(x)dx = F(a) - F(b)$ \\
+	 Diese Formel liefert Flächenbilanz. Also Darauf achten ob sich im Intervall a - b eine Nullstelle befindet!!! \\
+	 Simpson-Regel \\
+	 Wenn Funktion nicht integrierbar, kann Integral angenähert werden. \\
+	 Annäherung durch Trapeze. \\
+	 Bestimmte Trapezfläche für n Streifen und addiere sie. \\
+	 allgemein $\int_{a}^{b}f(x)dx = \frac{1}{2} * \frac{b - a}{2} * (y_0 + 2*y_1 + 2y_3.... +y_n)$ \\
+	 linker und rechter Rand nur einmal. \\
+	 Kepler'sche Fassregel \\
+	 Approximation durch Parabel. Anschließend Integral der Parabel bestimmen. \\
+	 Allgemein: $\int_{a}^{b}f(x)dx = \frac{b - a}{6} * (f(a) + 4*f(m)+f(b))$ \\
+	 Simpson-Verfahren \\
+	 Unterteilung der Funktion in mehrere Streifen und Anwendung der Kepler'sche Fassregel an. \\
+	 
+	 
+\end{document}

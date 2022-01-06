@@ -1,0 +1,70 @@
+\documentclass{article}
+\usepackage{mathtools}
+\begin{document}
+	\section*{Lsg Vorschlag A+N Ü005 Maximilian Maag}
+	\section*{Aufgabe A}
+	\subsection*{a)}
+	$\lim\limits_{x\to\infty} 7$
+	\subsection*{b)}
+	$\lim\limits_{x\to 1} \frac{(2x+2)(-2)(1-x)}{1-x}$ \\
+	$\lim\limits_{x\to 1} (2x+2)*-2$ \\
+	$\lim\limits_{x\to 1} -4x - 4$ \\
+	$\lim\limits_{x\to 1} -8$ \\
+	\subsection*{c)}
+	Polynomdivision ergibt: $\frac{3x + 5}{x}$ \\
+	$\lim\limits_{x\to 4} \frac{3x + 5}{x}$ \\
+	$\lim\limits_{x\to 4} \frac{3*4 + 5}{4}$ \\
+	$\lim\limits_{x\to 4} 8$
+	\section*{Aufgabe B}
+	Überlegung: Die gerade t(x) muss an der Stelle 2 den Parabelast schneiden, damit die Funktion stetig ist. \\
+	Der Schnittpunkt ist $P(2|f(2))$ \\
+	$f(2) = 2^2 - 2 * 2 + 2 = 2$ \\
+	$P(2|2)$ \\
+	$t(x) = 2x + t$ \\
+	$ 2 * 2 + t = 2$ \\
+	$t = -2$ \\
+	$t(x) = 2x -2$ \\
+	$t(2) = 2$ \\
+	
+	\section*{Aufgabe 1}
+	\subsection*{a)}
+	$\lim\limits_{x\to \infty} \frac{2x^{2} + 5x}{2 + 10x + x^2}$ \\
+	$ = \frac{x(2x + 5)}{x(\frac{2}{x} + 10 + x)}$ \\
+	$ = \frac{(2x + 5)}{(0 + 10 + x)}$ \\
+	$ = \frac{2x + 5}{x + 10}$ \\
+	$(2x + 5) : (x + 10) = 2$ \\
+	$-(2x + 20)$ \\
+	$-15$
+	\subsection*{b)}
+	$\lim\limits_{x\to \infty} \frac{x^2 - 3}{1-x^3}$ \\
+	$\lim\limits_{x\to \infty} \frac{x(x - \frac{3}{x})}{x(\frac{1}{x}-x^2)}$ \\
+	$\lim\limits_{x\to \infty} \frac{x - \frac{3}{x}}{\frac{1}{x}-x^2}$ \\
+	$\lim\limits_{x\to \infty} \frac{x}{-x^2}$ \\
+	$\lim\limits_{x\to \infty} 0$ \\
+	\subsection*{c)}
+	$(2x^2 + 4x - 6) : (-x + 1) = -2x - 2$ \\
+	$-(2x^2 -2x)$ \\
+		$2x -6$ \\
+		$-(2x -2)$ \\
+			$-4 - 6$ \\
+			$-10$ \\
+	$\lim\limits_{x\to 1} -2x - 2$\\
+	$\lim\limits_{x\to 1} -4$
+	\section*{Aufgabe 2}
+	\subsection*{b)}
+	Die Funktion f(x) verhält sich durch sin(1/x) wellenförmig. für x $\to$ 0 wird die Schwingungg der Funktion sowohl im negativen als auch im positiven Bereich immer stärker und geht gegen $\infty$. Der Funktionswert nährer sich 0 immer weiter an aber wird nie 0. \\
+	\subsection*{c)}
+	$\lim\limits_{x \to 0} x * \sin(\frac{1}{x})$ \\
+	$\lim\limits_{x \to 0} 0 * \sin(\frac{1}{x})$ \\
+	$\lim\limits_{x \to 0} 0$ \\
+	f(x) wird stetig indem wir zusätzlich definieren: f(0) = 0.
+	\section*{Aufgabe 3}
+	$f(x) = \cos(x) - x$ \\
+	$a = 0; b = 1;$ \\
+	$f(0) = 1; f(1/2) = 0,37758256189037 $ \\
+	$f(1/2) = 0,37758256189037; f(3/4) = -0,018311131126179$ \\
+	$f(5/8) = 0,18596311950522; f(3/4) = -0,018311131126179$ \\
+	$f(11/16)= 0,085334946152472; f(5/8) = 0,18596311950522$ \\
+	$f(11/16) > 0; f(12/16)<0$ \\
+	Nach 5 Iterationen liegt das Ergebnis zwischen $\frac{11}{16}$ und $\frac{12}{16}$ auf zwei Nachkommastellen genau.
+\end{document}

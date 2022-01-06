@@ -1,0 +1,329 @@
+Lösungsvorschlag Übung 01 Einführung Informatik
+
+Aufgabe 1.1
+
+a) cp /tmp/meineErsteDatei /home/pi
+
+b)
+
+root@testmachine:/home/pi# ls
+Bookshelf    meineErsteDatei   UNIXReferenzkarte.pdf  vim_tutor.txt
+desktop.ini  meineZweiteDatei  vi_mini_tut.txt        viReferenzkarte.pdf
+
+c) 
+
+root@testmachine:/home/pi# cat meineErsteDatei
+Dies ist Zeile 1 des Inhalts der Datei meineErsteDatei.
+Dies ist Zeile 2.
+Zeile 3
+Zeile 4
+Dies ist die letzte Zeile der Datei.
+
+Aufgabe 1.2
+
+a)
+
+cp /tmp/meineZweiteDatei /home/pi
+
+root@testmachine:/home/pi# cat meineZweiteDatei
+Dies ist Zeile 1 des Inhalts der Datei meineZweiteDatei.
+Dies ist Zeile 2.
+Zeile 3
+Zeile 4
+Zeile 5
+.............
+
+root@testmachine:/home/pi# more meineZweiteDatei
+Dies ist Zeile 1 des Inhalts der Datei meineZweiteDatei.
+Dies ist Zeile 2.
+Zeile 3
+Zeile 4
+Zeile 5
+Zeile 6
+Zeile 7
+Zeile 8
+Zeile 9
+Zeile 10
+Zeile 11
+Zeile 12
+Zeile 13
+Zeile 14
+Zeile 15
+Zeile 16
+Zeile 17
+.........
+
+Cat erzeugt eine Ausgabe mit dem gesamten Inhalt der Datei. More sorgt dafür, dass nicht der ganze Monitor zugemüllt wird. Man kann mit more vor und zurück blättern.
+
+b) more vorwärts eine Zeile Enter, vorwärts eine Seite SPACE eine Seite zurück b.
+
+c)
+
+cat vi_mini_tut.txt
+Dies ist der Uebungstext zu Aufgabenblatt 2.
+Er bietet eine "interaktive" Einfuehrung in den vi-Editor.
+(Erstellt von Marcus Thoss).
+
+Spaetestens jetzt sollte das Blatt "Die wichtigsten Befehle in vi" neben
+Ihnen liegen, es sei denn, Sie sind vi-
+
+Ausgabe ganze Datei.
+
+more vi_mini_tut.txt
+
+Liefert eine Ausgabe die nicht alles aus der Textdatei zeigt in der man blättern kann.
+
+Nach Zeichenketten kann man zwar mit more auch suchen, mit grep ist es aber eifnacher
+
+root@testmachine:/home/pi# grep test vi_mini_tut.txt
+Spaetestens jetzt sollte das Blatt "Die wichtigsten Befehle in vi" neben
+JETZT in Zeile *02 testen.
+
+Aufgabe 1.3
+
+a)
+
+root@testmachine:/home/pi# cp meineErsteDatei MeineKopierteDatei && cp meineZweiteDatei  M.
+root@testmachine:/home/pi# ls
+Bookshelf    M.               MeineKopierteDatei  UNIXReferenzkarte.pdf  vim_tutor.txt
+desktop.ini  meineErsteDatei  meineZweiteDatei    vi_mini_tut.txt        viReferenzkarte.pdf
+root@testmachine:/home/pi#
+
+b)
+
+root@testmachine:/home/pi# ls mein*
+meineErsteDatei  meineZweiteDatei
+
+Sucht nach Dateien, die mit mein beginnen gefolgt von einer bliebigen Zeichenkette.
+
+root@testmachine:/home/pi# ls Mein*
+MeineKopierteDatei
+root@testmachine:/home/pi#
+
+Sucht nach Dateien, die mit Mein beginnen gefolgt von einer bliebigen Zeichenkette.
+
+root@testmachine:/home/pi# ls ?
+ls: cannot access '?': No such file or directory
+
+Sucht nach einer Datei die ? heist.
+
+root@testmachine:/home/pi# ls ?eine*
+meineErsteDatei  MeineKopierteDatei  meineZweiteDatei
+
+Sucht nach Dateien die "eine" im Dateinamen enthalten.
+
+c)
+
+root@testmachine:/home/pi# mv MeineKopierteDatei m && ls m
+m
+
+d)
+
+root@testmachine:/home/pi# rm m && ls
+Bookshelf    M.               meineZweiteDatei       vi_mini_tut.txt  viReferenzkarte.pdf
+desktop.ini  meineErsteDatei  UNIXReferenzkarte.pdf  vim_tutor.txt
+
+e)
+
+rm M* löscht alle Dateien, deren Dateinamen mit M beginnt.
+
+f)
+
+rm * löscht alle Datein im ausgewählten Verzeichnis. Entsprechend der Berechtigung lassen sich auch versehentlich Systemrelevante Dateien löschen. Im Anschluss startet das System velleicht nicht mehr.
+(R.I.P) Raspberry Pi 3 der erste 2015
+
+Aufgabe 1.4
+
+a) root@testmachine:/home/pi# pwd
+/home/pi
+
+b) Formulierung irreführend ich gehe von Pfaden aus?
+
+Absolut gibt ein eindeutiges Ziel an, mit bestimmtem Ausgangspunkt.
+Relativ Pfad mit unbestimmtem Ausgangspunkt.
+
+c)
+
+.. bennent alle Verzeichnisse, die im Baum oberhalb dem aktuellen Verzeinis liegen.
+
+root@testmachine:~# ls ..
+bin   dev  home  lost+found  mnt  proc  run   srv  tmp  var
+boot  etc  lib   media       opt  root  sbin  sys  usr
+
+
+d)
+
+root@testmachine:/home/pi# mkdir uebdir1
+root@testmachine:/home/pi# cd uebdir1/
+root@testmachine:/home/pi/uebdir1# mkdir dir_a dir_b dir_c
+root@testmachine:/home/pi/uebdir1# nano file_1
+root@testmachine:/home/pi/uebdir1# cd dir_a/
+root@testmachine:/home/pi/uebdir1/dir_a# touch .hidden file_23 file_21 file_22
+root@testmachine:/home/pi/uebdir1/dir_a# cd /home/pi/uebdir1/dir_c/
+root@testmachine:/home/pi/uebdir1/dir_c# mkdir dir_ca dir_cx
+root@testmachine:/home/pi/uebdir1/dir_c# cd dir_ca
+root@testmachine:/home/pi/uebdir1/dir_c/dir_ca# touch file_31 file_32 file_33
+root@testmachine:/home/pi/uebdir1/dir_c/dir_ca#
+
+root@testmachine:/home/pi/uebdir1# ls
+dir_a  dir_b  dir_c
+root@testmachine:/home/pi/uebdir1# cd dir_a
+root@testmachine:/home/pi/uebdir1/dir_a# ls
+file_21  file_22  file_23
+root@testmachine:/home/pi/uebdir1/dir_a# cd /home/pi/uebdir1/dir_c/
+root@testmachine:/home/pi/uebdir1/dir_c# ls
+dir_ca  dir_cx
+root@testmachine:/home/pi/uebdir1/dir_c# cd dir_ca/
+root@testmachine:/home/pi/uebdir1/dir_c/dir_ca# ls
+file_31  file_32  file_33
+root@testmachine:/home/pi/uebdir1/dir_c/dir_ca#
+
+usw.
+
+e)
+
+ls -R uebdir1/dir_c
+uebdir1/dir_c:
+dir_ca  dir_cx
+
+uebdir1/dir_c/dir_ca:
+file_31  file_32  file_33
+
+uebdir1/dir_c/dir_cx:
+root@testmachine:/home/pi#
+
+
+ls . zeigt alle Dateien und Verzeichnisse im aktuelen Verzeichnis
+
+root@testmachine:/home/pi# ls .
+Bookshelf    M.               meineZweiteDatei  UNIXReferenzkarte.pdf  vim_tutor.txt
+desktop.ini  meineErsteDatei  uebdir1
+
+ls .. zeigt das Gleich wie ls . nur im übergeordneten Verzeichnis
+
+root@testmachine:/home/pi# ls ..
+pi  sinusbot
+root@testmachine:/home/pi#
+
+
+root@testmachine:/home/pi# ls .*
+.bash_history  .bash_logout  .bashrc  .profile
+
+.:
+Bookshelf    M.               meineZweiteDatei  UNIXReferenzkarte.pdf  vim_tutor.txt
+desktop.ini  meineErsteDatei  uebdir1           vi_mini_tut.txt        viReferenzkarte.pdf
+
+..:
+pi  sinusbot
+
+.gnupg:
+private-keys-v1.d
+
+.local:
+share
+root@testmachine:/home/pi#
+
+
+Zeigt aktuelles und übergordnetes Verzeichnis.
+
+g)
+
+root@testmachine:/home/pi# cd /home/pi/uebdir1/
+root@testmachine:/home/pi/uebdir1# cd /home/sinusbot/
+root@testmachine:/home/sinusbot# cd /var/log/
+
+Aufgabe 1.5
+
+a)
+
+root@testmachine:/home/pi/uebdir1/dir_c# mv dir_cx dir_cb
+root@testmachine:/home/pi/uebdir1/dir_c# ls
+dir_ca  dir_cb
+root@testmachine:/home/pi/uebdir1/dir_c#
+
+dir_cx ist nicht mehr vorhanden/ .hidden analog dazu daher hier nicht gezeigt.
+
+b)
+
+root@testmachine:/home/pi/uebdir1/dir_a# cp file_23 file_24
+root@testmachine:/home/pi/uebdir1/dir_a# ls
+file_21  file_22  file_23  file_24
+root@testmachine:/home/pi/uebdir1/dir_a#
+
+c)
+
+cp -R uebdir1/dir_c/dir_ca uebdir1/dir_c/dir_cb
+root@testmachine:/home/pi# cd uebdir1/dir_c/
+root@testmachine:/home/pi/uebdir1/dir_c# ls -R
+.:
+dir_ca  dir_cb
+
+./dir_ca:
+file_31  file_32  file_33
+
+./dir_cb:
+dir_ca
+
+./dir_cb/dir_ca:
+file_31  file_32  file_33
+root@testmachine:/home/pi/uebdir1/dir_c# cp uebdir1/dir_c/dir_ca uebdir1/dir_c/dir_cb
+cp: cannot stat 'uebdir1/dir_c/dir_ca': No such file or directory
+root@testmachine:/home/pi/uebdir1/dir_c# cp -R uebdir1/d
+
+d)
+
+root@testmachine:/home/pi/uebdir1/dir_c# cp -R dir_ca dir_cc
+root@testmachine:/home/pi/uebdir1/dir_c# ls
+dir_ca  dir_cb  dir_cc
+root@testmachine:/home/pi/uebdir1/dir_c# cd dir_cc
+root@testmachine:/home/pi/uebdir1/dir_c/dir_cc# ls
+file_31  file_32  file_33
+root@testmachine:/home/pi/uebdir1/dir_c/dir_cc#
+
+e)
+
+root@testmachine:/home/pi/uebdir1/dir_c# mv dir_ca dir_cc
+root@testmachine:/home/pi/uebdir1/dir_c# ls
+dir_cb  dir_cc
+root@testmachine:/home/pi/uebdir1/dir_c#
+
+f)
+
+root@testmachine:/home/pi/uebdir1/dir_a# touch file1 file2 file3 was_hidden
+root@testmachine:/home/pi/uebdir1/dir_a# ls
+file1  file2  file3  was_hidden
+root@testmachine:/home/pi/uebdir1/dir_a# cd ..
+root@testmachine:/home/pi/uebdir1# cd dir_a/
+root@testmachine:/home/pi/uebdir1/dir_a# cp file1 file2 file3 /home/pi/uebdir1/dir_b/
+root@testmachine:/home/pi/uebdir1/dir_a# cd ..
+root@testmachine:/home/pi/uebdir1# cd dir_b/
+root@testmachine:/home/pi/uebdir1/dir_b# ls
+file1  file2  file3
+root@testmachine:/home/pi/uebdir1/dir_b#
+
+g)
+
+root@testmachine:/home/pi/uebdir1# rm -R dir_c
+root@testmachine:/home/pi/uebdir1# ls
+dir_a  dir_b
+root@testmachine:/home/pi/uebdir1#
+
+Aufgabe 1.6
+
+root@testmachine:/home/pi# ls
+Bookshelf    M.               meineZweiteDatei  UNIXReferenzkarte.pdf  vim_tutor.txt
+desktop.ini  meineErsteDatei  uebdir1           vi_mini_tut.txt        viReferenzkarte.pdf
+root@testmachine:/home/pi# ^C
+root@testmachine:/home/pi#
+
+Datei Bereits im Homeverzeichnis.
+
+Aufgabe 1.7
+
+root@testmachine:/home/pi# cp /tmp/UNIXReferenzkarte.pdf /home/pi/
+root@testmachine:/home/pi# ls
+Bookshelf    M.               meineZweiteDatei  UNIXReferenzkarte.pdf  vim_tutor.txt
+desktop.ini  meineErsteDatei  uebdir1           vi_mini_tut.txt        viReferenzkarte.pdf
+root@testmachine:/home/pi#
+
+

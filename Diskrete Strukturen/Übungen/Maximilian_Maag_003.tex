@@ -1,0 +1,105 @@
+\documentclass{article}
+\usepackage{mathtools}
+\begin{document}
+	\section*{Lsg Vorschlag Maximilian Maag DS Übung 003}
+	\section*{Aufgabe A}
+	\subsection*{a)}
+	1. Absorptionsgesetz $A \land (A \lor B) \equiv A$ \\
+	\begin{tabular}[h]{l|c|r}
+		A $\land$ & A $\lor$ B & A \\
+		\hline
+		w & f  & w \\
+		w & w & w \\
+		f & f & f \\
+		f & w & f 
+	\end{tabular}
+	\subsection*{b)}
+	2. Distributivgesetz A $\land$ (B $\lor$ C) $\equiv$ (A $\land$ B) $\lor$ (A $\lor$ C) \\
+	\begin{tabular}[h]{l|c|r}
+		A $\land$ & (B $\lor$ C) & (A $\land$ B) $\lor$ (A $\lor$ C)  \\
+		\hline
+		w & w & w \\
+		w & f & f \\
+		f & w & f \\
+		f & f & f
+		
+	\end{tabular}
+	\subsection*{c)} $A \to B \equiv (\not B) \to (\not A)$ \\
+	$A \to B \equiv \not ((\not B) \to (\not A))$ \\
+	$A \to B \equiv A \to B $ 
+	
+	
+	
+	\section*{Aufgabe B}
+	
+	$f(x, y, z) = (\not x \land y \land z) \lor (\not x \land y \land \not z)  \lor (x \land y \land z)$
+	
+	\section*{Aufgabe C}
+	$A \to B \equiv \not A \lor B$ \\
+	$A \leftrightarrow B \equiv (A \to B) \land (B \to A)$ \\
+	$A \leftrightarrow B \equiv (\not A \lor B) \land (\not B \lor A)$ \\
+	$A \oplus B \equiv (A \lor B) \land (\not A \lor \not B)$ 
+	
+	\section*{Aufgabe 1}
+	\subsection*{a)}
+	\begin{tabular}[h]{c|c|c}
+%	$A \to B & \not (A \lor B) \land (A \lor \not B)  \lor B$ \\
+	\hline
+	w & w w w  \\
+	w & w w f \\
+	f & f w w \\
+	w & w f w \\
+	f & f f f \\
+	f & f w f 
+\end{tabular} 
+	\subsubsection*{b)}	
+	$A \to B \equiv \not (A \lor B) \land (A \lor \not B)  \lor B$ \\
+	$A \to B \equiv \not (\not (A \lor B) \land (A \lor \not B)  \lor B)$ \\
+	$A \to B \equiv (A \land B) \lor \not(A \land \not B)  \land B$ \\
+	$A \to B \equiv \not(A \land \not B)  \land B$ \\
+	$A \to B \equiv \not A \land B  \land B$ \\
+	$A \to B \equiv \not A \land B$ \\
+	$A \to B \equiv A \to B$ \\
+	q.e.d
+	\section*{Aufgabe 2}
+	\subsection*{a)}
+	0 = Schalter ist geöffnet; 1 = Schalter ist geschlossen \\
+	\begin{tabular}[h]{c|c|c|c}
+	x & y & z & f(x, y, z) \\
+	\hline
+%   $0 & 0 & 0 & 0 \\
+	0 & 0 & 1 & 0 \\	
+	0 & 1 & 1 & 1 \\
+	1 & 1 & 1 & 0 \\	
+	1 & 1 & 0 & 1 \\
+	1 & 0 & 1& 1
+		
+	\end{tabular}
+	\subsection*{b)}
+	$f(x, y, z) = (\not x \land y \land z) \lor (x \land y \land \not z) \lor (x \land \not y \land z)$ 
+%	
+	\subsection*{c)}
+	$(\not x \land y \land z) \lor (x \land y \land \not z) \lor (x \land \not y \land z) \equiv \not x \land y \land z$ \\
+	Angaben von WolramAlpha ohne Gewähr.
+	
+	\section*{Aufgabe 3}
+	Def.: $ Nand (A, B) \equiv \not A \lor \not B$
+	\subsection*{a)}
+	$NAND(A, w) \equiv \not A$ \\
+	$\not A \lor w \equiv \not A$ \\
+	$\not A \equiv \not A$
+	
+	\subsection*{b)}
+	$A \land B \equiv NAND(NADN(A,B), w)$ \\
+	$A \land B \equiv NAND(\not A \lor \not B, w)$ \\
+	$A \land B \equiv \not (\not A \lor \not B) \lor  f$ \\
+	$A \land B \equiv  ( A \land  B) \lor  f$ \\
+	$A \land B \equiv  A \land  B$
+	
+	\subsection*{c)}
+	$A \lor B \equiv NAND(NAND(A, w),NAND(B, w))$ \\
+	$A \lor B \equiv \not (NAND(A, w) \land NAND(B, w))$ \\
+	$A \lor B \equiv \not (\not (A \land w) \land \not (B \land w))$ \\
+	$A \lor B \equiv (\not (\not A \lor f) \lor \not (\not B \lor f))$ \\
+	$A \lor B \equiv A \lor  B$ \\
+\end{document}

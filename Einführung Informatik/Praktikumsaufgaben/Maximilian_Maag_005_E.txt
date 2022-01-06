@@ -1,0 +1,150 @@
+LSG Vorschlag Maxiimilian Maag Blatt 5 Gruppe E
+
+Aufgabe 5.1
+
+a)
+
+root@vps797276:~# xterm
+Warning: This program is an suid-root program or is being run by the root user.
+The full text of the error or warning message cannot be safely formatted
+in this environment. You may get a more descriptive message by running the
+program as a non-root user or by removing the suid bit on the executable.
+xterm: Xt error: Can't open display: %s
+xterm: DISPLAY is not set
+root@vps797276:~# xterm &
+[1] 688784
+root@vps797276:~# Warning: This program is an suid-root program or is being run by the root user.
+The full text of the error or warning message cannot be safely formatted
+in this environment. You may get a more descriptive message by running the
+program as a non-root user or by removing the suid bit on the executable.
+xterm: Xt error: Can't open display: %s
+xterm: DISPLAY is not set
+
+[1]+  Exit 1                  xterm
+root@vps797276:~#
+
+b)
+
+root@vps797276:~# vi cat
+
+[1]+  Stopped                 vi cat
+root@vps797276:~#
+
+c)
+
+root@vps797276:~# exit
+logout
+There are stopped jobs.
+root@vps797276:~#
+
+Aufgabe 5.2
+
+a) die History wird mit dem BGefehl History aufgerufen.
+b) !Befehlnummer
+c) Pfeiltaste nach oben.
+
+Aufgabe 5.3
+Aufgabe 5.7
+a)
+root@vps797276:/home# ps
+    PID TTY          TIME CMD
+  14713 pts/0    00:06:11 supervisord
+  15323 pts/0    00:00:00 stop-supervisor
+  15325 pts/0    00:00:20 cron
+  15326 pts/0    00:00:17 dovecot
+  15328 pts/0    00:00:58 syslog-ng
+  15347 pts/0    00:00:05 replicator
+  15353 pts/0    00:00:59 config
+ 686892 pts/0    00:00:00 bash
+ 688849 pts/0    00:00:00 vi
+ 689467 pts/0    00:00:00 ps
+
+b)
+
+688849 pts/0    00:00:00 vi
+
+c)
+
+root@vps797276:/home# ps
+    PID TTY          TIME CMD
+  14713 pts/0    00:06:11 supervisord
+  15323 pts/0    00:00:00 stop-supervisor
+  15325 pts/0    00:00:20 cron
+  15326 pts/0    00:00:17 dovecot
+  15328 pts/0    00:00:58 syslog-ng
+  15347 pts/0    00:00:05 replicator
+  15353 pts/0    00:00:59 config
+ 686892 pts/0    00:00:00 bash
+ 688849 pts/0    00:00:00 vi
+ 689985 pts/0    00:00:00 ps
+root@vps797276:/home# nano te
+tekkit/   test.txt
+root@vps797276:/home# nano test.txt
+root@vps797276:/home# ps
+    PID TTY          TIME CMD
+  14713 pts/0    00:06:11 supervisord
+  15323 pts/0    00:00:00 stop-supervisor
+  15325 pts/0    00:00:20 cron
+  15326 pts/0    00:00:17 dovecot
+  15328 pts/0    00:00:58 syslog-ng
+  15347 pts/0    00:00:05 replicator
+  15353 pts/0    00:00:59 config
+ 686892 pts/0    00:00:00 bash
+ 688849 pts/0    00:00:00 vi
+ 690001 pts/0    00:00:00 auth
+ 690012 pts/0    00:00:00 ps
+root@vps797276:/home#
+
+Aufgabe 5.6
+
+a) Unix unterscheidet Inhaber, Lese, Schreib und Ausführrechte.
+
+b) 
+
+root@vps797276:/home# ls -al /home/
+total 305920
+-rw-r--r--  1 root   root           7 Nov 23 15:55 -C
+drwxr-xr-x  6 root   root        4096 Dec 10 17:55 .
+drwxr-xr-x 19 root   root        4096 Dec  2 08:10 ..
+-rw-r--r--  1 root   root   229519744 Jul  9 17:15 0.981Tekxit3Server.zip
+drwxr-xr-x  2 root   root        4096 Dec  4 11:53 Material
+-rw-r--r--  1 root   root    83318621 Jun  8  2020 Tekkit_Server_v1.2.9g-2.zip
+-rw-r--r--  1 root   root         153 Nov 24 16:12 ls.txt
+-rw-r--r--  1 root   root         127 Nov 23 15:34 meineErsteDatei
+-rw-r--r--  1 root   root      245760 Nov 24 16:12 myuebung3.tar
+-rw-r--r--  1 root   root           2 Nov 23 15:41 no
+drwxr-xr-x  5 root   root        4096 Jul 22 16:48 tekkit
+-rw-r--r--  1 root   root         154 Dec  4 10:46 test.txt
+drwxr-xr-x  3 ubuntu ubuntu      4096 May 14  2020 ubuntu
+drwxr-xr-x  6 ubuntu ubuntu      4096 Nov 24 15:41 uebung3
+-rw-r--r--  1 root   root      115482 Nov 23 14:21 uebung3.tar.gz
+-rw-r--r--  1 root   root           1 Nov 23 15:41 yes
+
+c) mit dem x-Recht dürfen Dateien ausgeführt werden.
+
+d) root@vps797276:/home# chmod +x scr
+
+e)
+
+root@vps797276:/home# whoami
+root
+
+f)
+
+root@vps797276:/home# touch test2.txt
+root@vps797276:/home# chmod +x test.txt
+root@vps797276:/home# ls -al test.txt
+-rwxr-xr-x 1 root root 154 Dec  4 10:46 test.txt
+root@vps797276:/home#
+Aufgabe 5.8
+
+a)
+
+root@vps797276:~# find /usr -name "xterm"
+/usr/lib/terminfo/x/xterm
+/usr/bin/xterm
+/usr/share/icons/Adwaita/cursors/xterm
+
+b)
+root@vps797276:/home# find -mtime 14
+

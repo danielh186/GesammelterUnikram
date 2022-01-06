@@ -1,0 +1,72 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.11.21)  15 DEC 2020 20:15
+entering extended mode
+**./Maag-BWL-06.tex
+(Maag-BWL-06.tex
+LaTeX2e <2020-10-01> patch level 2
+L3 programming layer <2020-10-27> xparse <2020-03-03>
+(C:\Users\maxim\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
+Document Class: article 2020/04/10 v1.4m Standard LaTeX document class
+(C:\Users\maxim\AppData\Local\Programs\MiKTeX\tex/latex/base\size10.clo
+File: size10.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
+)
+\c@part=\count175
+\c@section=\count176
+\c@subsection=\count177
+\c@subsubsection=\count178
+\c@paragraph=\count179
+\c@subparagraph=\count180
+\c@figure=\count181
+\c@table=\count182
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen138
+)
+(C:\Users\maxim\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
+tex.def
+File: l3backend-pdftex.def 2020-09-24 L3 backend support: PDF output (pdfTeX)
+\l__kernel_color_stack_int=\count183
+\l__pdf_internal_box=\box47
+) (Maag-BWL-06.aux)
+\openout1 = `Maag-BWL-06.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+
+Overfull \hbox (6.3802pt too wide) in paragraph at lines 9--11
+\OT1/cmr/m/n/10 Eine Un-ternehmen-sanal-yse ist nach in-nen gerichtet. Sie pru
+ft Ressourcen, Starken
+ []
+
+[1
+
+{C:/Users/maxim/AppData/Local/MiKTeX/pdftex/config/pdftex.map}] [2]
+(Maag-BWL-06.aux) ) 
+Here is how much of TeX's memory you used:
+ 394 strings out of 479799
+ 7248 string characters out of 2869722
+ 275771 words of memory out of 3000000
+ 17466 multiletter control sequences out of 15000+200000
+ 535693 words of font info for 31 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 43i,4n,49p,651b,102s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Users/maxim/AppData/Local/Programs/MiKTeX/fonts/type1/pu
+blic/amsfonts/cm/cmbx12.pfb><C:/Users/maxim/AppData/Local/Programs/MiKTeX/fonts
+/type1/public/amsfonts/cm/cmr10.pfb>
+Output written on Maag-BWL-06.pdf (2 pages, 39523 bytes).
+PDF statistics:
+ 17 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

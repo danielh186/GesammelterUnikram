@@ -1,0 +1,206 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.11.21)  29 JAN 2021 13:30
+entering extended mode
+**./Maximilian_Maag_010.tex
+(Maximilian_Maag_010.tex
+LaTeX2e <2020-10-01> patch level 2
+L3 programming layer <2020-10-27> xparse <2020-03-03>
+(C:\Users\maxim\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
+Document Class: article 2020/04/10 v1.4m Standard LaTeX document class
+(C:\Users\maxim\AppData\Local\Programs\MiKTeX\tex/latex/base\size10.clo
+File: size10.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
+)
+\c@part=\count175
+\c@section=\count176
+\c@subsection=\count177
+\c@subsubsection=\count178
+\c@paragraph=\count179
+\c@subparagraph=\count180
+\c@figure=\count181
+\c@table=\count182
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen138
+)
+(C:\Users\maxim\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+Package: graphicx 2020/09/09 v1.2b Enhanced LaTeX Graphics (DPC,SPQR)
+
+(C:\Users\maxim\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks15
+)
+(C:\Users\maxim\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+Package: graphics 2020/08/30 v1.4c Standard LaTeX Graphics (DPC,SPQR)
+
+(C:\Users\maxim\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(C:\Users\maxim\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.c
+fg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 105.
+
+(C:\Users\maxim\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
+File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen139
+\Gin@req@width=\dimen140
+)
+(C:\Users\maxim\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
+tex.def
+File: l3backend-pdftex.def 2020-09-24 L3 backend support: PDF output (pdfTeX)
+\l__kernel_color_stack_int=\count183
+\l__pdf_internal_box=\box47
+) (Maximilian_Maag_010.aux)
+\openout1 = `Maximilian_Maag_010.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+
+(C:\Users\maxim\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
+ii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count184
+\scratchdimen=\dimen141
+\scratchbox=\box48
+\nofMPsegments=\count185
+\nofMParguments=\count186
+\everyMPshowfont=\toks16
+\MPscratchCnt=\count187
+\MPscratchDim=\dimen142
+\MPnumerator=\count188
+\makeMPintoPDFobject=\count189
+\everyMPtoPDFconversion=\toks17
+)
+(C:\Users\maxim\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
+ase.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+)
+<1011.png, id=1, 439.6425pt x 682.4697pt>
+File: 1011.png Graphic file (type png)
+<use 1011.png>
+Package pdftex.def Info: 1011.png  used on input line 6.
+(pdftex.def)             Requested size: 345.01279pt x 345.01414pt.
+<1012.png, id=3, 374.1177pt x 73.4745pt>
+File: 1012.png Graphic file (type png)
+<use 1012.png>
+Package pdftex.def Info: 1012.png  used on input line 7.
+(pdftex.def)             Requested size: 345.0pt x 67.7599pt.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 8.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 8.
+<102a.png, id=4, 364.4817pt x 530.2209pt>
+File: 102a.png Graphic file (type png)
+<use 102a.png>
+Package pdftex.def Info: 102a.png  used on input line 11.
+(pdftex.def)             Requested size: 345.0pt x 501.89471pt.
+ [1
+
+{C:/Users/maxim/AppData/Local/MiKTeX/pdftex/config/pdftex.map} <./1011.png> <./
+1012.png>]
+<102b.png, id=14, 372.1905pt x 216.0873pt>
+File: 102b.png Graphic file (type png)
+<use 102b.png>
+Package pdftex.def Info: 102b.png  used on input line 13.
+(pdftex.def)             Requested size: 345.0pt x 200.29965pt.
+ [2 <./102a.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 19--23
+
+ []
+
+[3 <./102b.png>]
+<103d.png, id=24, 418.4433pt x 350.9913pt>
+File: 103d.png Graphic file (type png)
+<use 103d.png>
+Package pdftex.def Info: 103d.png  used on input line 33.
+(pdftex.def)             Requested size: 345.0pt x 289.3893pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 35--43
+
+ []
+
+[4 <./103d.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 45--54
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 45--54
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 45--54
+
+ []
+
+<105b.png, id=29, 393.3897pt x 183.3249pt>
+File: 105b.png Graphic file (type png)
+<use 105b.png>
+Package pdftex.def Info: 105b.png  used on input line 56.
+(pdftex.def)             Requested size: 345.0pt x 160.77812pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 55--65
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 55--65
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 55--65
+
+ []
+
+[5 <./105b.png>]
+<106a.png, id=37, 320.1561pt x 219.9417pt>
+File: 106a.png Graphic file (type png)
+<use 106a.png>
+Package pdftex.def Info: 106a.png  used on input line 69.
+(pdftex.def)             Requested size: 345.0pt x 237.03008pt.
+<106c.png, id=38, 362.5545pt x 119.7273pt>
+File: 106c.png Graphic file (type png)
+<use 106c.png>
+Package pdftex.def Info: 106c.png  used on input line 73.
+(pdftex.def)             Requested size: 345.0pt x 113.93575pt.
+ [6 <./106a.png>] [7 <./106c.png>] (Maximilian_Maag_010.aux) ) 
+Here is how much of TeX's memory you used:
+ 1227 strings out of 479799
+ 18924 string characters out of 2869722
+ 286262 words of memory out of 3000000
+ 18266 multiletter control sequences out of 15000+200000
+ 536298 words of font info for 33 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 66i,7n,72p,240b,122s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Users/maxim/A
+ppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/User
+s/maxim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb
+><C:/Users/maxim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/c
+mmi7.pfb><C:/Users/maxim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfo
+nts/cm/cmr10.pfb><C:/Users/maxim/AppData/Local/Programs/MiKTeX/fonts/type1/publ
+ic/amsfonts/cm/cmr7.pfb><C:/Users/maxim/AppData/Local/Programs/MiKTeX/fonts/typ
+e1/public/amsfonts/cm/cmsy10.pfb><C:/Users/maxim/AppData/Local/Programs/MiKTeX/
+fonts/type1/public/amsfonts/cm/cmsy7.pfb>
+Output written on Maximilian_Maag_010.pdf (7 pages, 8124665 bytes).
+PDF statistics:
+ 71 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+
