@@ -1,0 +1,105 @@
+\documentclass{article}
+\usepackage{hyperref}
+\begin{document}
+	
+	\section*{Lsg Vorschlag RuT Ü02 Maximilian Maag}
+	\subsection*{Aufgabe 2.1}
+	\subsection*{a)}
+	Rechner der HSRM Website \\
+	PING hs-rm.de (195.72.103.63) 56(84) Bytes Daten.
+	64 Bytes von hs-rm.de (195.72.103.63): icmp seq=1 ttl=53 Zeit=12.8 ms \\
+	64 Bytes von hs-rm.de (195.72.103.63): icmp seq=2 ttl=53 Zeit=11.1 ms
+	
+	\subsection*{b)}
+	Handy in meinem W-Lan \\ \\
+	PING 192.168.188.22 (192.168.188.22) 56(84) Bytes Daten. \\
+	64 Bytes von 192.168.188.22: icmp seq=1 ttl=64 Zeit=145 ms
+	
+	\subsection*{c)}
+	Angemieteter Server in einem Rechenzentrum in Düsseldorf: \\
+	PING www.yourlocalcloud.de (213.202.247.190) 56(84) Bytes Daten. \\
+	64 Bytes von rs003862.fastrootserver.de (213.202.247.190): icmp seq=1 ttl=57 Zeit=13.5 ms \\
+	64 Bytes von rs003862.fastrootserver.de (213.202.247.190): icmp seq=2 ttl=57 Zeit=13.3 ms \\
+	64 Bytes von rs003862.fastrootserver.de (213.202.247.190): icmp seq=3 ttl=57 Zeit=13.5 ms \\
+	\subsection*{d)}
+	Website des Weißen Hauses \\
+	PING e4036.dscb.akamaiedge.net \\ (184.30.18.92) 56(84) Bytes Daten.
+	64 Bytes von \\ a184-30-18-92.deploy.static.akamaitechnologies.com (184.30.18.92): icmp seq=1 ttl=59 Zeit=9.73 ms \\
+	64 Bytes von a184-30-18-92.deploy.static.akamaitechnologies.com (184.30.18.92): icmp seq=2 ttl=59 Zeit=9.91 ms
+	
+	\subsection*{e)}
+	Lokale Fritzbox: \\
+	PING fritz.box (192.168.188.1) 56(84) Bytes Daten. \\
+	64 Bytes von fritz.box (192.168.188.1): icmp seq=1 ttl=64 Zeit=0.535 ms \\
+	64 Bytes von fritz.box (192.168.188.1): icmp seq=2 ttl=64 Zeit=0.496 ms \\
+	64 Bytes von fritz.box (192.168.188.1): icmp seq=3 ttl=64 Zeit=0.553 ms \\
+	64 Bytes von fritz.box (192.168.188.1): icmp seq=4 ttl=64 Zeit=0.539 ms 
+	
+	\subsection*{Aufgabe 2.2}
+	\subsection*{a)}
+	traceroute to 195.72.103.63 (195.72.103.63), 30 hops max, 60 byte packets
+	1  10.8.0.1 (10.8.0.1)  6.748 ms  6.724 ms  6.840 ms \\
+	2  gw02.netcup.net (5.45.100.3)  6.834 ms  6.827 ms  6.939 ms \\
+	3  ae3-4018.bbr01.anx84.nue.de.anexia-it.net (144.208.211.30)  6.931 ms  6.930 ms  7.039 ms \\
+	4  ae2-0.bbr02.anx25.fra.de.anexia-it.net (144.208.208.141)  10.953 ms  11.072 ms  11.062 ms \\
+	5  te-0-1-0.peer1.fra4.ix.f.man-da.net (80.81.192.6)  10.807 ms  10.807 ms  10.912 ms \\
+	6  te-1-2-6-0.core1.fra1.ix.f.man-da.net (82.195.67.79)  11.660 ms  9.864 ms  9.854 ms
+	7  te-0-0-3-0.core1.fr5.eqx.f.man-da.net (82.195.80.50)  10.345 ms  10.327 ms te-1-0-3-0.core1.fr5.eqx.f.man-da.net (82.195.80.56)  10.398 ms \\
+	8  te-0-0-0-0.core1.hmwk.wi.man-da.net (82.195.67.66)  10.805 ms  10.793 ms  10.791 ms \\
+	9  te-0-1-0-842.br-hsrm1.ksr.hsrm.wi.man-da.net (82.195.78.178)  10.625 ms  10.610 ms  10.629 ms \\
+	10  2te-po600-656.sw-core-2k.itmz.hs-rm.de (195.72.110.3)  11.026 ms \\ 2te-po600-656.sw-core-1k.itmz.hs-rm.de (195.72.110.1)  11.024 ms \\ 2te-po600-656.sw-core-2k.itmz.hs-rm.de (195.72.110.3)  11.160 ms \\
+	
+	\subsection*{b)}
+	traceroute 192.168.188.22 \\
+	traceroute to 192.168.188.22 (192.168.188.22), 30 hops max, 60 byte packets \\
+	1  Galaxy-A42-5G.fritz.box (192.168.188.22)  199.343 ms *  199.308 ms
+	
+	\subsection*{c)}
+	traceroute 213.202.247.190
+	traceroute to 213.202.247.190 (213.202.247.190), 30 hops max, 60 byte packets \\
+	1  10.8.0.1 (10.8.0.1)  6.104 ms  6.205 ms  6.205 ms \\
+	2  gw02.netcup.net (5.45.100.3)  6.485 ms  6.479 ms  6.475 ms \\
+	3  ae3-4018.bbr01.anx84.nue.de.anexia-it.net (144.208.211.30)  6.611 ms  6.630 ms  6.739 ms \\
+	4  ae2-0.bbr02.anx25.fra.de.anexia-it.net (144.208.208.141)  10.703 ms  10.703 ms  10.696 ms \\
+	5  po16q60-h9137.core1-dus-ix.bb.as24961.net (80.81.192.162)  13.494 ms  13.495 ms  13.610 ms \\
+	6  * * * \\
+	7  po101.agr1-dus6-vz.bb.as24961.net (62.141.47.27)  15.963 ms  14.993 ms po100.agr1-dus6-vz.bb.as24961.net (62.141.47.23)  17.754 ms
+	
+	\subsection*{d)}
+	traceroute 184.30.18.92 \\
+	traceroute to 184.30.18.92 (184.30.18.92), 30 hops max, 60 byte packets \\
+	1  10.8.0.1 (10.8.0.1)  6.377 ms  6.602 ms  6.601 ms \\
+	2  gw02.netcup.net (5.45.100.3)  6.752 ms  6.751 ms  6.770 ms \\
+	3  ae3-4018.bbr01.anx84.nue.de.anexia-it.net (144.208.211.30)  7.166 ms  7.163 ms  7.189 ms \\
+	4  ae2-0.bbr02.anx25.fra.de.anexia-it.net (144.208.208.141)  10.982 ms  10.985 ms  11.005 ms \\
+	5  decix-fra10.netarch.akamai.com (80.81.195.168)  15.229 ms  15.235 ms  15.232 ms \\
+	
+	\subsection*{e)}
+	traceroute 192.168.188.1 \\
+	traceroute to 192.168.188.1 (192.168.188.1), 30 hops max, 60 byte packets \\
+	1  fritz.box (192.168.188.1)  0.787 ms  1.100 ms  1.251 ms
+	
+	\subsection*{Aufgabe 2.3}
+	\subsection*{a) Heise.de Rechner}
+	Name:	www.heise.de \\
+	Address: 193.99.144.85  \\
+	Name:	www.heise.de \\
+	Address: 2a02:2e0:3fe:1001:7777:772e:2:85
+	
+	\subsection*{b) HSRM Rechner}
+	www.hs-rm.de	canonical name = hs-rm.de. \\
+	Name:	hs-rm.de \\
+	Address: 195.72.103.63
+	
+	\subsection*{Aufgabe 2.4}
+	\subsection*{a)}
+	ssh nutzer@host
+	\subsection*{b)}
+	Geklaut bei Wikipedia: \url{https://de.wikipedia.org/wiki/Secure_Shell#Sicherung_der_Transportschicht}  \\
+	Noch vor einer Authentifizierung des Clients wird für die Dauer der Sitzung ein geheimer Schlüssel zwischen Server und Client ausgehandelt, mit dem die gesamte nachfolgende Kommunikation verschlüsselt wird. Dabei identifiziert sich zunächst der Server dem Client gegenüber mit einem RSA-, DSA- oder ECDSA-Zertifikat, wodurch Manipulationen im Netzwerk erkannt werden können. \\
+	Nach erfolgter Sicherung der Transportschicht kann sich der Client unter anderem per Public-Key-Authentifizierung mit einem privaten Schlüssel, dessen öffentlicher Schlüssel auf dem Server hinterlegt wurde, oder einem gewöhnlichen Kennwort authentisieren. Während Letzteres in der Regel eine Benutzerinteraktion erfordert, ermöglicht die Public-Key-Authentifizierung, dass sich Client-Computer auch ohne Benutzerinteraktion auf SSH-Servern einloggen können, ohne dass dabei ein Passwort auf dem Client im Klartext gespeichert werden muss.
+	\subsection*{c)}
+	ssh mmaag001@login1.cs.hs-rm.de
+	\subsection*{d)}
+	scp Dateipfad mmaag001@login1.cs.hs-rm.de
+\end{document}

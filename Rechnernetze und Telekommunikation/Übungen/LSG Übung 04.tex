@@ -1,0 +1,142 @@
+\documentclass{article}
+\begin{document}
+	\section*{Lsg Vorschlag RuT Ü04 Maximilian Maag}
+	\subsection*{Aufgabe 4.1}
+	Durch Schnelle Umwandlung
+	\subsection*{a)}
+	192.168.1.2 \\
+	11000000 10100100 00000001 00000010
+	\subsection*{b)}
+	10.0.123.7 \\
+	00001010 00000000 01111011 00000111
+	
+	\subsection*{Aufgabe 4.2}
+	\subsection*{c)}
+	Subnetzmaske ist aufgebraucht.
+	\subsection*{d)}
+	Diese Adresse ist ungültig, da sie nur 3 Adressblöcke enthält.
+	\subsection*{e)}
+	hat keinen Host, da IP-adressen nie görßer als 255 sind.
+	\subsection*{Aufgabe 4.3}
+	\subsection*{a)}
+	13.34.254.0/23 \\
+	13.34.11111110 00000000 \\
+	Netzmaske: 255.255.254.0 \\
+	\subsection*{b)}
+	20.30.0.0/15 \\
+	20.11111110 00000000 00000000 \\
+	255.254.0.0
+	\subsection*{Aufgabe 4.4}
+	\subsection*{a)}
+	128 kann mit einem Bit an 8. Stelel dargestellt werden. \\
+	21.17.128.0/17
+	\subsection*{b)}
+	Für die 192 sind sowohl das 8. und das 7. Bit gesetzt. \\
+	194.99.17.96/26
+	\subsection*{Aufgabe 4.5}
+	Bei der Broadcast-Adresse besteht der Hostteil nur aus Einsen. Daraus folgt: \\
+	IA: IP-Adresse \\
+	NM: Netzmaske \\
+	BC: Broadcast-Adresse
+	\subsection*{3a)}
+	12.34.254.0/23 \\
+	IA: 00001100 00100010 1111111-0 00000000 \\
+	NM: 11111111 11111111 11111110 00000000 \\
+	BC: 00001100 00100010 1111111-1 11111111 \\
+	BC als Dezimal: 12.34.255.255
+	\subsection*{3b)}
+	20.30.0.0/15 \\
+	IA: 00010100 0001111-0 00000000 00000000 \\
+	BC: 00010100 0001111-1 11111111 11111111 \\
+	BC dezimal: 20.31.255.255 
+	\subsection*{4a)}
+	21.17.128.0/17 \\
+	IA: 21.17. 1-0000000 00000000 \\
+	BC: 21.17. 1-1111111 11111111 \\
+	BC dezimal: 21.17.255.255
+	\subsection*{4b)}
+	194.99.17.96/26 \\
+	IA: 194.99.17 01-100000 \\
+	BC: 194.99.17 01-111111 \\
+	BC dezimal: 194.99.17.127
+	\subsection*{Aufgabe 4.6}
+	\subsection*{a)}
+	172.30 0 001000 .... \\
+	172.30.0.0
+	\subsection*{b)}
+	10. 000101 00... 10.20.0.0
+	\subsection*{c)}
+	20.15.23.245/25 \\
+	20.15.23 1... 20.15.23.128
+	\subsection*{Aufgabe 4.7}
+	\subsection*{a)}
+	172.30.24.0 \\
+	10101100 00011110 00011000 0 0000000 \\
+	10101100 00011110 00011000 1 0000000 \\
+	172.30.24.0 \\
+	172.30.24.128 \\
+	\subsection*{b)}
+	10.20.240.0 \\
+	00001010 00010100 111100 00 00000000 \\
+	00001010 00010100 111100 10 00000000 \\
+	00001010 00010100 111100 01 00000000 \\
+	00001010 00010100 111100 11 00000000 \\
+	10.20.240.0 \\
+	10.20.244.0 \\
+	10.20.248.0 \\
+	10.20.252.0 \\
+	
+	\subsection*{c)}
+	172.30.24.127 \\
+	172.30.24.255
+	\\ \\
+	10.20.240.255 \\
+	10.20.244.255 \\
+	10.20.248.255 \\
+	10.20.252.255 \\
+	\subsection*{Aufgabe 4.8}
+	Netzmaske: 11111111 11111111 11110000 00000000 \\
+	Netzadresse: 00001010 000010100 11000000 00000000
+	\subsection*{c)}
+	10.20.241.12 \\
+	Netzadresse: 00001010 00010100 11110001 00001100 \\
+	Netzmaske: 11111111 11111111 11110000 00000000 \\
+	00001010 00010100 11110001 00000000 \\
+	Ungleich Netzadresse daher nicht enthalten. 
+	\subsection*{d)}
+	10.20.100.13 \\
+	00001010 00010100 01100100 00001101 \\
+	11111111 11111111 11110000 00000000 \\
+	00001010 00010100 01100000 00000000 \\
+	nicht enthalten.
+	\subsection*{e)}
+	10.21.200.14 \\
+	00001010 00010101 11001000 00001110 \\
+	11111111 11111111 11110000 00000000 \\
+	00001010 00010101 11000000 00000000 \\
+	Adresse ist nicht enthalten.
+	\subsection*{f)}
+	10.20.200.15 \\
+	00001010 00010100 11001000 00001111 \\
+	11111111 11111111 11110000 00000000 \\
+	00001010 00010100 11000000 00000000 \\
+	Ist enthalten.
+	\subsection*{g)}
+	10.20.191.16 \\
+	00001010 00010101 10111111 00010000 \\
+	11111111 11111111 11110000 00000000 \\
+	00001010 00010101 10110000 00000000 \\ 
+	nicht enthalten.
+	\subsection*{Aufgabe 4.9}
+	\subsection*{a)}
+	gw 10.10.10.20 eth0
+	\subsection*{b)}
+	gw 10.10.20.140 eth1
+	\subsection*{c)}
+	sl0
+	\subsection*{d)}
+	gw 10.10.20.140 eth1
+	\subsection*{e)}
+	gw 10.10.10.20 eth0
+	
+\end{document}

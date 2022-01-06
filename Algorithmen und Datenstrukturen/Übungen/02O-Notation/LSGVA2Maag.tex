@@ -1,0 +1,29 @@
+\documentclass{article}
+\usepackage{mathtools}
+\begin{document}
+	\section*{Lsg Vorschlag ADS Ü02 A2 Maximilian Maag}
+	\subsection*{Aufgabe a}
+
+	
+
+	\subsection*{Aufgabe b}
+	Zu zeigen ist durch Folgekonvergenz: $n^3 
+	\notin O(n^2 + n +4)$  \\ \\
+	$f_n = n^3$; $g_n = n^2 + n + 4$ \\
+	$\frac{f_n}{g_n} \lim\limits_{x \to \infty}$ = $\frac{n^3}{n^2 + n + 4}$ \\
+	$\frac{f_n}{g_n} \lim\limits_{x \to \infty}$ = $\frac{n * n^2}{n(n + \frac{4}{n})}$ \\
+	$\frac{f_n}{g_n} \lim\limits_{x \to \infty}$ = $\frac{n^2}{n + \frac{4}{n}}$ \\
+	$\frac{f_n}{g_n} \lim\limits_{x \to \infty}$ = $\frac{n^2}{n + \frac{4}{n}}$ \\
+	$\frac{f_n}{g_n} \lim\limits_{x \to \infty}$ = $\infty$ \\ \\
+	Der Grenzwert der beiden Folgen ist ungleich 0 daher gilt $n^3 \notin O(n^2 + n + 4)$.
+	\subsection*{Aufgabe c}
+	$a_n \in o(b_n)$; $b_n \in o(c_n)$ \\ \\
+	Daraus folgt: \\
+	$c_n > b_n$ \\
+	$b_n > a_n$  \\
+	\\
+	Daraus wiederum folgt: \\
+	$a_n < b_n < c_n$ \\
+	Geschuldet durch Transitivität: \\
+	$a_n < c_n \equiv a_n \in o(c_n)$ 
+\end{document}

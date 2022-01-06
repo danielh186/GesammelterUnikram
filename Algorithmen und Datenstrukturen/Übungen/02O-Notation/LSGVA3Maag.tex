@@ -1,0 +1,25 @@
+\documentclass{article}
+\usepackage{mathtools}
+\begin{document}
+	\section*{Lsg Vorschlag ADS Ü02 A3 Maximilian Maag}
+	\subsection*{best case unicorn ninja()}
+	BC für unicorn-ninja(n, 0, 0) \\
+	Für Pos = 0 und Pos = 1 gibt es einen Durchlauf. \\
+	für n $>$ 2 gibt es mindestens 2 Durchläufe. \\
+	Da n $>$ 2 gilt gibt es mindestens 4 Schritte \\ \\
+	$\to$ 4 + $\sum_{pos=3}^{n-1}$ 2 \\
+	$\to$ 4 + $\sum_{pos=0}^{n-4}$ 2 \\
+	$\to$ 4 + 2(n-3) \\
+	$\to$ 4 + 2n-6 \\
+	$\to$ 2n - 2 \\
+	\subsection*{best case gesamt}
+	$a^{best} =  \sum_{pos=0}^{n-1} 1 + 2n - 2$ \\
+	$a^{best} =  n*1 + 2n - 2$ \\
+	$a^{best} =  n + 2n - 2$ \\
+	$a^{best} =  3n - 2$ \\
+	\subsection*{worst case}
+	Die Schleife um unicorn ninja läuft bis n-1 und unicorn ninja selbst läuft bis n-1. \\ \\
+	$a^{worst} =  \sum_{pos=0}^{n-1}(1)+\sum_{pos=0}^{n-1}(\frac{pos}{2}+1)$ \\
+	$a^{worst} = n+n+\sum_{pos=0}^{n-1}(\frac{pos}{2})$ \\
+	$a^{worst} = 2n+\sum_{pos=0}^{n-1}(\frac{pos}{2})$ \\
+\end{document} 

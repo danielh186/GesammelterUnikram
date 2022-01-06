@@ -1,0 +1,438 @@
+\documentclass{article}
+\begin{document}
+	\section*{Lsg Vorschlag LAÜ10 Maximilian Maag}
+	\subsection*{Aufgabe 1}
+	A = 
+	$\left(
+	\begin{array}{ccc}
+	 1&-1&1 \\ 0&-6&12 \\ -2&2&-2
+	\end{array}
+	\right)$ \\
+	T = 
+	$\left(
+	\begin{array}{ccc}
+	 -1&-1&-2 \\ 0&2&0 \\ 1&1&4
+	\end{array}
+	\right)$ \\
+	$T^{-1}$ =
+	$
+	\left(\begin{array}{ccc}
+	-2 & \frac{-1}{2} & -1 \\
+	0 & \frac{1}{2} & 0 \\
+	\frac{1}{2} & 0 & \frac{1}{2}
+	\end{array}\right)
+	$ \\
+	B = $T^{-1}$ $\cdot$ A $\cdot$ T \\
+	B = 
+	$
+	\left(\begin{array}{ccc}
+	-2 & \frac{-1}{2} & -1 \\
+	0 & \frac{1}{2} & 0 \\
+	\frac{1}{2} & 0 & \frac{1}{2}
+	\end{array}\right)
+	$ $\cdot$ 
+	$\left(
+	\begin{array}{ccc}
+	1&-1&1 \\ 0&-6&12 \\ -2&2&-2
+	\end{array}
+	\right)$
+	$\cdot$
+	$\left(
+	\begin{array}{ccc}
+	-1&-1&-2 \\ 0&2&0 \\ 1&1&4
+	\end{array}
+	\right)$ \\
+	B = 
+	$
+	\left(\begin{array}{ccc}
+	-2 & \frac{-1}{2} & -1 \\
+	0 & \frac{1}{2} & 0 \\
+	\frac{1}{2} & 0 & \frac{1}{2}
+	\end{array}\right)
+	$
+	$\cdot$
+	$\left(
+	\begin{array}{ccc}
+	 0&-2&2 \\ 12&0&48 \\ 0&4&-4
+	\end{array}
+	\right)$ \\
+	B = 
+	$
+	\left(\begin{array}{ccc}
+	-6 & 0 & -24 \\
+	6 & 0 & 24 \\
+	0 & 1 & -1
+	\end{array}\right)
+	$
+	\subsection*{Aufgabe 2}
+	\subsection*{a)}
+	Berechnung der Eigenwerte: \\ \\
+	$\xi_{A}(\lambda)$ = det(A - $\lambda$ $\cdot$ E) \\ \\
+	= det
+	$\left(
+	\left(
+	\begin{array}{ccc}
+	2&1&0 \\ 1&1&1 \\ 0&1&2 
+	\end{array}
+	\right)
+	-
+	\lambda \cdot 
+	\left(\begin{array}{ccc}
+	1&0&0 \\ 0&1&0 \\ 0&0&1
+	\end{array}\right)
+	\right)$ \\
+	= det
+	$\left(
+	\left(
+	\begin{array}{ccc}
+	2&1&0 \\ 1&1&1 \\ 0&1&2 
+	\end{array}
+	\right)
+	-
+	\left(\begin{array}{ccc}
+	\lambda&0&0 \\ 0&\lambda&0 \\ 0&0&\lambda
+	\end{array}\right)
+	\right)$ \\
+	= det
+	$\left(
+	\begin{array}{ccc}
+	2 - \lambda&1&0 \\ 1&1- \lambda&1 \\ 0&1&2- \lambda 
+	\end{array}
+	\right)$ \\
+	= $((2-\lambda) \cdot (1 - \lambda) \cdot (2-\lambda)) + (1 \cdot 1 \cdot 0) + (0 \cdot 1 \cdot (2 - \lambda)) - (0 \cdot (1-\lambda) \cdot 0) - (1 \cdot 1 \cdot (2 - \lambda)) - ((2 - \lambda) \cdot 1 \cdot 1)$ \\
+	=
+	$
+	(4 - 2\lambda - 4\lambda + 2\lambda^{2} -2\lambda + \lambda^{2} + 2\lambda^{2} - \lambda^{3}) -(1 \cdot 1 \cdot (2 - \lambda)) - ((2 - \lambda) \cdot 1 \cdot 1)$ \\
+	=
+	$
+	(-\lambda^{3}+ 5\lambda^{2}- 8\lambda + 4) -(1 \cdot 1 \cdot (2 - \lambda)) - ((2 - \lambda) \cdot 1 \cdot 1)$ \\
+	$
+	=
+	(-\lambda^{3}+ 5\lambda^{2}- 8\lambda + 4) -2 + \lambda - 2 + \lambda$ \\	
+	$
+	-\lambda^{3}+ 5\lambda^{2} - 6\lambda + 4 - 4$ \\
+	$\xi_{A}(\lambda)$ =$ -\lambda^{3}+ 5\lambda^{2}- 6\lambda$ \\ \\
+	Bestimmung Nullstellen des Polynoms: \\ \\
+	$\xi_{A}(\lambda)$ =$ -\lambda^{3}+ 5\lambda^{2}- 6\lambda$ \\
+	$-\lambda^{3}+ 5\lambda^{2}- 8\lambda$ = 0 \\
+	$-\lambda \cdot (\lambda^{2} - 5\lambda + 6) = 0$ \\
+	$x_1$ = 0 \\
+	$\lambda^{2} - 5\lambda + 6 = 0$  \\
+	$x_{2, 3} = \frac{5}{2} +- \sqrt{\frac{5}{2}^2 - 6}$ \\
+	$x_2$ = 2 \\
+	$x_3$ = 3 \\
+	\\
+	\\
+	Eigenvektoren \\
+	\\
+	$
+	\left(
+	\begin{array}{ccc}
+	2&1&0 \\ 1&1&1 \\ 0&1&2 
+	\end{array}
+	\right)
+	\cdot
+	\left(
+	\begin{array}{c}
+	x \\ y \\ z
+	\end{array}
+	\right)
+	=
+	0 \cdot
+	\left(
+	\begin{array}{c}
+	x \\ y \\ z
+	\end{array}
+	\right)
+	$ \\ \\
+	Als homogenes LGS: \\ \\
+	A1: 2x + y  = 0\\
+	B1: x + y + z = 0\\
+	C1: y + 2z = 0\\
+	B2: $\frac{1}{2}$y + z = 0 \\
+	C2: y - y +2z -2z = 0 \\
+	C2: 0 = 0 \\ 
+	A2: 3x + 2y + z = 0 \\ \\
+	In Stufenform: \\
+	A2: 3x + 2y + z = 0 \\
+	B2: $\frac{1}{2}$y + z = 0 \\
+	C2: z = z \\
+	z = z; y = -2z; x = z \\
+	Lösung in Abhängigkeit von z: \\
+	$\vec{x}$ = 
+	$\left(
+	\begin{array}{c}
+	z\\-2z\\z
+	\end{array}
+	\right)$
+	\\
+	Daraus Folgt eine Lösung für den Eigenwert 0: \\
+	$\vec{\lambda_{0}}$ =
+	$\left(
+	\begin{array}{c}
+	1 \\ -2 \\ 1
+	\end{array}
+	\right)$
+	$ \\ \\
+	\left(
+	\begin{array}{ccc}
+	2&1&0 \\ 1&1&1 \\ 0&1&2 
+	\end{array}
+	\right)
+	\cdot
+	\left(
+	\begin{array}{c}
+	x \\ y \\ z
+	\end{array}
+	\right)
+	=
+	2 \cdot
+	\left(
+	\begin{array}{c}
+	x \\ y \\ z
+	\end{array}
+	\right)
+	$ \\
+	Als LGS: \\
+	A1: 2x + y = 2x \\
+	B1: x + y + z = 2y \\
+	
+	C1: y + 2z = 2z \\
+	Als homogenes LGS: \\
+	A1: y = 0 \\
+	B1: x - y + z = 0 \\
+	C1: y = 0 \\
+	x = -z; y = 0; z = z  \\
+	$\vec{\lambda_{2}}$ =
+	$\left(
+	\begin{array}{c}
+	-1 \\ 0 \\ 1 
+	\end{array}
+	\right)$
+	$ \\ \\
+	\left(
+	\begin{array}{ccc}
+	2&1&0 \\ 1&1&1 \\ 0&1&2 
+	\end{array}
+	\right)
+	\cdot
+	\left(
+	\begin{array}{c}
+	x \\ y \\ z
+	\end{array}
+	\right)
+	=
+	3 \cdot
+	\left(
+	\begin{array}{c}
+	x \\ y \\ z
+	\end{array}
+	\right)
+	$ \\
+	Als LGS:  \\
+	A1: 2x + y = 3x \\
+	B1: x + y + z = 3y \\
+	C1: y + 2z = 3z \\ \\
+	Als homogenes LGS: \\
+	A1: -x + y = 0 \\
+	B1: x -2y + z = 0 \\
+	C1: y = z \\
+	C1 in A1 \\
+	A2: -x + z = 0 \\
+	A3: x = z
+	A3 und C1 in B2 \\
+	B2: z -2z + z = 0 \\
+	B3: 0 = 0 \\
+	Lösung in Abhängigkeit von z: \\
+	$\vec{x}$ = 
+	$\left(
+	\begin{array}{c}
+	z \\ z\\ z
+	\end{array}
+	\right)$
+	$\vec{\lambda_{3}}$ =
+	$\left(
+	\begin{array}{c}
+	1 \\ 1 \\1
+	\end{array}
+	\right)$
+	\subsection*{b)}
+	Wir recyclen die Eigenvektoren aus Aufgabe a und zeigen durch $T^{-1}$ $\cdot$ A $\cdot$ T das B eine Diagonalmatrix ist mit den Eigenwerten aus A auf ihrer Diagonalen. \\ \\
+	T Ergibt sich aus den Eigenvektoren: \\ \\
+	T = 
+	$\left(
+	\begin{array}{ccc}
+	 1& -1&1\\ -2&0&1\\ 1&1&1
+	\end{array}
+	\right)$ \\ \\
+	$T^{-1}$ ist entsprechend: \\
+	$T^{-1}$ = 
+	$
+	\left(\begin{array}{ccc}
+	\frac{1}{6} & \frac{-1}{3} & \frac{1}{6} \\
+	\frac{-1}{2} & 0 & \frac{1}{2} \\
+	\frac{1}{3} & \frac{1}{3} & \frac{1}{3}
+	\end{array}\right)
+	$ \\ \\
+	B = 
+	$
+	\left(\begin{array}{ccc}
+	\frac{1}{6} & \frac{-1}{3} & \frac{1}{6} \\
+	\frac{-1}{2} & 0 & \frac{1}{2} \\
+	\frac{1}{3} & \frac{1}{3} & \frac{1}{3}
+	\end{array}\right)
+	$
+	$\cdot$
+	$
+	\left(\begin{array}{ccc}
+	2 & 1 & 0 \\
+	1 & 1 & 1 \\
+	0 & 1 & 2
+	\end{array}\right)
+	$
+	$\cdot$
+	$
+	\left(\begin{array}{ccc}
+	1 & -1 & 1 \\
+	-2 & 0 & 1 \\
+	1 & 1 & 1
+	\end{array}\right)
+	$ \\
+	B = 
+	$
+	\left(\begin{array}{ccc}
+	\frac{1}{6} & \frac{-1}{3} & \frac{1}{6} \\
+	\frac{-1}{2} & 0 & \frac{1}{2} \\
+	\frac{1}{3} & \frac{1}{3} & \frac{1}{3}
+	\end{array}\right)
+	$
+	$\cdot$
+	$
+	\left(\begin{array}{ccc}
+	0 & -2 & 3 \\
+	0 & 0 & 3 \\
+	0 & 2 & 3
+	\end{array}\right)
+	$ \\
+	B = 
+	$
+	\left(\begin{array}{ccc}
+	0 & 0 & 0 \\
+	0 & 2 & 0 \\
+	0 & 0 & 3
+	\end{array}\right)
+	$
+	\subsection*{Aufgabe 3}
+	\subsection*{a)}
+	Die Z werte einer Koordinate werden bei einer Multiplikation mit der Matrix $R_{z}$ nicht verändert. Durch entsprechende Multiplikationen mit Sinus und Kosinus der X und Y-Werte der entsteht eine Drehung. Insgesamt bewirkt die Matrix damit eine Drehung um die Z-Achse.
+	\subsection*{b)}
+	$R_{x} = 
+	\left(
+	\begin{array}{ccc}
+	1&0&0 \\ 0&\cos(\alpha)&-\sin(\alpha) \\ 0&\sin(\alpha)& \cos(\alpha)
+	\end{array}
+	\right)
+	$ \\
+	$R_{y} = 
+	\left(
+	\begin{array}{ccc}
+	\cos(\alpha)&0&\sin(\alpha) \\ 0&1&0 \\ -\sin(\alpha)&0&\cos(\alpha)
+	\end{array}
+	\right)
+	$
+	\subsection*{c)}
+	$R_{y} = 
+	\left(
+	\begin{array}{ccc}
+	\cos(60^{\circ})&0&\sin(60^{\circ}) \\ 0&1&0 \\ -\sin(60^{\circ})&0&\cos(60^{\circ})
+	\end{array}
+	\right)
+	$  \\
+	$A'	
+	=
+	\left(
+	\begin{array}{ccc}
+	\cos(60^{\circ})&0&\sin(60^{\circ}) \\ 0&1&0 \\ -\sin(60^{\circ})&0&\cos(60^{\circ})
+	\end{array}
+	\right)
+	\cdot
+	\left(
+	\begin{array}{c}
+	8\\6\\0
+	\end{array}
+	\right)
+	=
+	\left(
+	\begin{array}{c}
+	4\\54\\-4\sqrt{3}
+	\end{array}
+	\right)
+	$ \\
+	$B'	
+	=
+	\left(
+	\begin{array}{ccc}
+	\cos(60^{\circ})&0&\sin(60^{\circ}) \\ 0&1&0 \\ -\sin(60^{\circ})&0&\cos(60^{\circ})
+	\end{array}
+	\right)
+	\cdot
+	\left(
+	\begin{array}{c}
+	8\\10\\0
+	\end{array}
+	\right)
+	=
+	\left(
+	\begin{array}{c}
+	4\\58\\-4\sqrt{3}
+	\end{array}
+	\right)
+	$ \\
+	$C'	
+	=
+	\left(
+	\begin{array}{ccc}
+	\cos(60^{\circ})&0&\sin(60^{\circ}) \\ 0&1&0 \\ -\sin(60^{\circ})&0&\cos(60^{\circ})
+	\end{array}
+	\right)
+	\cdot
+	\left(
+	\begin{array}{c}
+	8\\10\\2
+	\end{array}
+	\right)
+	=
+	\left(
+	\begin{array}{c}
+	\sqrt{3}+4\\58\\-4\sqrt{3}+1
+	\end{array}
+	\right)
+	$ \\
+	$D'	
+	=
+	\left(
+	\begin{array}{ccc}
+	\cos(60^{\circ})&0&\sin(60^{\circ}) \\ 0&1&0 \\ -\sin(60^{\circ})&0&\cos(60^{\circ})
+	\end{array}
+	\right)
+	\cdot
+	\left(
+	\begin{array}{c}
+	8\\6\\2
+	\end{array}
+	\right)
+	=
+	\left(
+	\begin{array}{c}
+	\sqrt{3}+4 \\
+	54 \\
+	-4*\sqrt{3}+1
+	\end{array}
+	\right)
+	$ \\ \\
+	Die Ortsvektoren $A'$, $B'$, $C'$ und $D'$ können waagerecht als Bildpunkte der Punkte A, B, C und D gelesen werden. \\ \\
+	$A'$ = ( 4 $\|$ 54 $\|$ $-4\sqrt{3}$ ) \\
+	$B'$ = ( 4 $\|$ 58 $\|$ $-4\sqrt{3}$ ) \\
+	$C'$ = ( $\sqrt{3}+4$ $\|$  58 $\|$ $-4\sqrt{3}+1$ ) \\
+	$D'$ = ( $\sqrt{3}+4$ $\|$ 54 $\|$ $-4*\sqrt{3}+1$ ) \\
+\end{document}

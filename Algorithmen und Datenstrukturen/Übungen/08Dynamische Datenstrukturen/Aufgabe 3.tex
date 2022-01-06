@@ -1,0 +1,29 @@
+\documentclass{article}
+\begin{document}
+	\section*{Lsg Vorschlag ADSÜ08 A3 Maximilian Maag}
+	
+	\subsection*{Aufgabe 1}
+	Unter der Voraussetzung, ein Baum sei zyklenfrei und vollständig lassen sich folgende Überlegungen treffen: \\
+	\begin{itemize}
+		\item Bei einer höhe von 2 gehen von der Wurzel zu n Knoten je eine Kante also n Kanten.
+		\item Erhöht man die Höhe um 1 müssen nun von n Knoten n Kanten zu n Kinderknoten je Knoten n gezogen werden.
+		\item Wiederholt man dies h-mal um auf  die Höhe des Baumes zu kommen müsste man h $\cdot$ (n $\cdot$ n $\cdot$ n ......... n) rechnen.
+	\end{itemize}
+	Aus den obigen Überlegungen ergibt sich dann für einen Baum der Höhe h eine Anzahl von Kanten k = $n^{h}$.
+	\subsection*{Aufgabe 2}
+	Die Anzahl der Knoten eines vollständigen Binärbaumes, der Höhe h, lassen sich durch $2^{h} - 1$ bestimmten. \\ \\
+	Zu Zeigen ist: $n = 2^{h} - 1$ \\ \\
+	IV: \\ \\
+	Für die Eingabe 1 an der Wurzel ergibt sich: \\ \\
+	$2^{1} - 1$ = 1 \\ \\
+	Dieses Ergebnis hätten wir auch erwartet, da ein Baum der Höhe 1 nur die Wurzel als einzigen Knoten besitzt. \\ \\
+	IS: h $\to$ h+1 \\
+	$2^{h} - 1 = n$ \\
+	$2^{h+1} - 1 = 2n$ + 1 \\
+	$2^{h+1} - 1 = 2(2^{h} - 1)$ + 1 \\
+	$2^{h+1} - 1 = 2 \cdot 2^{h} - 2$  + 1\\
+	$2^{h+1} - 1 = 2^{h+1} - 2$  + 1\\
+	$2^{h+1} - 1 = 2^{h+1} - 1$ \\
+	q.e.d
+	
+\end{document}

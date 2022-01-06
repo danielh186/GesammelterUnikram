@@ -1,0 +1,145 @@
+\documentclass{article}
+\usepackage{mathtools}
+\begin{document}
+	\section*{Lsg Vorschlag LAÜ11 Maximilian Maag}
+	\subsection*{Aufgabe 1}
+	$\xi_{A}(\lambda)$ =
+	det$\left(
+	\left(
+	\begin{array}{ccc}
+	\frac{1}{5} & 0 & \frac{2}{5} \\ 0&1&0 \\ \frac{2}{5}&0&\frac{4}{5}
+	\end{array}
+	\right)
+	-
+	\left(
+	\begin{array}{ccc}
+	 \lambda&0&0\\ 0&\lambda&0 \\ 0&0&\lambda 
+	\end{array}
+	\right)
+	\right)$ \\
+	$\xi_{A}(\lambda)$ =
+	det$\left(
+	\begin{array}{ccc}
+	\frac{1}{5} - \lambda & 0 & \frac{2}{5} \\ 0&1 - \lambda&0 \\ \frac{2}{5}&0&\frac{4}{5}  - \lambda
+	\end{array}
+	\right)$ \\
+	$\xi_{A}\lambda)$ = $((\frac{1}{5} - \lambda) \cdot (1 - \lambda) \cdot (\frac{4}{5} - \lambda)) - (\frac{2}{5} \cdot (1 - \lambda) \cdot \frac{2}{5})$ \\
+	$\xi_{A}(\lambda)$ = $-\lambda^{3} + 2\lambda^{2} - \lambda$ \\ \\
+	Eigenwerte bestimmen \\
+	\\
+	$\lambda^{3} - 2\lambda^{2} + \lambda = 0$ \\
+	$\lambda \cdot (\lambda^{2} - 2\lambda + 1) = 0$ \\
+	$\lambda_{1}$  = 0 \\
+	$\lambda^{2} - 2\lambda + 1 = 0$ \\
+	$\lambda_{2} = 1 +-  \sqrt{1 - 1}$  \\
+	$\lambda_{2} = 1$ Doppelte Nullstelle \\ 
+	\\
+	Eigenvektoren: \\ \\
+	LGS1: \\
+	A1: $\frac{1}{5}$ x + $\frac{2}{5}$z = 0 \\
+	B1: y = 0\\
+	C1: $\frac{2}{5}$ x + $\frac{4}{5}$z = 0 \\ \\
+	$\vec{\lambda_{0}} =
+	\left(
+	\begin{array}{c}
+	-2z\\0\\z
+	\end{array}
+	\right)$ 
+	$\to$
+	$\left(
+	\begin{array}{c}
+	-2\\0\\1
+	\end{array}
+	\right)$
+	\\ \\
+	LGS2: \\
+	A1: $\frac{1}{5}$ x + $\frac{2}{5}$z = x \\
+	B1: y = y\\
+	C1: $\frac{2}{5}$ x + $\frac{4}{5}$z = z \\ \\
+	A2: $-\frac{4}{5}$ x + $\frac{2}{5}$z = 0 \\
+	B2: 0 = 0\\
+	C2: $\frac{2}{5}$ x - $\frac{1}{5}$z = 0 \\ \\
+	$\vec{\lambda_{1}} =
+	\left(
+	\begin{array}{c}
+	\frac{1}{2}z\\0\\z
+	\end{array}
+	\right)$ $\to$
+	$
+	\left(
+	\begin{array}{c}
+	1\\0\\2
+	\end{array}
+	\right)$
+	\subsection*{Aufgabe 2}
+	Aus der Kurvendiskussion in Aufgabe 1 ergab sich eine doppelte Nullstelle daher gilt folgende lineare Zerlegung: \\ \\
+	$(\lambda - 1)^{2} \cdot (-(\lambda-0)) = -\lambda^{3} + 2\lambda^{2} - \lambda$ \\ \\
+	Der Eigenwert $\lambda_{1}$ ist zweimal enthalten, woraus sich folgende LGS Aussage ableiten lässt: \\
+	Der Vektor $\vec{\lambda_{1}}$ hat nur eine linear unabhängige Lösung der Form
+	$\left(
+	\begin{array}{c}
+	\frac{1}{2}z  \\ 0 \\ z
+	\end{array}
+	\right)$
+	erscheint aber in der Linearfaktorzerlegung zweimal aus diesem Grund ist die Matrix A nicht diagonalisierbar. 
+	\subsection*{Aufgabe 3}
+	\subsection*{a)}
+	$U' =$
+	$\left(
+	\begin{array}{cc}
+	0 & -i \\ -i&0
+	\end{array}
+	\right)$ \\ \\
+	$\left(
+	\begin{array}{cc}
+	0 & -i \\ -i&0
+	\end{array}
+	\right)$
+	$\cdot$
+	$\left(
+	\begin{array}{cc}
+	0 & i \\ i&0
+	\end{array}
+	\right)$ =
+	$\left(
+	\begin{array}{cc}
+	1 & 0 \\ 0&1
+	\end{array}
+	\right)$
+	\subsection*{b)}
+	$U' = \frac{1}{2} \cdot
+	\left(
+	\begin{array}{cc}
+	1-i & 1+i \\ 1 + i & 1 - i
+	\end{array}
+	\right)
+	$ \\ \\	
+	$\frac{1}{2} \cdot \left(
+	\begin{array}{cc}
+		1-i & 1+i \\ 1 + i & 1 - i
+	\end{array}
+	\right)
+	\cdot
+	\frac{1}{2}
+	\left(
+	\begin{array}{cc}
+	1+ i & 1-i \\ 1 - i & 1 + i
+	\end{array}
+	\right)
+	$ \\
+	=
+	$\frac{1}{2}$
+	$\left(
+	\begin{array}{cc}
+	2 & 0  \\ 0 & 2
+	\end{array}
+	\right)$
+	\\
+	=
+	$\left(
+	\begin{array}{cc}
+	1 & 0  \\ 0 & 1
+	\end{array}
+	\right)$
+	
+\end{document}

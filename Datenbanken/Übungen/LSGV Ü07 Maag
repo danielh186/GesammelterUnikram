@@ -1,0 +1,22 @@
+-- QUERY eis1: Ausgabe aller Eissorten (Ausgabe: name);
+SELECT name FROM Eis;
+
+-- QUERY eis2: Ausgabe aller Eissorten sortiert nach Kalorien aufsteigend (Ausgabe: name, farbe, kalorien)
+SELECT name, farbe, kalorien FROM Eis ORDER BY kalorien ASC;
+
+-- QUERY eis3: Ausgabe aller Eisdielen in Mainz (Ausgabe: Name)
+SELECT name FROM Eisdiele WHERE ort = 'Mainz';
+
+-- QUERY eis4: Ausgabe aller Eisdielen die Aussenverkauf haben und als Spezialeis Vanille (Ausgabe: alle Attribute der Eisdiele)
+SELECT * FROM Eisdiele WHERE aussenverkauf = true AND specialEis = 'Vanille';
+
+-- QUERY eis5: Ausgabe aller Eissorten die "Marios Eiseck" verkauft werden. (Ausgabe: eisname, preis)
+SELECT eisName,preis FROM EisdieleVerkauftEis WHERE dielenName = 'Marios Eiseck';
+
+-- QUERY eis6: Wieviel kostet das preiswerteste Eis?
+SELECT MIN(preis) FROM EisdieleVerkauftEis;
+
+-- QUERY eis7: Wie heißt der Eisladen, wo der Besitzername Schnei enthält. (Ausgabe: name)
+SELECT name FROM Eisdiele WHERE besitzer LIKE '%Schnei%';
+
+

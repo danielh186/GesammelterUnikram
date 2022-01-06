@@ -1,0 +1,28 @@
+\documentclass{article}
+\usepackage{mathtools}
+\begin{document}
+	\section*{Lsg Vorschlag ADS Ü01 A1 Maximilian Maag}
+	\subsection*{Grenzwerte}
+	$f(x) = \frac{7x^{2}+3}{x-1000}$ \\
+	$\lim\limits_{x\to\infty} f(x) = \frac{x(7x+\frac{3}{x})}{x(1-\frac{1000}{x})}$ \\
+	$\lim\limits_{x\to\infty} f(x) = \frac{7x+\frac{3}{x}}{1-\frac{1000}{x}}$ \\
+	$\lim\limits_{x\to\infty} f(x) = \frac{\infty+0}{1-0}$ \\
+	$\lim\limits_{x\to\infty} f(x) = \infty$ \\
+	 \\
+	$f(x) = \frac{x*\log(x) + 10}{x^{2}}$ \\
+	$\lim\limits_{x\to\infty} f(x) = \frac{x*(\log(x) + \frac{10}{x})}{x*x}$ \\
+	$\lim\limits_{x\to\infty} f(x) = \frac{(\log(x) + \frac{10}{x})}{x}$ \\
+	$\lim\limits_{x\to\infty} f(x) = \frac{\log(\infty) + 0}{\infty}$ \\
+	$\lim\limits_{x\to\infty} f(x) = 0$
+	\subsection*{Induktionsbeweis}
+	Zu zeigen ist durch vollständige Induktion: \\
+	$n + 100 \leq n^{2}$ für alle $n \geq 100$. \\ \\
+	Induktionsbasis: n = 100 \\
+	$100 + 100 \leq 100^2$ \\
+	$200 \leq 1000$ \\ \\
+	Induktionsbehauptung: $\exists: n \geq 100 | n + 100 \leq n^2$ \\ \\
+	Induktionsschritt: n $\to$ n+1 \\
+	$(n+1) + 100 \leq (n+1)^2$ \\
+	$1 \leq 2n +1$ \\
+	q.e.d
+\end{document}

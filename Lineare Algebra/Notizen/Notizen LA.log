@@ -1,0 +1,309 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.3.19)  6 JUL 2021 13:19
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**"Notizen LA.tex"
+(./Notizen LA.tex
+LaTeX2e <2020-02-02> patch level 2
+L3 programming layer <2020-02-14>
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2019/12/20 v1.4l Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
+)
+\c@part=\count167
+\c@section=\count168
+\c@subsection=\count169
+\c@subsubsection=\count170
+\c@paragraph=\count171
+\c@subparagraph=\count172
+\c@figure=\count173
+\c@table=\count174
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen134
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 105.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen135
+\Gin@req@width=\dimen136
+)
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
+File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
+\l__kernel_color_stack_int=\count175
+\l__pdf_internal_box=\box45
+)
+(./Notizen LA.aux)
+\openout1 = `"Notizen LA.aux"'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count176
+\scratchdimen=\dimen137
+\scratchbox=\box46
+\nofMPsegments=\count177
+\nofMParguments=\count178
+\everyMPshowfont=\toks15
+\MPscratchCnt=\count179
+\MPscratchDim=\dimen138
+\MPnumerator=\count180
+\makeMPintoPDFobject=\count181
+\everyMPtoPDFconversion=\toks16
+) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+Underfull \hbox (badness 10000) in paragraph at lines 22--39
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 22--39
+
+ []
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 41.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 41.
+[1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+Underfull \hbox (badness 10000) in paragraph at lines 58--78
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 79--91
+
+ []
+
+[2]
+<Pic01.png, id=17, 1927.2pt x 1084.05pt>
+File: Pic01.png Graphic file (type png)
+<use Pic01.png>
+Package pdftex.def Info: Pic01.png  used on input line 96.
+(pdftex.def)             Requested size: 345.0pt x 194.06194pt.
+<sampleWinkel.png, id=18, 1927.2pt x 1084.05pt>
+File: sampleWinkel.png Graphic file (type png)
+<use sampleWinkel.png>
+Package pdftex.def Info: sampleWinkel.png  used on input line 99.
+(pdftex.def)             Requested size: 345.0pt x 194.06194pt.
+<VecProd1.png, id=19, 1927.2pt x 1084.05pt>
+File: VecProd1.png Graphic file (type png)
+<use VecProd1.png>
+Package pdftex.def Info: VecProd1.png  used on input line 103.
+(pdftex.def)             Requested size: 345.0pt x 194.06194pt.
+<GVP.png, id=20, 1927.2pt x 1084.05pt>
+File: GVP.png Graphic file (type png)
+<use GVP.png>
+Package pdftex.def Info: GVP.png  used on input line 108.
+(pdftex.def)             Requested size: 345.0pt x 194.06194pt.
+<wechsel.png, id=21, 1927.2pt x 1084.05pt>
+File: wechsel.png Graphic file (type png)
+<use wechsel.png>
+Package pdftex.def Info: wechsel.png  used on input line 110.
+(pdftex.def)             Requested size: 345.0pt x 194.06194pt.
+<formeln.png, id=22, 1927.2pt x 1084.05pt>
+File: formeln.png Graphic file (type png)
+<use formeln.png>
+Package pdftex.def Info: formeln.png  used on input line 121.
+(pdftex.def)             Requested size: 345.0pt x 194.06194pt.
+ [3 <./Pic01.png>] [4 <./sampleWinkel.png> <./VecProd1.png>] [5 <./GVP.png> <./
+wechsel.png>]
+<mat.png, id=32, 1927.2pt x 1084.05pt>
+File: mat.png Graphic file (type png)
+<use mat.png>
+Package pdftex.def Info: mat.png  used on input line 131.
+(pdftex.def)             Requested size: 345.0pt x 194.06194pt.
+<rang.png, id=33, 1927.2pt x 1084.05pt>
+File: rang.png Graphic file (type png)
+<use rang.png>
+Package pdftex.def Info: rang.png  used on input line 135.
+(pdftex.def)             Requested size: 345.0pt x 194.06194pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--144
+
+ []
+
+[6 <./formeln.png> <./mat.png>]
+<tanspo.png, id=37, 1927.2pt x 1084.05pt>
+File: tanspo.png Graphic file (type png)
+<use tanspo.png>
+Package pdftex.def Info: tanspo.png  used on input line 150.
+(pdftex.def)             Requested size: 345.0pt x 194.06194pt.
+<sample2.png, id=38, 1927.2pt x 1084.05pt>
+File: sample2.png Graphic file (type png)
+<use sample2.png>
+Package pdftex.def Info: sample2.png  used on input line 151.
+(pdftex.def)             Requested size: 345.0pt x 194.06194pt.
+<übungbedarf.png, id=39, 1927.2pt x 1084.05pt>
+File: übungbedarf.png Graphic file (type png)
+<use übungbedarf.png>
+Package pdftex.def Info: übungbedarf.png  used on input line 155.
+(pdftex.def)             Requested size: 345.0pt x 194.06194pt.
+<übedarfsolv.png, id=40, 1927.2pt x 1084.05pt>
+File: übedarfsolv.png Graphic file (type png)
+<use übedarfsolv.png>
+Package pdftex.def Info: übedarfsolv.png  used on input line 157.
+(pdftex.def)             Requested size: 345.0pt x 194.06194pt.
+<sarrus.png, id=41, 1927.2pt x 1084.05pt>
+File: sarrus.png Graphic file (type png)
+<use sarrus.png>
+Package pdftex.def Info: sarrus.png  used on input line 166.
+(pdftex.def)             Requested size: 345.0pt x 194.06194pt.
+<bsarrus.png, id=42, 1927.2pt x 1084.05pt>
+File: bsarrus.png Graphic file (type png)
+<use bsarrus.png>
+Package pdftex.def Info: bsarrus.png  used on input line 168.
+(pdftex.def)             Requested size: 345.0pt x 194.06194pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 145--171
+
+ []
+
+[7 <./rang.png>] [8 <./tanspo.png> <./sample2.png>] [9 <./übungbedarf.png> <./
+übedarfsolv.png>]
+<zstreckung.png, id=53, 1927.2pt x 1084.05pt>
+File: zstreckung.png Graphic file (type png)
+<use zstreckung.png>
+Package pdftex.def Info: zstreckung.png  used on input line 188.
+(pdftex.def)             Requested size: 345.0pt x 194.06194pt.
+<zes.png, id=54, 1927.2pt x 1084.05pt>
+File: zes.png Graphic file (type png)
+<use zes.png>
+Package pdftex.def Info: zes.png  used on input line 191.
+(pdftex.def)             Requested size: 345.0pt x 194.06194pt.
+<proschatten.png, id=55, 1927.2pt x 1084.05pt>
+File: proschatten.png Graphic file (type png)
+<use proschatten.png>
+Package pdftex.def Info: proschatten.png  used on input line 196.
+(pdftex.def)             Requested size: 345.0pt x 194.06194pt.
+<satz.png, id=56, 1927.2pt x 1084.05pt>
+File: satz.png Graphic file (type png)
+<use satz.png>
+Package pdftex.def Info: satz.png  used on input line 200.
+(pdftex.def)             Requested size: 345.0pt x 194.06194pt.
+<üsatz.png, id=57, 1927.2pt x 1084.05pt>
+File: üsatz.png Graphic file (type png)
+<use üsatz.png>
+Package pdftex.def Info: üsatz.png  used on input line 202.
+(pdftex.def)             Requested size: 345.0pt x 194.06194pt.
+ [10 <./sarrus.png> <./bsarrus.png>] [11 <./zstreckung.png> <./zes.png>] [12 <.
+/proschatten.png> <./satz.png>]
+<abbildung.png, id=67, 1927.2pt x 1084.05pt>
+File: abbildung.png Graphic file (type png)
+<use abbildung.png>
+Package pdftex.def Info: abbildung.png  used on input line 212.
+(pdftex.def)             Requested size: 345.0pt x 194.06194pt.
+<sampleFixKern.png, id=68, 1927.2pt x 1084.05pt>
+File: sampleFixKern.png Graphic file (type png)
+<use sampleFixKern.png>
+Package pdftex.def Info: sampleFixKern.png  used on input line 218.
+(pdftex.def)             Requested size: 345.0pt x 194.06194pt.
+ [13 <./üsatz.png> <./abbildung.png>]
+<charpolynom.png, id=73, 1927.2pt x 1084.05pt>
+File: charpolynom.png Graphic file (type png)
+<use charpolynom.png>
+Package pdftex.def Info: charpolynom.png  used on input line 223.
+(pdftex.def)             Requested size: 345.0pt x 194.06194pt.
+<transformer.png, id=74, 1927.2pt x 1084.05pt>
+File: transformer.png Graphic file (type png)
+<use transformer.png>
+Package pdftex.def Info: transformer.png  used on input line 230.
+(pdftex.def)             Requested size: 345.0pt x 194.06194pt.
+ [14 <./sampleFixKern.png> <./charpolynom.png>] [15 <./transformer.png>]
+<samplekz.png, id=81, 1927.2pt x 1084.05pt>
+File: samplekz.png Graphic file (type png)
+<use samplekz.png>
+Package pdftex.def Info: samplekz.png  used on input line 263.
+(pdftex.def)             Requested size: 345.0pt x 194.06194pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 263--271
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 263--271
+
+ []
+
+<mav.png, id=82, 1927.2pt x 1084.05pt>
+File: mav.png Graphic file (type png)
+<use mav.png>
+Package pdftex.def Info: mav.png  used on input line 277.
+(pdftex.def)             Requested size: 345.0pt x 194.06194pt.
+<streckeinv.png, id=83, 1927.2pt x 1084.05pt>
+File: streckeinv.png Graphic file (type png)
+<use streckeinv.png>
+Package pdftex.def Info: streckeinv.png  used on input line 281.
+(pdftex.def)             Requested size: 345.0pt x 194.06194pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 272--284
+
+ []
+
+[16 <./samplekz.png>] [17 <./mav.png> <./streckeinv.png>] (./Notizen LA.aux) ) 
+Here is how much of TeX's memory you used:
+ 1324 strings out of 481239
+ 19381 string characters out of 5920377
+ 251466 words of memory out of 5000000
+ 16637 multiletter control sequences out of 15000+600000
+ 533548 words of font info for 28 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 30i,8n,25p,303b,117s stack positions out of 5000i,500n,10000p,200000b,80000s
+<
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/t
+exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmsy7.pfb>
+Output written on "Notizen LA.pdf" (17 pages, 20755921 bytes).
+PDF statistics:
+ 117 PDF objects out of 1000 (max. 8388607)
+ 63 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 131 words of extra memory for PDF output out of 10000 (max. 10000000)
+

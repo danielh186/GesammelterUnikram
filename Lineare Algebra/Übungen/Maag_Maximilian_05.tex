@@ -1,0 +1,293 @@
+\documentclass{article}
+\begin{document}
+	\section*{Lsg Vorschlag LAÜ05 Maximilian Maag}
+	\subsection*{Aufgabe A}
+	\begin{itemize}
+		\item falsch
+		\item richtig
+		\item richtig
+		\item falsch
+		\item richtig
+	\end{itemize}
+	\subsection*{Aufgabe B}
+	\subsection*{a)}
+	Annahme: Das Dreieck ABC umfasst die Winkel $\alpha$, $\beta$ und $\gamma$. \\
+	\\
+	$\cos$($\alpha$) = $\frac{\vec{AB} \cdot \vec{AC}}{\|\vec{AB}\| \cdot \|\vec{AC}\|}$ \\
+	$\vec{AB}$ = 
+	$
+	\left(\begin{array}{c}
+	-1 \\ 4  \\ -1
+	\end{array}\right) \\
+	$
+	$\vec{AC}$ = 
+	$
+	\left(\begin{array}{c}
+	-5 \\ -1 \\ 2
+	\end{array}\right)
+	$ \\
+	$\cos$($\alpha$) =
+	$\frac{  \left(\begin{array}{c}
+		-1 \\ 4  \\ -1
+		\end{array}\right) 
+	\cdot
+	 \left(\begin{array}{c}
+	 -5 \\ -1 \\ 2
+	 \end{array}\right)}{\left\|\left(\begin{array}{c}
+	 -1 \\ 4  \\ -1
+	 \end{array}\right)\right\| \cdot \left\|\left(\begin{array}{c}
+	 -5 \\ -1 \\ 2
+	 \end{array}\right)\right\| }$ \\
+	$\cos$($\alpha$) = $\frac{-1 \cdot 5 + 4 \cdot -1 + -1 \cdot 2}{\sqrt{1^2 + 4^2 +1^2} \cdot \sqrt{5^2 + 1 + 2^2}}$ \\
+	$\cos$($\alpha$) = $\frac{-1 \cdot -5 + 4 \cdot -1 + -1 \cdot 2}{\sqrt{18} \cdot \sqrt{30}}$ \\
+	$\cos$($\alpha$) = $\frac{5  - 4 - 2}{\sqrt{18} \cdot \sqrt{30}}$ \\
+	$\cos$($\alpha$) = $\frac{-1}{\sqrt{18} \cdot \sqrt{30}}$ \\
+	$\cos$($\alpha$) $\approx$ 0,0430331 \\
+	$\alpha$ = $\cos^{-1}$ \\
+	$\alpha$ $\approx$ 61,7471° \\ \\
+	$\vec{BC}$ = 
+	$\left(\begin{array}{c}
+	-4 \\ -5 \\ 3
+	\end{array}\right)$\\
+	$\vec{BA}$ = $\left(\begin{array}{c}
+	-1 \\ 4 \\ -1
+	\end{array}\right)$ \\
+	
+	
+	\subsection*{b)}
+	A = $\frac{1}{2}$ $\cdot$ $|$ $\vec{AB}$ x $\vec{AC}$ $|$ \\
+	$\vec{AB}$ = 
+	$
+	\left(\begin{array}{c}
+	-1 \\ 4  \\ -1
+	\end{array}\right) \\
+	$
+	$\vec{AC}$ = 
+	$
+	\left(\begin{array}{c}
+	-5 \\ -1 \\ 2
+	\end{array}\right)
+	$ \\
+	A = $\frac{1}{2}$ $\cdot$
+	$
+	\left\|\left(\begin{array}{c}
+	7 \\ 7 \\ 21
+	\end{array}\right)\right\|
+	$ \\
+	A = $\frac{1}{2}$ $\cdot$ $\sqrt{7^2 + 7^2 + 21^2}$ \\
+	A = $\frac{1}{2}$ $\cdot$ $\sqrt{49 + 49 + 441}$ \\
+	A = $\frac{1}{2}$ $\cdot$ $\sqrt{539}$ \\
+	A = 11,6082
+	\section*{Aufgabe 1}
+	Bilde Ebene in Normalform. \\
+	\\
+	Normalenvektor $\vec{n}$ = 
+	$\left(\begin{array}{c}
+	-6 \\ 2 \\ 1
+	\end{array}\right)$
+	X
+	$\left(\begin{array}{c}
+	4 \\1 \\ -3
+	\end{array}\right)$ = 
+	$\left(\begin{array}{c}
+	-7 \\ -14 \\ -14
+	\end{array}\right)$
+	\\  \\
+	Hilfsebene E mit $\vec{n}$ \\ \\
+	E: 
+	$\left(\begin{array}{c}
+	-7 \\ -14 \\ -14
+	\end{array}\right)$
+	 $\cdot$ $\left[\vec{x} - 
+	\left(\begin{array}{c}
+	9 \\ 3 \\ 8
+	\end{array}\right)
+	\right]$
+	= 0 \\
+	\\
+	Überführung in Koordinatenform: \\
+	\\
+	E: -7x - 14y -14z = 63 + 42 112 \\
+	E: -7x - 14y -14z = 105 + 112 \\
+	E: -7x - 14y -14z = 217 \\ \\
+	Überführung in hesse'sche Normalform: \\ \\
+	$\left\|\vec{n}\right\|$ = $\sqrt{7^2 +14^2 +14^2}$ \\
+	$\left\|\vec{n}\right\|$ = $\sqrt{49 + 196 + 196}$ \\
+	$\left\|\vec{n}\right\|$ = $\sqrt{49 + 196 + 196}$ \\
+	$\left\|\vec{n}\right\|$ = $\sqrt{441}$ \\
+	$\left\|\vec{n}\right\|$ = 21 \\ \\
+	Die H-Form liegt vor, wenn die Normalform um den Betrag des Normalvektors dividiert wird. \\ \\
+	E: $\frac{1}{21}$ $\|-7x - 14y -14z -217 \| = 0 \\ \\$
+	Stützpunkt von h in E liefert die Distanz d: \\ \\
+	d = $\frac{1}{21}$ $\cdot$ $\|-7 \cdot 4 - 14 \cdot 2 -14 -217 \| \\$
+	d =  $\frac{1}{21}$ $\cdot$ $\|-28 - 28 -14 -217 \| \\$
+	d =  $\frac{1}{21}$ $\cdot$ $\|-70 -217 \| \\$
+	d =  $\frac{1}{21}$ $\cdot$ $\|-287 \| = 0 \\$
+	d = $\frac{1}{21}$ $\cdot$ 287 \\$ \\
+	d = 13,6667 RE$ (Raumeinheiten)
+	\section*{Aufgabe 2}
+	\subsection*{a)}
+	E: 
+	$\left(\begin{array}{c}
+	2 \\ 1 \\ -3
+	\end{array}\right)$
+	$\cdot$ $\left[\vec{x} - 
+	\left(\begin{array}{c}
+	1 \\ 1 \\ 1
+	\end{array}\right)
+	\right]$
+	= 0 \\
+	\subsection*{b)}
+	E: 
+	$\left(\begin{array}{c}
+	0 \\ 0 \\ 1
+	\end{array}\right)$
+	$\cdot$ $\left[\vec{x} - 
+	\left(\begin{array}{c}
+	1111111111 \\ 2222222222 \\ 0
+	\end{array}\right)
+	\right]$
+	= 0 \\
+	\subsection*{c)}
+	E: 
+	$\left(\begin{array}{c}
+	1 \\ 0 \\ 0
+	\end{array}\right)$
+	$\cdot$ $\left[\vec{x} - 
+	\left(\begin{array}{c}
+	1 \\ 1 \\ 0
+	\end{array}\right)
+	\right]$
+	= 0 \\
+	\subsection*{d)}
+	Ebene E in Parameterform \\
+	\\
+	E: $\vec{x} =$
+	$\left(\begin{array}{c}
+		0 \\ 2 \\ 0
+	\end{array}\right)$ + 
+	r $\cdot$ 
+	$\left(\begin{array}{c}
+	2 \\ -1 \\ 2
+	\end{array}\right)$ +
+	s $\cdot$ 
+	$\left(\begin{array}{c}
+	1 \\ -2 \\ 2
+	\end{array}\right)$ \\ \\
+	Überführung in Normalform \\ \\
+	E:
+	$\left(\begin{array}{c}
+	2 \\ -2 \\ -3
+	\end{array}\right)$
+	$\cdot$
+	$\left[\vec{x} - \left(\begin{array}{c}
+		0 \\ 2 \\ 0
+	\end{array}\right) \right]$ = 0
+	\section*{Aufgabe 3}
+	\subsection*{a)}
+	Berechnung der Höhe der Pyramide als Abstand des Punktes S und dem Durchstoßpunkt einer Geraden h, die senkrecht auf der Ebene E stehe. \\ \\
+	E: $\vec{x} =$
+	$\left(\begin{array}{c}
+	7 \\ 1 \\ 0
+	\end{array}\right)$ + 
+	r $\cdot$ 
+	$\left(\begin{array}{c}
+	0 \\ 6 \\ 2
+	\end{array}\right)$ +
+	s $\cdot$ 
+	$\left(\begin{array}{c}
+	-6 \\ 6 \\ 4
+	\end{array}\right)$ \\
+	Normalenvektor $\vec{n}$ =
+	$\left(\begin{array}{c}
+	 12 \\ -12 \\ 36
+	\end{array}\right) $ \\ \\
+	E in Normalform: \\ \\
+	E:
+	$\left(\begin{array}{c}
+	12 \\ -12 \\ 36
+	\end{array}\right)$
+	$\cdot$
+	$\left[\vec{x} - \left(\begin{array}{c}
+	7 \\ 1 \\ 0
+	\end{array}\right) \right]$ = 0 \\
+	\\
+	E in Koordinatenform: \\ \\
+	E: 12x -12y + 36z - 72 = 0 \\
+	E: 12x -12y + 36z =  72 \\
+	E: 2x -2y + 6z = 12 \\ \\
+	Hilfsgerade h: \\
+	h: 
+	$\vec{x} =$
+	$\left(\begin{array}{c}
+	7 \\ 2 \\ 4
+	\end{array}\right)$ + 
+	r $\cdot$ 
+	$\left(\begin{array}{c}
+	2 \\ -2 \\ 6
+	\end{array}\right)$ \\
+	h in E: \\
+	2(7 + 2r) -2(2 -2r) + 6(4 + 6r) = 12 \\
+	14 + 4r -4 + 4r + 24 + 36r = 12 \\
+	34 + 44r = 12 \\
+	44r = -22 \\
+	r = -$\frac{1}{2}$ \\
+	r in h: \\
+	$\vec{OP}$ = 
+	$\left(\begin{array}{c}
+	7 \\ 2 \\ 4
+	\end{array}\right)$ - 
+	$\frac{1}{2}$ $\cdot$ 
+	$\left(\begin{array}{c}
+	2 \\ -2 \\ 6
+	\end{array}\right)$ \\
+	$\vec{OP}$ = 
+	$\left(\begin{array}{c}
+	7 \\ 2 \\ 4
+	\end{array}\right)$ - 
+	$\left(\begin{array}{c}
+	-1 \\ 1 \\ -6
+	\end{array}\right)$ \\
+	$\vec{OP}$ = 
+	$\left(\begin{array}{c}
+	8 \\ 1 \\ 10
+	\end{array}\right)$ \\ \\
+	Durchstoßpunkt P = (8 $|$ 1 $|$ 10)
+	Höhe der Pyramide ergibt sich aus dem Abstand zwischen S und dem Durchstoßpunkt der Hilfsgeraden h. \\ \\
+	$\vec{PS}$ = 
+	$\left(\begin{array}{c}
+	7 \\ 2 \\ 4
+	\end{array}\right)$ - 
+	$\left(\begin{array}{c}
+	8 \\ 1 \\ 10
+	\end{array}\right)$ \\
+	$\vec{PS}$ = 
+	$\left(\begin{array}{c}
+	-1 \\ 1 \\ -6
+	\end{array}\right)$ \\ \\
+	h = $\|\vec{PS}\|$ \\
+	h = $\sqrt{1 + 1 + 6^2}$ \\
+	h = $\sqrt{1 + 1 + 36}$ \\
+	h = $\sqrt{38}$ \\
+	h = 6,16441 \\
+	h $\approx$ 6,16 RE
+	\subsection*{b)}
+	Für die Grundfläche der Pyramide gilt: $\|\vec{AB} x \vec{AC}\|$  \\
+	$\to$ $V_{Pyramide}$ = $\frac{1}{3} \cdot \|\vec{AB}$ x $\vec{AC}\| \cdot h$ \\
+	G = 
+	$\left(\begin{array}{c}
+	0 \\ 6 \\ 2
+	\end{array}\right)$
+	x
+	$\left(\begin{array}{c}
+	-6 \\ 6 \\ 4
+	\end{array}\right)$ \\
+	G = 
+	$\left(\begin{array}{c}
+	12 \\ -12 \\ 36
+	\end{array}\right)$ \\
+	V = $\frac{1}{3} * G * h$ \\
+	V = 12 * 6,16441 \\
+	V = 73,9729 \\
+	V $\approx$ 73,973 VE (Volumeneinheiten)
+\end{document}

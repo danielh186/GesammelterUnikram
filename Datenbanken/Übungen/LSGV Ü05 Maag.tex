@@ -1,0 +1,50 @@
+\documentclass{article}
+\usepackage{pdfpages}
+\begin{document}
+	\includepdf[pages=1]{PA5}
+	\section*{Lsg Vorschlag DBÜ05 Maximilian Maag}
+	AIdual, 1246281, Maag \\
+	Zeichnungen müssen leider aufgrund meiner Sehschädigung entfallen.
+	\section*{Aufgabe 1}
+	\subsection*{a)}
+	A(model,speed, ram, hd, screen, price) := $\sigma_{ram>2048}(Laptop)$ \\
+	Result() := $\pi_{modell}(A)$
+	\subsection*{b)}
+	A(model, speed, ram, hd, screen, price) := $\sigma_{hd\geq100}(Tablet)$ \\
+	B(model, hd) := $\pi_{model, hd}$(A); \\
+	C(maker, model) := $\pi_{maker, model}(Product)$ \\
+	D(maker, model, hd) := B $\bowtie$ C
+	Result(maker) := $\pi_{maker}(D)$
+	\subsection*{c)}
+	A(model, color, price, typ) := $\sigma_{color="red"}(Printer)$ \\
+	Result(model) :=  $\pi_{model}(A)$
+	\subsection*{d)}
+	A(model, speed, ram, hd, screen, price) := $\sigma_{\delta(ram)}(Laptop)$ \\
+	Result(ram) := $\pi_{ram}(A)$
+	\section*{Aufgabe 2}
+	\subsection*{a)}
+	A(PlaceName, Country, MainAttraction) := $\sigma_{MainAttraction = "Vulkan"}(Location)$ \\
+	B(PlaceName, Country) := $\pi_{PlaceName, Country}(A)$ \\
+	Result(Ort, Land) := $\rho_{Ort, Land}(B)$
+	\subsection*{b)}
+	A(VID, PlaceName, Year, LastName, HomeCity) := Visitor $\bowtie$ Visited \\
+	B(VID, PlaceName, Year, LastName, HomeCity) := $\sigma_{Year<2019}(A)$ \\
+	C(VID, PlaceName, Year, LastName, HomeCity, Country, MainAttraction) := B $\bowtie$ Location \\
+	Result(LastName, PlaceName, Country, Year) := $\pi_{LastName, PlaceName, Country, Year}(C)$
+	\subsection*{c)}
+	A := Visited $\bowtie$ Location \\
+	B := A \\
+	C := A $\bowtie_{A.V-ID != B.V-ID \land A.year = B.year \land A.Country = B.Country }$ B \\
+	D := $\pi_{A.VID \to VID, A.year \to year, A.Placename \to Placename}(C)$ $\bowtie$ Visitor \\
+	E :=  D $\bowtie$ Visitor \\
+	F := $\pi_{LastName, Year, PlaceName}(E)$
+	\section*{Aufgabe 3}
+	A := Count(Location) \\
+	B := $\delta$($\pi_{VID, Placename}$(Visited)) \\
+	C := $\gamma_{VID, Count(PlaceName)}$ (B)\\
+	D := A $\bowtie$ C \\
+	E := D $\bowtie$ Visitor \\
+	Result := $\pi_{Lastname}$(E)
+	
+	
+\end{document}

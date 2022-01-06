@@ -1,0 +1,53 @@
+\documentclass{article}
+\usepackage{graphicx}
+\begin{document}
+	\section*{Lsg Vorschlag ADS Ü01 A4 Maximilian Maag}
+	\section*{Theorieaufgaben}
+	\subsection*{Aufgabe 1}
+	Ausgangstabelle \\
+	\begin{tabular}[h]{|c|c|c|c|}
+		\hline
+		2 & 3 & 4 & 5 \\
+		\hline
+		6 & 7 & 8 & 9 \\
+		\hline
+		10 & 11 & 12 & 13 \\
+		\hline
+		14 & 15 & 16 & 17 \\
+		\hline
+		
+	\end{tabular} \\ \\
+
+	Lösungstabelle \\
+	\begin{tabular}[h]{|c|c|c|c|}
+		\hline
+		2p & 3p & 4s & 5p \\
+		\hline
+		6s & 7p & 8s & 9s \\
+		\hline
+		10s & 11p & 12s & 13p \\
+		\hline
+		14s & 15s & 16s & 17p \\
+		\hline
+		
+	\end{tabular} \\ \\
+	Legende: \\
+	\begin{itemize}
+		\item s: gestrichen
+		\item p: Primzahl
+	\end{itemize}
+	\subsection*{Aufgabe 2}
+	Terminiert der Algorithmus immer? \\ \\
+	Der Algorithmus terminiert immer, da er solange durchgeführt wird bis es in der endlichen Eingabemenge M keine Zahl mehr m $\leq$ m gibt die als Primzahl oder als gestrichen markiert wurde. \\ 
+	Das heißt der Algorithmus bricht nach endlichen Schritten für zulässige Eingaben ab und ist damit terminierend.\\
+	
+	Ist der Algorithmus determinierend? \\ \\
+	Für jede zulässige Eingabe bricht der Algorithmus mit dem selben Ergebnis ab und zwar unabhängig von der Anzahl der Wiederholungen.
+	
+	Ist der Algorithmus deterministisch? \\ \\
+	Bei der Durchführung des Algorithmus ist zu beobachten, dass immer wieder dieselben Zahlen nach einander als Primzahlen markiert werden und deren, immer gleichen, Vielfache gestrichen werden. Dies macht den Algorithmus deterministisch.
+	
+	Ist der Algorithmus Korrekt? \\
+	Der Algorithmus ist deterministisch. Zusätzlich entspricht die Ausgabe des Algorithmus exakt der Spezifikation. Das macht den vorliegenden Algorithmus korrekt.
+	
+\end{document}

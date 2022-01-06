@@ -1,0 +1,18 @@
+\documentclass{article}
+\begin{document}
+	\section*{Lsg Vorschlag ADSÜ11 A4 Maximilian Maag}
+	\subsection*{Aufgabe a}
+	Lösung komplett falsch: \\ \\
+	Jeder Knoten n muss mindestens mit $\frac{M}{2}$ Schlüsseln befüllt werden. (Mit Ausnahme der Wurzel). \\
+	S = 1 + ($\frac{M}{2}$ * (h - 1)) \\
+	S = 1 + ($\frac{M}{2}$ * ( $log_{M+1}(n+1)$ - 1)) \\
+	\subsection*{Aufgabe b}
+	Lösung leider falsch \\ \\
+	Idee: Aufwand je Knoten * Höhe des Baumes \\ \\
+	In einem Knoten befinden sich $\frac{M}{2}$ linear zu durchsuchende Schlüssel, diese müssten im Worst Case alle durchlaufen werden. Daraus folgt: \\ \\
+	O($\frac{M}{2}$) \\ \\
+	Komplexität für die Höhe des Baumes ist aus der Vorlesung bekannt: \\
+	\\
+	O($log_{M+1}(n)$) \\ \\
+	Daraus folgt insgesamt: ($\frac{M}{2}$ * $log_{M+1}(n+1)$)
+\end{document}
